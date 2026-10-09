@@ -1,0 +1,1 @@
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,packages:{'[+]':['noerrors']}},svg:{fontCache:'local'},startup:{typeset:false}};
