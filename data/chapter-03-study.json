@@ -1,0 +1,6013 @@
+{
+  "number": 3,
+  "title": "一元函数积分学",
+  "schema": 2,
+  "reference_date": "2026-10-16",
+  "exam_date": "2026-11-14",
+  "sections": [
+    {
+      "id": "type-1",
+      "short": "一 · 不定积分",
+      "title": "题型一 · 不定积分",
+      "lo": 1,
+      "hi": 26,
+      "focus": "计算与方法选择并重",
+      "signal": "找内层导数；比较换元、分部和分式分解，先选能降低复杂度的路线。",
+      "check": "能解释为什么选法，结果能求导还原；积分常数按定义区间理解。",
+      "basics": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06"
+      ]
+    },
+    {
+      "id": "type-2",
+      "short": "二 · 定积分计算",
+      "title": "题型二 · 定积分的计算",
+      "lo": 27,
+      "hi": 37,
+      "focus": "计算、对称观察与分段条件",
+      "signal": "先查分段、绝对值、奇偶、周期与区间配对，再决定是否求原函数。",
+      "check": "换元同时改限；arcsin(sin t)先查主值；面积与带符号积分分清。",
+      "basics": [
+        "j07",
+        "j09",
+        "j10",
+        "j11"
+      ]
+    },
+    {
+      "id": "type-3",
+      "short": "三 · 定积分典型问题",
+      "title": "题型三 · 定积分的几类典型问题",
+      "lo": 38,
+      "hi": 49,
+      "focus": "条件判断、局部分析与证明思路",
+      "signal": "分清积分变量、自由参数和定限常量；含x的被积式先看能否换元消参。",
+      "check": "只给f连续不能直接对f求导；极限与积分换序要有依据；误差与中值点不能省。",
+      "basics": [
+        "j08",
+        "j12",
+        "j16",
+        "b13",
+        "j17"
+      ]
+    },
+    {
+      "id": "type-4",
+      "short": "四 · 广义积分",
+      "title": "题型四 · 广义积分的计算",
+      "lo": 50,
+      "hi": 56,
+      "focus": "审敛条件与计算同样重要",
+      "signal": "先列所有无穷端点和瑕点，分别判断；可能相消的式子先共同截断。",
+      "check": "两个发散积分不能拆开相减；内部瑕点两侧都收敛才收敛，主值不等于收敛。",
+      "basics": [
+        "j13",
+        "j14",
+        "j15",
+        "j06"
+      ]
+    },
+    {
+      "id": "type-5",
+      "short": "五 · 几何应用",
+      "title": "题型五 · 定积分在几何中的应用",
+      "lo": 57,
+      "hi": 63,
+      "focus": "建模为主，计算为辅",
+      "signal": "先画图、找交点、确认描迹范围与转轴；分清面积、截面体积、弧长和表面积。",
+      "check": "dV=截面积·dx；ds=√(dx²+dy²)；dS=2π·到轴距离·ds，不混用。",
+      "basics": [
+        "j21",
+        "b09",
+        "b17",
+        "j09"
+      ]
+    },
+    {
+      "id": "type-6",
+      "short": "六 · 物理应用",
+      "title": "题型六 · 定积分在物理中的应用",
+      "lo": 64,
+      "hi": 67,
+      "focus": "微元、量纲与真实距离",
+      "signal": "从密度、重量、压强或引力写微元，再乘实际变化的距离或方向分量。",
+      "check": "密度不是质量，压强不是压力；抽水各层提升距离不同，质心要除总质量。",
+      "basics": [
+        "j22",
+        "j21"
+      ]
+    },
+    {
+      "id": "type-7",
+      "short": "七 · 积分不等式",
+      "title": "题型七 · 积分不等式的证明",
+      "lo": 68,
+      "hi": 82,
+      "focus": "构造、条件、严格性与等号",
+      "signal": "先从条件提取符号、单调、端点、平均值与凹凸，再选作差、估计、Cauchy或平方化。",
+      "check": "连续非负函数积分为0才可推出处处为0；权的符号、每一步的取等必须检查。",
+      "basics": [
+        "j17",
+        "j18",
+        "j19",
+        "j20",
+        "b13"
+      ]
+    },
+    {
+      "id": "true-examples",
+      "short": "3.3 · 真题选讲",
+      "title": "3.3 · 真题选讲与点评",
+      "lo": 83,
+      "hi": 109,
+      "focus": "综合迁移，按原书顺序复现方法",
+      "signal": "初赛、决赛标签只作来源说明，按已确认的A/B/C/D深度学习。",
+      "check": "学过解答的真题是复现材料；不计入未见题检测。分部、条件与等号都要写全。",
+      "basics": [
+        "j08",
+        "j13",
+        "j17",
+        "j18",
+        "j19"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "number": 1,
+      "id": "3.1",
+      "level": "A",
+      "pdf_page": 179,
+      "printed_page": 171,
+      "group": "凑微分法",
+      "method": "分子改写、识别复合函数的导数",
+      "target": "两小问都掌握；先找内层函数及其导数，再决定凑微分，结果用求导检查。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-1",
+      "basic_ids": [
+        "j03",
+        "b05"
+      ],
+      "mother_ids": [
+        "i1"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 2,
+      "id": "3.2",
+      "level": "C",
+      "pdf_page": 179,
+      "printed_page": 171,
+      "group": "凑微分法",
+      "method": "xe^x 换元、配成反正切型",
+      "target": "同类选学；凑内层导数由3.1负责，指数配方的变化留作加练。若3.1仍不熟，可补这两小问，不要求所有近似方法都首轮重复。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-2",
+      "basic_ids": [
+        "j03",
+        "b05"
+      ],
+      "mother_ids": [
+        "i1"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 3,
+      "id": "3.3",
+      "level": "B",
+      "pdf_page": 179,
+      "printed_page": 171,
+      "group": "凑微分法",
+      "method": "拆成两项后利用 x±1/x",
+      "target": "保留把 1/(1+x^4) 拆成两种凑微分的结构；能说明为什么拆，不要求背最终长公式。",
+      "minutes": 12,
+      "bridge": "先核对 d(x±1/x)，再看原书拆出的两个分子。",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-3",
+      "basic_ids": [
+        "j03",
+        "b05"
+      ],
+      "mother_ids": [
+        "i1"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 4,
+      "id": "3.4",
+      "level": "C",
+      "pdf_page": 180,
+      "printed_page": 172,
+      "group": "凑微分法",
+      "method": "x−1/x 换元",
+      "target": "方法已包含在3.3的一部分；核对一遍即可，不因其决赛标签排除，也不另占一道重点题时间。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-4",
+      "basic_ids": [
+        "j03",
+        "b05"
+      ],
+      "mother_ids": [
+        "i1"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 5,
+      "id": "3.5",
+      "level": "A",
+      "pdf_page": 180,
+      "printed_page": 172,
+      "group": "换元积分法·总例",
+      "method": "隐函数关系中设 y=tx",
+      "target": "重点掌握；这是原书第十一届初赛题。先把 x、y 表为 t，再把 dx/y² 整体变换，检查除数非零的区间。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-5",
+      "basic_ids": [
+        "j04",
+        "b08"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 6,
+      "id": "3.6",
+      "level": "A",
+      "pdf_page": 181,
+      "printed_page": 173,
+      "group": "换元积分法·三角代换",
+      "method": "二次根式配方、三角代换",
+      "target": "两小问都掌握；能据根式选择 sin 或 tan，利用取值区间处理根号中的绝对值。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-6",
+      "basic_ids": [
+        "j04",
+        "p02"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 7,
+      "id": "3.7",
+      "level": "C",
+      "pdf_page": 181,
+      "printed_page": 173,
+      "group": "换元积分法·三角代换",
+      "method": "配方换元；万能代换",
+      "target": "I的二次根式配方已由3.6覆盖；II先读本小节的半角代换公式，完整综合练习由3.24负责，本题长式两小问选学。",
+      "minutes": 0,
+      "bridge": "半角代换方法保留；跳过本例不等于跳过本小节的三条换元公式。",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-7",
+      "basic_ids": [
+        "j04",
+        "p02"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 8,
+      "id": "3.8",
+      "level": "B",
+      "pdf_page": 182,
+      "printed_page": 174,
+      "group": "换元积分法·根式代换",
+      "method": "以根式和为新变量进行有理化",
+      "target": "要会说明 t=√x+√(1+x) 为何能同时表示两个根式；先写换元关系，再对照解答完成，不背成套λ公式。",
+      "minutes": 12,
+      "bridge": "先用有理化计算附录S1，再比较本题为什么需要更系统的代换。",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-8",
+      "basic_ids": [
+        "j04",
+        "p02"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": [
+        "S1"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "3.9",
+      "level": "A",
+      "pdf_page": 182,
+      "printed_page": 174,
+      "group": "换元积分法·根式代换",
+      "method": "根指数取最小公倍数",
+      "target": "重点掌握；换元后先做多项式除法，再积分。根式去掉不代表计算已经完成。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-9",
+      "basic_ids": [
+        "j04",
+        "p02"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 10,
+      "id": "3.10",
+      "level": "B",
+      "pdf_page": 182,
+      "printed_page": 174,
+      "group": "换元积分法·根式代换",
+      "method": "分式根式整体换元",
+      "target": "保留分式根式整体换元；会由t³=(x+1)/(x−1)解出x并求dx，再对照原书完成。与3.9的同底根式换元分清适用结构。",
+      "minutes": 10,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-10",
+      "basic_ids": [
+        "j04",
+        "p02"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 11,
+      "id": "3.11",
+      "level": "A",
+      "pdf_page": 183,
+      "printed_page": 175,
+      "group": "换元积分法·倒置代换",
+      "method": "t=1/x 或 t=1/(x+1)",
+      "target": "两小问都掌握；目的在于降低分母幂次、消去根式，注意换元后 dx 的负号。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-11",
+      "basic_ids": [
+        "j04",
+        "b05"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 12,
+      "id": "3.12",
+      "level": "A",
+      "pdf_page": 183,
+      "printed_page": 175,
+      "group": "换元积分法·二项代换",
+      "method": "t=x±1/x",
+      "target": "两小问都掌握；同时匹配分母结构与 dt 的分子，不凭看到四次式就机械套用。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-12",
+      "basic_ids": [
+        "j04",
+        "b05"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 13,
+      "id": "3.13",
+      "level": "B",
+      "pdf_page": 184,
+      "printed_page": 176,
+      "group": "分部积分法·基本用法",
+      "method": "凑倒数的微分，再分部",
+      "target": "核心是识别 d(−1/F)=F′/F² dx；能复述先凑导数再降复杂度的两步，不死记特殊三角式。",
+      "minutes": 10,
+      "bridge": "先核对倒数求导，再写出本题的F及F′。",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-13",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 14,
+      "id": "3.14",
+      "level": "A",
+      "pdf_page": 184,
+      "printed_page": 176,
+      "group": "分部积分法·基本用法",
+      "method": "反三角函数乘积、多次分部",
+      "target": "重点掌握；先取 dv=dx，再利用反三角导数及 arcsin x+arccos x=π/2 检查化简。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-14",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 15,
+      "id": "3.15",
+      "level": "C",
+      "pdf_page": 184,
+      "printed_page": 176,
+      "group": "分部积分法·基本用法",
+      "method": "三因子乘积、连续分部",
+      "target": "多次分部的方法已由3.14覆盖，ln(1+x²)的基本分部另见难度参照；原题增加展开长度，首轮选学。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-15",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 16,
+      "id": "3.16",
+      "level": "C",
+      "pdf_page": 185,
+      "printed_page": 177,
+      "group": "分部积分法·基本用法",
+      "method": "补出分母导数、逆用商的求导",
+      "target": "补出分母导数后分部的通用方法由3.13覆盖；本例额外补乘cos的特殊观察选学，不设为首轮独立猜题任务。",
+      "minutes": 0,
+      "bridge": "需要时回看3.13的 d(1/F)，注意补乘时的区间。",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-16",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 17,
+      "id": "3.17",
+      "level": "C",
+      "pdf_page": 185,
+      "printed_page": 177,
+      "group": "分部积分法·回归法",
+      "method": "两次分部后回到原积分",
+      "target": "本题的根式、反三角指数组合较绕；回归法由3.19与3.27(II)负责独立掌握，本题作为加练。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-17",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 18,
+      "id": "3.18",
+      "level": "A",
+      "pdf_page": 185,
+      "printed_page": 177,
+      "group": "分部积分法·拆项法",
+      "method": "拆项相消、逆用乘积求导",
+      "target": "虽为决赛题，关键步骤短而通用：观察 e^(x+1/x) 的导数，并与 x 配成乘积；必须会解释非初等积分为何最终消去。",
+      "minutes": 10,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-18",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i1",
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 19,
+      "id": "3.19",
+      "level": "A",
+      "pdf_page": 186,
+      "printed_page": 178,
+      "group": "分部积分法·拆项法",
+      "method": "sec³x 的分部与回归",
+      "target": "重点掌握；分部产生原积分时移项求解，sec³x的结果不作为脱离推导的孤立公式硬背。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-19",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 20,
+      "id": "3.20",
+      "level": "D",
+      "pdf_page": 186,
+      "printed_page": 178,
+      "group": "分部积分法·拆项法",
+      "method": "特殊拆式、行列式组织恒等变形",
+      "target": "首轮暂缓完整原题；其一般方法由3.13、3.16和3.18保留，不必为这套特殊拆法单独投入。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-20",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 21,
+      "id": "3.21",
+      "level": "A",
+      "pdf_page": 187,
+      "printed_page": 179,
+      "group": "分部积分法·递推法",
+      "method": "分部建立降幂递推",
+      "target": "重点掌握；会推 sin^n x 的递推关系，知道起始值与终止位置；连到定积分的Wallis公式。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-21",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 22,
+      "id": "3.22",
+      "level": "C",
+      "pdf_page": 187,
+      "printed_page": 179,
+      "group": "分部积分法·递推法",
+      "method": "根式积分的递推",
+      "target": "递推思想已由3.21覆盖；本题保留作同类加练，不能据此跳过“参数n如何降阶”的方法。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-22",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 23,
+      "id": "3.23",
+      "level": "A/B",
+      "pdf_page": 188,
+      "printed_page": 180,
+      "group": "部分分式法",
+      "method": "一次重因子、不可约二次重因子",
+      "target": "I重点独立完成；II必须会把分式的形式列全，并完成一个二次因子的积分，整套五系数计算属方法学习。书中代入复数的捷径可选学。",
+      "minutes": 20,
+      "bridge": "II先用附录S8处理 1/(1+x²)²，再回到本题；不用复数也可比较系数。",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-23",
+      "basic_ids": [
+        "j05",
+        "j06"
+      ],
+      "mother_ids": [
+        "i3"
+      ],
+      "bridges": [
+        "S8"
+      ]
+    },
+    {
+      "number": 24,
+      "id": "3.24",
+      "level": "A",
+      "pdf_page": 189,
+      "printed_page": 181,
+      "group": "部分分式法",
+      "method": "万能代换接部分分式",
+      "target": "重点掌握；完整走通半角代换→分式分解→积分→换回。要会使用这一兜底方法，并先判断有无更短换元。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-24",
+      "basic_ids": [
+        "j05",
+        "j06"
+      ],
+      "mother_ids": [
+        "i3"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 25,
+      "id": "3.25",
+      "level": "B",
+      "pdf_page": 190,
+      "printed_page": 182,
+      "group": "部分分式法",
+      "method": "比较方法、用tan换元减少运算",
+      "target": "保留方法比较：先说明为何不列六个待定系数，再写出tan换元后的简化结构；三角降幂计算薄弱时再完整复现。",
+      "minutes": 8,
+      "bridge": "",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-25",
+      "basic_ids": [
+        "j05",
+        "j06"
+      ],
+      "mother_ids": [
+        "i3"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 26,
+      "id": "3.26",
+      "level": "C",
+      "pdf_page": 191,
+      "printed_page": 183,
+      "group": "部分分式法",
+      "method": "tan换元、二次分母平方的积分",
+      "target": "二次分母平方的标准积分由3.23(II)与附录S8保留，三角转有理式由3.24负责。本题长系数整理选学，不重复设一整题必做。",
+      "minutes": 0,
+      "bridge": "附录S8先练最简二次分母平方。",
+      "section": "题型一、不定积分",
+      "section_id": "type-1",
+      "dom_id": "example-3-26",
+      "basic_ids": [
+        "j05",
+        "j06"
+      ],
+      "mother_ids": [
+        "i3"
+      ],
+      "bridges": [
+        "S8"
+      ]
+    },
+    {
+      "number": 27,
+      "id": "3.27",
+      "level": "A",
+      "pdf_page": 192,
+      "printed_page": 184,
+      "group": "计算定积分的基本方法",
+      "method": "换元、两次分部回归",
+      "target": "I、II都重点掌握；换元同步改限，回归积分移项，定积分的边界项完整写出。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-27",
+      "basic_ids": [
+        "j09",
+        "j06"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 28,
+      "id": "3.28",
+      "level": "A",
+      "pdf_page": 192,
+      "printed_page": 184,
+      "group": "计算定积分的基本方法",
+      "method": "已知导数、未知函数参与积分",
+      "target": "重点掌握；通过选择v=x−1消去未知边界值，而不是先求出φ的全部表达式。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-28",
+      "basic_ids": [
+        "j09",
+        "j06"
+      ],
+      "mother_ids": [
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 29,
+      "id": "3.29",
+      "level": "A",
+      "pdf_page": 193,
+      "printed_page": 185,
+      "group": "计算分段函数的定积分",
+      "method": "先换元，再按分段点拆区间",
+      "target": "重点掌握；判断的是 f 的自变量落在哪段，不是机械按原变量的0分段。",
+      "minutes": 10,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-29",
+      "basic_ids": [
+        "j11",
+        "p02"
+      ],
+      "mother_ids": [
+        "i6"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 30,
+      "id": "3.30",
+      "level": "A",
+      "pdf_page": 193,
+      "printed_page": 185,
+      "group": "计算分段函数的定积分",
+      "method": "函数递推关系、分段还原",
+      "target": "重点掌握；按区间逐段推出表达式，检查平移后sin的符号，再积分。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-30",
+      "basic_ids": [
+        "j11",
+        "p02"
+      ],
+      "mother_ids": [
+        "i6"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 31,
+      "id": "3.31",
+      "level": "C",
+      "pdf_page": 193,
+      "printed_page": 185,
+      "group": "计算分段函数的定积分",
+      "method": "含绝对值、参数端点的奇偶性",
+      "target": "会按a、b与0的位置分段即可；原书将答案压成绝对值端点式的技巧选学，不要求背这个特定闭式。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-31",
+      "basic_ids": [
+        "j11",
+        "p02"
+      ],
+      "mother_ids": [
+        "i6"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 32,
+      "id": "3.32",
+      "level": "A",
+      "pdf_page": 194,
+      "printed_page": 186,
+      "group": "计算分段函数的定积分",
+      "method": "换元后反三角主值分段",
+      "target": "重点掌握；arcsin(sin t)不能全区间写成t，必须按主值分段。这是换元与条件检查的代表题。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-32",
+      "basic_ids": [
+        "j11",
+        "p02"
+      ],
+      "mother_ids": [
+        "i6"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 33,
+      "id": "3.33",
+      "level": "A",
+      "pdf_page": 195,
+      "printed_page": 187,
+      "group": "计算定积分的若干技巧",
+      "method": "周期、奇偶、对称配对、Wallis",
+      "target": "两小问都掌握；平方根先转绝对值，分母复杂时先试x与−x配对；避免无必要地求原函数。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-33",
+      "basic_ids": [
+        "j10",
+        "j09"
+      ],
+      "mother_ids": [
+        "i5"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 34,
+      "id": "3.34",
+      "level": "A/C",
+      "pdf_page": 195,
+      "printed_page": 187,
+      "group": "计算定积分的若干技巧",
+      "method": "区间对称变换、奇偶拆分",
+      "target": "I重点掌握x→π/2−x的配对；II的x→−x及分部方法已由3.33、3.27覆盖，作为同类选学。",
+      "minutes": 10,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-34",
+      "basic_ids": [
+        "j10",
+        "j09"
+      ],
+      "mother_ids": [
+        "i5"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 35,
+      "id": "3.35",
+      "level": "A",
+      "pdf_page": 196,
+      "printed_page": 188,
+      "group": "计算定积分的若干技巧",
+      "method": "两次对称消去反三角与x因子",
+      "target": "重点掌握；第五届初赛原题，说明有思维链条的计算题仍须保留。会核对 arctan(e^x)+arctan(e^(−x))=π/2。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-35",
+      "basic_ids": [
+        "j10",
+        "j09"
+      ],
+      "mother_ids": [
+        "i5"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 36,
+      "id": "3.36",
+      "level": "A",
+      "pdf_page": 196,
+      "printed_page": 188,
+      "group": "计算定积分的若干技巧",
+      "method": "对数换元、绝对值与周期",
+      "target": "重点掌握；第六届初赛原题，先求导化简绝对值内表达式，再换元统计整周期。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-36",
+      "basic_ids": [
+        "j10",
+        "j09"
+      ],
+      "mother_ids": [
+        "i5"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 37,
+      "id": "3.37",
+      "level": "B",
+      "pdf_page": 196,
+      "printed_page": 188,
+      "group": "计算定积分的若干技巧",
+      "method": "对数对称、周期拆段、平移配对",
+      "target": "I保留对数拆开后利用π/4−t对称相消的思路；II的周期拆分及III的平移后长换元均作选学，对称与周期的独立掌握由3.33—3.36负责。",
+      "minutes": 12,
+      "bridge": "先写出I在x=tan t后的两个对数积分，检查平移配对怎样抵消；II、III不计入本轮硬任务。",
+      "section": "题型二、定积分的计算",
+      "section_id": "type-2",
+      "dom_id": "example-3-37",
+      "basic_ids": [
+        "j10",
+        "j09"
+      ],
+      "mother_ids": [
+        "i5"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 38,
+      "id": "3.38",
+      "level": "A",
+      "pdf_page": 197,
+      "printed_page": 189,
+      "group": "关于变上限积分的函数",
+      "method": "变上限链式求导；定限积分设常数",
+      "target": "两小问都重点掌握；I求目标点而不必解全函数；II定限积分是常数，设未知量列代数方程。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-38",
+      "basic_ids": [
+        "j08",
+        "j12"
+      ],
+      "mother_ids": [
+        "i7",
+        "i8"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 39,
+      "id": "3.39",
+      "level": "B",
+      "pdf_page": 198,
+      "printed_page": 190,
+      "group": "关于变上限积分的函数",
+      "method": "反函数参与的变上限积分",
+      "target": "保留反函数参与变上限积分的方法；会用f⁻¹[f(x)]=x简化并确定积分常数。约去x时先在x≠0处，再处理端点；不为特殊三角原函数另加熟练要求。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-39",
+      "basic_ids": [
+        "j08",
+        "j12"
+      ],
+      "mother_ids": [
+        "i7",
+        "i8"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 40,
+      "id": "3.40",
+      "level": "A",
+      "pdf_page": 198,
+      "printed_page": 190,
+      "group": "关于变上限积分的函数",
+      "method": "被积式含参数，先换元再求导",
+      "target": "重点掌握；把 f(2x−t) 改写为只含u的函数，再拆出积分；本题只给f连续，不能擅自对f求导。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-40",
+      "basic_ids": [
+        "j08",
+        "j12"
+      ],
+      "mother_ids": [
+        "i7",
+        "i8"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 41,
+      "id": "3.41",
+      "level": "A",
+      "pdf_page": 199,
+      "printed_page": 191,
+      "group": "定积分中的极限问题",
+      "method": "隐函数局部导数、积分换元、洛必达",
+      "target": "重点掌握；综合第二章而不算超纲：先求f(0)、f′(0)，再判断积分的阶数。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-41",
+      "basic_ids": [
+        "j16",
+        "b14"
+      ],
+      "mother_ids": [
+        "i7",
+        "i9"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 42,
+      "id": "3.42",
+      "level": "B",
+      "pdf_page": 199,
+      "printed_page": 191,
+      "group": "定积分中的极限问题",
+      "method": "导数估计、积分控制增量、单调有界",
+      "target": "保留完整思路：先证f′>0，再把f′上界估成可积函数，由积分给f上界；不要求背此特殊根式对数估计。",
+      "minutes": 12,
+      "bridge": "若0≤f′(x)≤1/x²（x≥1），则f递增且f(x)≤f(1)+∫₁ˣt⁻²dt≤f(1)+1，因此单调有界。再看原题怎样估出这样的可积上界。",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-42",
+      "basic_ids": [
+        "j16",
+        "b14"
+      ],
+      "mother_ids": [
+        "i9"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 43,
+      "id": "3.43",
+      "level": "C",
+      "pdf_page": 200,
+      "printed_page": 192,
+      "group": "定积分中的极限问题",
+      "method": "Wallis公式与夹逼",
+      "target": "Wallis公式及其来源由3.21、本题型前的公式和3.33保留；本题的双阶乘极限是夹逼法变式，可作数列薄弱时的加练，不重复设必做。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-43",
+      "basic_ids": [
+        "j16",
+        "b14"
+      ],
+      "mother_ids": [
+        "i9"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 44,
+      "id": "3.44",
+      "level": "A",
+      "pdf_page": 201,
+      "printed_page": 193,
+      "group": "定积分中的极限问题",
+      "method": "连续正函数的正下界、夹逼",
+      "target": "重点掌握；闭区间连续且处处正才能取得严格正的最小值；通过统一上下界处理积分极限，不无条件换序。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-44",
+      "basic_ids": [
+        "j16",
+        "b14"
+      ],
+      "mother_ids": [
+        "i9",
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 45,
+      "id": "3.45",
+      "level": "A",
+      "pdf_page": 201,
+      "printed_page": 193,
+      "group": "定积分中的极限问题",
+      "method": "周期平均值、有界余项",
+      "target": "重点掌握；一个周期平均值×区间长度加有界余项，除以x后余项趋0；能复述此通用分解。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-45",
+      "basic_ids": [
+        "j16",
+        "b14"
+      ],
+      "mother_ids": [
+        "i5",
+        "i9"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 46,
+      "id": "3.46",
+      "level": "C",
+      "pdf_page": 202,
+      "printed_page": 194,
+      "group": "关于积分等式的证明题",
+      "method": "平方换元再倒置配对",
+      "target": "平方换元、倒置改限的方法由3.11与3.52保留；本题是特殊积分恒等式的配对变式，可选学，不要求记参数公式。",
+      "minutes": 0,
+      "bridge": "先掌握3.11、3.12及定积分改限；写出两次换元各自的上下限。",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-46",
+      "basic_ids": [
+        "j09",
+        "j10"
+      ],
+      "mother_ids": [
+        "i2"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 47,
+      "id": "3.47",
+      "level": "A",
+      "pdf_page": 202,
+      "printed_page": 194,
+      "group": "关于积分等式的证明题",
+      "method": "f(x)+f(−x)=常数，乘偶函数",
+      "target": "两部分都掌握；会从换元证明配对公式，也会验证本题的arctan恒等式。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-47",
+      "basic_ids": [
+        "j09",
+        "j10"
+      ],
+      "mother_ids": [
+        "i5"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 48,
+      "id": "3.48",
+      "level": "B",
+      "pdf_page": 203,
+      "printed_page": 195,
+      "group": "关于积分等式的证明题",
+      "method": "中点展开、积分辅助函数、误差阶",
+      "target": "重要方法必须保留：中心对称消掉奇次项，构造F(x)=∫f以匹配导数阶数；会说明误差为何是区间长的三次量。",
+      "minutes": 15,
+      "bridge": "附录S2先建立中心展开的计算直觉，再看原题“存在ξ”的论证。",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-48",
+      "basic_ids": [
+        "b13",
+        "j17"
+      ],
+      "mother_ids": [
+        "i7",
+        "i9",
+        "i13"
+      ],
+      "bridges": [
+        "S2"
+      ]
+    },
+    {
+      "number": 49,
+      "id": "3.49",
+      "level": "B",
+      "pdf_page": 203,
+      "printed_page": 195,
+      "group": "关于积分等式的证明题",
+      "method": "梯形误差、待定常数、Rolle与Taylor",
+      "target": "保留构造误差函数消边界的思路；原书两种证明选第一种理解，不要求两法全背，常数及符号要会核对。",
+      "minutes": 15,
+      "bridge": "结合附录S2及后面3.74核对凸函数时梯形与积分的大小；精确ξ结论仍须按本题条件证明。",
+      "section": "题型三、定积分的几类典型问题",
+      "section_id": "type-3",
+      "dom_id": "example-3-49",
+      "basic_ids": [
+        "b13",
+        "j17"
+      ],
+      "mother_ids": [
+        "i7",
+        "i9",
+        "i13"
+      ],
+      "bridges": [
+        "S2"
+      ]
+    },
+    {
+      "number": 50,
+      "id": "3.50",
+      "level": "A",
+      "pdf_page": 205,
+      "printed_page": 197,
+      "group": "广义积分的计算",
+      "method": "无穷端点极限；瑕点处相消",
+      "target": "两小问都掌握；II必须把两项放在同一截断区间求极限，不能拆成两个发散积分相减。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型四、广义积分的计算",
+      "section_id": "type-4",
+      "dom_id": "example-3-50",
+      "basic_ids": [
+        "j13",
+        "j06"
+      ],
+      "mother_ids": [
+        "i4",
+        "i10"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 51,
+      "id": "3.51",
+      "level": "C",
+      "pdf_page": 205,
+      "printed_page": 197,
+      "group": "广义积分的计算",
+      "method": "tan换元使端点到∞，再分部",
+      "target": "换元、分部与无穷端点极限已由3.27、3.50覆盖；本题增加双参数有理式整理，保留作综合计算加练。",
+      "minutes": 0,
+      "bridge": "接3.27与3.50；先说明换元后为什么出现反常积分。",
+      "section": "题型四、广义积分的计算",
+      "section_id": "type-4",
+      "dom_id": "example-3-51",
+      "basic_ids": [
+        "j13",
+        "j06"
+      ],
+      "mother_ids": [
+        "i2",
+        "i10"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 52,
+      "id": "3.52",
+      "level": "A",
+      "pdf_page": 206,
+      "printed_page": 198,
+      "group": "广义积分的计算",
+      "method": "倒置换元、两式相加",
+      "target": "重点掌握；比较0与∞两端收敛，再用x→1/x配对求值，不用硬背1/(1+x⁴)的完整原函数。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型四、广义积分的计算",
+      "section_id": "type-4",
+      "dom_id": "example-3-52",
+      "basic_ids": [
+        "j13",
+        "j06"
+      ],
+      "mother_ids": [
+        "i2",
+        "i10"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 53,
+      "id": "3.53",
+      "level": "A",
+      "pdf_page": 206,
+      "printed_page": 198,
+      "group": "广义积分的计算",
+      "method": "对称、倍角、回归方程",
+      "target": "重点掌握；先知道ln x在0附近可积，才能分拆和回归；不是把“两个∞”当作有限数移项。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型四、广义积分的计算",
+      "section_id": "type-4",
+      "dom_id": "example-3-53",
+      "basic_ids": [
+        "j13",
+        "j06"
+      ],
+      "mother_ids": [
+        "i4",
+        "i5",
+        "i10"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 54,
+      "id": "3.54",
+      "level": "A",
+      "pdf_page": 206,
+      "printed_page": 198,
+      "group": "广义积分的计算",
+      "method": "参数缩放、倒置使对数项反号",
+      "target": "虽为决赛题但方法短而通用，重点掌握；先检查两端绝对收敛，再缩放x=at及倒置配对。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型四、广义积分的计算",
+      "section_id": "type-4",
+      "dom_id": "example-3-54",
+      "basic_ids": [
+        "j13",
+        "j06"
+      ],
+      "mother_ids": [
+        "i2",
+        "i10"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 55,
+      "id": "3.55",
+      "level": "B",
+      "pdf_page": 207,
+      "printed_page": 199,
+      "group": "广义积分的计算",
+      "method": "高斯权下分部、降低多项式次数",
+      "target": "保留利用指数导数降阶的思路；本章可使用题中/教材给定的高斯积分，不把其二重积分证明设为前置。",
+      "minutes": 12,
+      "bridge": "附录S7从已知∫e^(−x²)=C求一个二次矩，先掌握分部的降阶。",
+      "section": "题型四、广义积分的计算",
+      "section_id": "type-4",
+      "dom_id": "example-3-55",
+      "basic_ids": [
+        "j13",
+        "j06"
+      ],
+      "mother_ids": [
+        "i4",
+        "i10"
+      ],
+      "bridges": [
+        "S7"
+      ]
+    },
+    {
+      "number": 56,
+      "id": "3.56",
+      "level": "B",
+      "pdf_page": 207,
+      "printed_page": 199,
+      "group": "广义积分的计算",
+      "method": "Frullani型、缩放后边界抵消",
+      "target": "重要复杂方法保留；会写截断积分、换元后相消、分别控制0端和∞端，不只背f(0)ln(b/a)。",
+      "minutes": 15,
+      "bridge": "附录S3用指数函数给出一题可完整复现的初赛层次计算。",
+      "section": "题型四、广义积分的计算",
+      "section_id": "type-4",
+      "dom_id": "example-3-56",
+      "basic_ids": [
+        "j13",
+        "j06"
+      ],
+      "mother_ids": [
+        "i10"
+      ],
+      "bridges": [
+        "S3"
+      ]
+    },
+    {
+      "number": 57,
+      "id": "3.57",
+      "level": "A",
+      "pdf_page": 208,
+      "printed_page": 200,
+      "group": "求平面图形的面积",
+      "method": "极坐标面积、确定一瓣的区间",
+      "target": "重点掌握；先说明曲线描过的区域与次数，再用½∫r²dθ；不能看到极坐标就默认0到2π。",
+      "minutes": 10,
+      "bridge": "",
+      "section": "题型五、定积分在几何中的应用",
+      "section_id": "type-5",
+      "dom_id": "example-3-57",
+      "basic_ids": [
+        "j21",
+        "b09"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 58,
+      "id": "3.58",
+      "level": "C",
+      "pdf_page": 208,
+      "printed_page": 200,
+      "group": "求平面图形的面积",
+      "method": "迭代函数求通项、面积极限",
+      "target": "函数迭代求通项属于第一章已学方法；本题面积只是把通项再积分，与3.57—3.60相比不增加新的几何建模工具，留作跨章加练。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型五、定积分在几何中的应用",
+      "section_id": "type-5",
+      "dom_id": "example-3-58",
+      "basic_ids": [
+        "j21",
+        "b09"
+      ],
+      "mother_ids": [
+        "i9",
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 59,
+      "id": "3.59",
+      "level": "A",
+      "pdf_page": 209,
+      "printed_page": 201,
+      "group": "求旋转体的体积与侧面积",
+      "method": "切线定位、分段截面、圆盘/垫片",
+      "target": "重点掌握；画图后判断各段截面，明确外半径、内半径随哪一段变化，再列积分。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型五、定积分在几何中的应用",
+      "section_id": "type-5",
+      "dom_id": "example-3-59",
+      "basic_ids": [
+        "j21",
+        "b09"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 60,
+      "id": "3.60",
+      "level": "A",
+      "pdf_page": 210,
+      "printed_page": 202,
+      "group": "求旋转体的体积与侧面积",
+      "method": "参数曲线的体积和旋转表面积",
+      "target": "两项都重点掌握；体积用截面面积，表面积用2πr ds，不能混用；参数变化导致dx负号时相应改限。",
+      "minutes": 22,
+      "bridge": "",
+      "section": "题型五、定积分在几何中的应用",
+      "section_id": "type-5",
+      "dom_id": "example-3-60",
+      "basic_ids": [
+        "j21",
+        "b09"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 61,
+      "id": "3.61",
+      "level": "B",
+      "pdf_page": 210,
+      "printed_page": 202,
+      "group": "求旋转体的体积与侧面积",
+      "method": "绕外部直线的体积、参数最值",
+      "target": "保留改用“到转轴的距离”建模及最后一元最值的步骤；多圆位置关系的长展开作为方法学习。",
+      "minutes": 12,
+      "bridge": "先独立完成3.59；本题先只推一个圆绕外轴的体积，再看整体加减。",
+      "section": "题型五、定积分在几何中的应用",
+      "section_id": "type-5",
+      "dom_id": "example-3-61",
+      "basic_ids": [
+        "j21",
+        "b09"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 62,
+      "id": "3.62",
+      "level": "A",
+      "pdf_page": 211,
+      "printed_page": 203,
+      "group": "求平面曲线的弧长",
+      "method": "交点、对称、直角坐标弧长",
+      "target": "重点掌握；曲线方程已经给出，不必研究“渐屈线”的理论定义；求导、交点和积分限必须自己做。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型五、定积分在几何中的应用",
+      "section_id": "type-5",
+      "dom_id": "example-3-62",
+      "basic_ids": [
+        "j21",
+        "b09"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 63,
+      "id": "3.63",
+      "level": "A",
+      "pdf_page": 212,
+      "printed_page": 204,
+      "group": "求平面曲线的弧长",
+      "method": "极坐标弧长、描迹范围",
+      "target": "重点掌握；会解释本题取0到3π的描迹范围，并用√(r²+r′²)，不把求面积公式拿来求弧长。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型五、定积分在几何中的应用",
+      "section_id": "type-5",
+      "dom_id": "example-3-63",
+      "basic_ids": [
+        "j21",
+        "b09"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 64,
+      "id": "3.64",
+      "level": "A",
+      "pdf_page": 213,
+      "printed_page": 205,
+      "group": "求物体的质量与重心",
+      "method": "密度、质量、一次矩与质心",
+      "target": "重点掌握；会由dm=ρ(x)dx推出质心为一阶矩/总质量，而不是把密度当作质量。",
+      "minutes": 10,
+      "bridge": "",
+      "section": "题型六、定积分在物理中的应用",
+      "section_id": "type-6",
+      "dom_id": "example-3-64",
+      "basic_ids": [
+        "j22",
+        "j21"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 65,
+      "id": "3.65",
+      "level": "A",
+      "pdf_page": 213,
+      "printed_page": 205,
+      "group": "求变力所做的功",
+      "method": "抽水功、分层、分段半径",
+      "target": "两部分都掌握；薄层重量×提升距离是关键，提升距离随高度变化，不能用总重量乘固定高度。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型六、定积分在物理中的应用",
+      "section_id": "type-6",
+      "dom_id": "example-3-65",
+      "basic_ids": [
+        "j22",
+        "j21"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 66,
+      "id": "3.66",
+      "level": "A/C",
+      "pdf_page": 214,
+      "printed_page": 206,
+      "group": "利用微元法求引力与压力",
+      "method": "细杆引力微元；由力求功",
+      "target": "I重点掌握，会按质量密度和距离写dF；II与3.65重复检验功的积分，只保留核对或选学，不另作首轮硬任务。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型六、定积分在物理中的应用",
+      "section_id": "type-6",
+      "dom_id": "example-3-66",
+      "basic_ids": [
+        "j22",
+        "j21"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 67,
+      "id": "3.67",
+      "level": "A",
+      "pdf_page": 215,
+      "printed_page": 207,
+      "group": "利用微元法求引力与压力",
+      "method": "静水压力、深度×条带面积",
+      "target": "重点掌握；用dF=ρg·深度·条带宽度·dy，区分深度与坐标，按几何边界分段。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型六、定积分在物理中的应用",
+      "section_id": "type-6",
+      "dom_id": "example-3-67",
+      "basic_ids": [
+        "j22",
+        "j21"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 68,
+      "id": "3.68",
+      "level": "A",
+      "pdf_page": 215,
+      "printed_page": 207,
+      "group": "利用微分法证明",
+      "method": "积分函数减目标式、二阶导数判形状",
+      "target": "重点掌握；令两边之差为F，检查端点值及F″符号，再得区间内符号；不是只算出某个导数就结束。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-68",
+      "basic_ids": [
+        "b15",
+        "j08"
+      ],
+      "mother_ids": [
+        "i7",
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 69,
+      "id": "3.69",
+      "level": "A",
+      "pdf_page": 216,
+      "printed_page": 208,
+      "group": "利用微分法证明",
+      "method": "两层辅助函数、逐层判单调",
+      "target": "第八届初赛原题，重点掌握；从最终差式求导，若符号仍不明，再为其关键部分造第二个函数。",
+      "minutes": 22,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-69",
+      "basic_ids": [
+        "b15",
+        "j08"
+      ],
+      "mother_ids": [
+        "i7"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 70,
+      "id": "3.70",
+      "level": "B",
+      "pdf_page": 216,
+      "printed_page": 208,
+      "group": "利用微分法证明",
+      "method": "最大点分区、中值定理、导数积分",
+      "target": "保留“找正的最大值→两侧用中值定理→积分夹估”的思路；端点f=0，涉及f″/f时先检查反常积分，不机械作常义积分。",
+      "minutes": 15,
+      "bridge": "先复习中值定理及f″<0时图像在端点弦上方；原题是方法拓展，不要求首轮限时攻克。",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-70",
+      "basic_ids": [
+        "b15",
+        "j08"
+      ],
+      "mother_ids": [
+        "i13",
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 71,
+      "id": "3.71",
+      "level": "A",
+      "pdf_page": 217,
+      "printed_page": 209,
+      "group": "利用微分法证明",
+      "method": "Jensen的切线法",
+      "target": "重要方法，重点掌握；从f″≥0推出f(v)≥f(m)+f′(m)(v−m)，取m为u的平均值后积分，线性项抵消；凹函数方向相反。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-71",
+      "basic_ids": [
+        "j19",
+        "b13"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 72,
+      "id": "3.72",
+      "level": "A",
+      "pdf_page": 218,
+      "printed_page": 210,
+      "group": "利用定积分的性质",
+      "method": "点态估计后乘正权积分",
+      "target": "重点掌握；先配方夹住分子，再利用同一个可积的正权函数；严格不等号需要说明不处处取等。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-72",
+      "basic_ids": [
+        "j14",
+        "j17"
+      ],
+      "mother_ids": [
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 73,
+      "id": "3.73",
+      "level": "B",
+      "pdf_page": 218,
+      "printed_page": 210,
+      "group": "利用定积分的性质",
+      "method": "Kantorovich上界、Cauchy下界",
+      "target": "一般m、M的方法保留；先练数字版，核心是(f−m)(f−M)≤0，除以f再积分。无需背不等式名称。",
+      "minutes": 15,
+      "bridge": "附录S4用1≤f≤2铺垫；后面3.97是原书初赛数值版，学习时不算新的独立检验。",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-73",
+      "basic_ids": [
+        "j18",
+        "j19"
+      ],
+      "mother_ids": [
+        "i14",
+        "i15"
+      ],
+      "bridges": [
+        "S4"
+      ]
+    },
+    {
+      "number": 74,
+      "id": "3.74",
+      "level": "A",
+      "pdf_page": 219,
+      "printed_page": 211,
+      "group": "利用定积分的几何意义",
+      "method": "凸函数的中点—积分—梯形界",
+      "target": "重点掌握；能由给定弦不等式判方向，再用x与a+b−x配对；凹凸中文名称易混时，直接检查公式方向。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-74",
+      "basic_ids": [
+        "j19",
+        "j20"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 75,
+      "id": "3.75",
+      "level": "C",
+      "pdf_page": 220,
+      "printed_page": 212,
+      "group": "利用定积分的几何意义",
+      "method": "指数与对数的面积比较",
+      "target": "同类选学；概念关系保留，但独立掌握的比较与辅助函数方法已由3.68、3.71、3.74覆盖，无需额外熟练这张特殊图。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-75",
+      "basic_ids": [
+        "j19",
+        "j20"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 76,
+      "id": "3.76",
+      "level": "A",
+      "pdf_page": 220,
+      "printed_page": 212,
+      "group": "利用定积分的几何意义",
+      "method": "求和与积分比较、凹性改进界",
+      "target": "重点掌握；知道单调性给哪边估计、凹性给哪边梯形估计，不能只记上下界结果。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-76",
+      "basic_ids": [
+        "j19",
+        "j20"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 77,
+      "id": "3.77",
+      "level": "A",
+      "pdf_page": 221,
+      "printed_page": 213,
+      "group": "利用积分中值定理",
+      "method": "选平均值点、积分导数控制差",
+      "target": "重点掌握；先在|f|上取平均值点，再用牛顿—莱布尼茨和绝对值估计把该点连到0。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-77",
+      "basic_ids": [
+        "j17",
+        "b11"
+      ],
+      "mother_ids": [
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 78,
+      "id": "3.78",
+      "level": "C",
+      "pdf_page": 221,
+      "printed_page": 213,
+      "group": "利用积分中值定理",
+      "method": "相邻区间的平均值比较",
+      "target": "积分中值定理及平均值由3.77、3.45保留；本题的相邻区间单调平均比较作加练。看结论时仍要留意区间长度不同，不能把积分值直接当平均值。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-78",
+      "basic_ids": [
+        "j17",
+        "b11"
+      ],
+      "mother_ids": [
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 79,
+      "id": "3.79",
+      "level": "A",
+      "pdf_page": 222,
+      "printed_page": 214,
+      "group": "利用重积分法",
+      "method": "Cauchy积分不等式及等号",
+      "target": "公式、使用条件和等号条件重点掌握；本章改用∫(u−λv)²≥0的一元证明，书上的二重积分证明等学到重积分后回看。",
+      "minutes": 18,
+      "bridge": "先作为本题前的“先补基础”简列Cauchy，供3.73查用，不改变题型正文顺序。",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-79",
+      "basic_ids": [
+        "j18"
+      ],
+      "mother_ids": [
+        "i14"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 80,
+      "id": "3.80",
+      "level": "D",
+      "pdf_page": 222,
+      "printed_page": 214,
+      "group": "利用重积分法",
+      "method": "平面区域比较、圆形区域估计",
+      "target": "本题完整证明暂缓到重积分章；本章所需的一元估计方法已由3.72、3.74、3.79、3.81覆盖，暂缓的是区域技巧。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-80",
+      "basic_ids": [
+        "j18"
+      ],
+      "mother_ids": [],
+      "bridges": []
+    },
+    {
+      "number": 81,
+      "id": "3.81",
+      "level": "A",
+      "pdf_page": 224,
+      "printed_page": 216,
+      "group": "利用幂级数法",
+      "method": "有限Taylor多项式夹逼积分",
+      "target": "重点掌握；本章用有限Taylor及余项符号完成，不要求先学完整幂级数理论；知道选到哪一阶才够用。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-81",
+      "basic_ids": [
+        "b13",
+        "j14"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 82,
+      "id": "3.82",
+      "level": "C",
+      "pdf_page": 224,
+      "printed_page": 216,
+      "group": "利用幂级数法",
+      "method": "带根式权的估计、不同积分的比较",
+      "target": "可积界函数与Taylor估计已由3.72、3.81覆盖；本题的多轮数值界整理作选学。保留一条判断提醒：sin与cos在整个区间并非同一大小顺序，不能逐点硬比。",
+      "minutes": 0,
+      "bridge": "先掌握3.72、3.81；每次比较写清界函数和严格性的来源。",
+      "section": "题型七、积分不等式的证明",
+      "section_id": "type-7",
+      "dom_id": "example-3-82",
+      "basic_ids": [
+        "b13",
+        "j14"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 83,
+      "id": "3.83",
+      "level": "A",
+      "pdf_page": 225,
+      "printed_page": 217,
+      "group": "真题选讲与点评",
+      "method": "凑微分后分部、逆乘积求导",
+      "target": "第九届初赛原题，重点掌握；先t=sin x，识别 t e^(−t)/(1−t)² 的结构，两种解法选一种走通。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-83",
+      "basic_ids": [
+        "j03",
+        "j06"
+      ],
+      "mother_ids": [
+        "i1",
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 84,
+      "id": "3.84",
+      "level": "A",
+      "pdf_page": 225,
+      "printed_page": 217,
+      "group": "真题选讲与点评",
+      "method": "单调换元、反函数导数上界",
+      "target": "第五届初赛原题，重点掌握；f′≥m>0给出反函数及1/f′上界，先取绝对值，再估计∫|sin y|。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-84",
+      "basic_ids": [
+        "b06",
+        "j09"
+      ],
+      "mother_ids": [
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 85,
+      "id": "3.85",
+      "level": "C",
+      "pdf_page": 226,
+      "printed_page": 218,
+      "group": "真题选讲与点评",
+      "method": "用积分给有限和定位整数部分",
+      "target": "用积分估和已由3.76负责独立掌握；本题再用上下界夹整数部分，作为数列与取整薄弱时的加练，方法并未因决赛标签删掉。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-85",
+      "basic_ids": [
+        "j20"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 86,
+      "id": "3.86",
+      "level": "C",
+      "pdf_page": 226,
+      "printed_page": 218,
+      "group": "真题选讲与点评",
+      "method": "三角和立方、因式分解后换元",
+      "target": "因式分解与万能代换已由3.7、3.24覆盖；本题作为三角有理式加练，首轮不额外占时。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-86",
+      "basic_ids": [
+        "j05"
+      ],
+      "mother_ids": [
+        "i3"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 87,
+      "id": "3.87",
+      "level": "A",
+      "pdf_page": 226,
+      "printed_page": 218,
+      "group": "真题选讲与点评",
+      "method": "指数衰减×周期绝对值、几何级数",
+      "target": "第四届初赛原题，重点掌握；一周期积分后求等比和，余段需趋0；可直接用I=J+e^(−2π)I，但应先证收敛。",
+      "minutes": 20,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-87",
+      "basic_ids": [
+        "j13",
+        "j10"
+      ],
+      "mother_ids": [
+        "i5",
+        "i10",
+        "i11"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 88,
+      "id": "3.88",
+      "level": "A",
+      "pdf_page": 227,
+      "printed_page": 219,
+      "group": "真题选讲与点评",
+      "method": "导数界生成折线包络、积分等号刚性",
+      "target": "虽为决赛题，方法通用且很贴合初赛证明；重点掌握“积分相等+非负连续差⇒处处相等”，再利用折点不可导反证。",
+      "minutes": 20,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-88",
+      "basic_ids": [
+        "j17",
+        "b11"
+      ],
+      "mother_ids": [
+        "i14"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 89,
+      "id": "3.89",
+      "level": "A",
+      "pdf_page": 228,
+      "printed_page": 220,
+      "group": "真题选讲与点评",
+      "method": "隐式曲线渐近线、极坐标/参数面积",
+      "target": "第十四届初赛补赛题；(1)作为第二章回忆，重点放在(2)选参数、找一圈范围、列面积积分。",
+      "minutes": 22,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-89",
+      "basic_ids": [
+        "j21",
+        "b08"
+      ],
+      "mother_ids": [
+        "i6",
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 90,
+      "id": "3.90",
+      "level": "A",
+      "pdf_page": 229,
+      "printed_page": 221,
+      "group": "真题选讲与点评",
+      "method": "ln的切线不等式、积分Jensen",
+      "target": "第十届初赛原题，重点掌握；用 ln y≤ln m+(y−m)/m 即可，不必两种证明都学；正性用于定义对数及除以m。",
+      "minutes": 18,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-90",
+      "basic_ids": [
+        "j19"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 91,
+      "id": "3.91",
+      "level": "B",
+      "pdf_page": 230,
+      "printed_page": 222,
+      "group": "真题选讲与点评",
+      "method": "绕斜轴的表面积、到直线距离",
+      "target": "重要建模方法保留；会写dS=2π·到轴距离·ds，并完成书中简洁换元，不把只适用坐标轴的半径直接照搬。",
+      "minutes": 15,
+      "bridge": "先做3.60的表面积部分，再将半径换成点到直线距离。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-91",
+      "basic_ids": [
+        "j21",
+        "b17"
+      ],
+      "mother_ids": [
+        "i12"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 92,
+      "id": "3.92",
+      "level": "A",
+      "pdf_page": 230,
+      "printed_page": 222,
+      "group": "真题选讲与点评",
+      "method": "分部配成平方、连续非负积分为零",
+      "target": "虽为决赛题，平方化与等号识别很有迁移价值；作为重点进阶题，先将∫f变成∫x f′，再补成∫(f′−g)²。",
+      "minutes": 25,
+      "bridge": "附录S5先练端点约束下的Cauchy最小值，体会平方与等号对应的函数。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-92",
+      "basic_ids": [
+        "j18",
+        "j06"
+      ],
+      "mother_ids": [
+        "i8",
+        "i14"
+      ],
+      "bridges": [
+        "S5"
+      ]
+    },
+    {
+      "number": 93,
+      "id": "3.93",
+      "level": "B",
+      "pdf_page": 231,
+      "printed_page": 223,
+      "group": "真题选讲与点评",
+      "method": "条件刚性、周期与带权Cauchy",
+      "target": "先发现连续、0≤f≤1且∫₀¹f=1已推出f≡1；保留余下带权Cauchy选权消变量的方法，原书冗长积分处理无需照搬。",
+      "minutes": 12,
+      "bridge": "先用3.88的非负连续零积分结论；权重选择看怎样使根号内加权和成为常数。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-93",
+      "basic_ids": [
+        "j17",
+        "j18"
+      ],
+      "mother_ids": [
+        "i5",
+        "i14",
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 94,
+      "id": "3.94",
+      "level": "A",
+      "pdf_page": 232,
+      "printed_page": 224,
+      "group": "真题选讲与点评",
+      "method": "高次幂积分集中于最大值端点",
+      "target": "第六届初赛原题，重点进阶；会对靠近b的一小段作下界并取n次根，解释为什么中值点趋b，不能只凭直觉。",
+      "minutes": 22,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-94",
+      "basic_ids": [
+        "j17",
+        "j16"
+      ],
+      "mother_ids": [
+        "i9",
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 95,
+      "id": "3.95",
+      "level": "A",
+      "pdf_page": 233,
+      "printed_page": 225,
+      "group": "真题选讲与点评",
+      "method": "消去零矩、反证估计、介值定理",
+      "target": "第七届初赛原题，重点进阶；利用∫f=0把x改成x−1/2，追踪等号排除，再由零点和超界点找指定值点。",
+      "minutes": 22,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-95",
+      "basic_ids": [
+        "j17",
+        "p03"
+      ],
+      "mother_ids": [
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 96,
+      "id": "3.96",
+      "level": "B",
+      "pdf_page": 233,
+      "printed_page": 225,
+      "group": "真题选讲与点评",
+      "method": "正核积分、对参数积分、边界余项",
+      "target": "第九届初赛题，保留截取区间、再对参数积分获得长度界的核心路线；完整换序论证留到重积分相关基础具备后回看。",
+      "minutes": 15,
+      "bridge": "先会∫e^(−|t−x|)dt的分段计算；不能把积分估计当成逐点f≤1。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-96",
+      "basic_ids": [
+        "j12",
+        "j17"
+      ],
+      "mother_ids": [],
+      "bridges": []
+    },
+    {
+      "number": 97,
+      "id": "3.97",
+      "level": "A",
+      "pdf_page": 234,
+      "printed_page": 226,
+      "group": "真题选讲与点评",
+      "method": "Cauchy与值域约束的双向估计",
+      "target": "第十届初赛原题，重点掌握；独立写出从1≤f≤3到f+3/f≤4，再到乘积上界的链条；与3.73合并复现，不重复计为两次检测。",
+      "minutes": 15,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-97",
+      "basic_ids": [
+        "j18"
+      ],
+      "mother_ids": [
+        "i14",
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 98,
+      "id": "3.98",
+      "level": "A",
+      "pdf_page": 234,
+      "printed_page": 226,
+      "group": "真题选讲与点评",
+      "method": "振荡商的两种上界、按n分段",
+      "target": "第十四届初赛原题，重点进阶；将 |sin nx|≤n sin x 与 |sin nx|≤1 配合，选分点π/(2n)平衡两种估计。",
+      "minutes": 22,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-98",
+      "basic_ids": [
+        "j14"
+      ],
+      "mother_ids": [
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 99,
+      "id": "3.99",
+      "level": "B",
+      "pdf_page": 235,
+      "printed_page": 227,
+      "group": "真题选讲与点评",
+      "method": "待定权函数、分部转化矩条件",
+      "target": "重要复杂方法保留；构造端点为零且内部定号的w=x(1−x)，把∫wf′改为∫(2x−1)f，最后用积分中值定理。",
+      "minutes": 18,
+      "bridge": "先完成3.95的消矩，再核对本题w及w′；不需要凭空试一串辅助函数。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-99",
+      "basic_ids": [
+        "j06",
+        "j17"
+      ],
+      "mother_ids": [
+        "i8",
+        "i13",
+        "i14"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 100,
+      "id": "3.100",
+      "level": "B",
+      "pdf_page": 236,
+      "printed_page": 228,
+      "group": "真题选讲与点评",
+      "method": "单调参数换元、反函数导数给1/n界",
+      "target": "保留由y=nx−1/x得y′≥n及反函数导数≤1/n的路线，再将f′积分成有界端点差；能复现估计链即可。",
+      "minutes": 12,
+      "bridge": "接3.84的反函数导数控制；不能把“区间变长”直接理解为积分变大。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-100",
+      "basic_ids": [
+        "b06",
+        "j09"
+      ],
+      "mother_ids": [
+        "i9"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 101,
+      "id": "3.101",
+      "level": "B",
+      "pdf_page": 236,
+      "printed_page": 228,
+      "group": "真题选讲与点评",
+      "method": "积分中值点、单调性分区估计",
+      "target": "保留书中第二种较短证明；取δ=g(ξ)，用[δ,1]上的f≥f(δ)和[0,δ]上的f≥0来估计，无须首轮掌握两种证明。",
+      "minutes": 15,
+      "bridge": "接3.77—3.78；写明δ在[0,1]，否则分区估计无依据。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-101",
+      "basic_ids": [
+        "j17"
+      ],
+      "mother_ids": [
+        "i13"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 102,
+      "id": "3.102",
+      "level": "B",
+      "pdf_page": 237,
+      "printed_page": 229,
+      "group": "真题选讲与点评",
+      "method": "按周期分块、比较转p级数",
+      "target": "重要方法保留；不能将振荡分母简单当作x^α。会写每块积分上下界及n的幂次；原题参数长算式可后补。",
+      "minutes": 18,
+      "bridge": "附录S6先用|sin x|/x^p学习分块与绝对收敛，再回本题看“尖峰如何改变阈值”。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-102",
+      "basic_ids": [
+        "j13",
+        "j15"
+      ],
+      "mother_ids": [
+        "i9",
+        "i10",
+        "i11"
+      ],
+      "bridges": [
+        "S6"
+      ]
+    },
+    {
+      "number": 103,
+      "id": "3.103",
+      "level": "B",
+      "pdf_page": 238,
+      "printed_page": 230,
+      "group": "真题选讲与点评",
+      "method": "取整分段、振荡收敛与绝对收敛",
+      "target": "第十三届补赛题偏综合；先掌握附录S6的条件/绝对收敛判别，以及取整分段。原题Stirling与复合相位的完整拼接暂缓，方法不能删。",
+      "minutes": 18,
+      "bridge": "附录S6；仅“同阶”不足以判断带符号振荡积分，必须再验证振幅单调性或作分部估计。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-103",
+      "basic_ids": [
+        "j13",
+        "j15"
+      ],
+      "mother_ids": [
+        "i6",
+        "i9",
+        "i10",
+        "i11"
+      ],
+      "bridges": [
+        "S6"
+      ]
+    },
+    {
+      "number": 104,
+      "id": "3.104",
+      "level": "A",
+      "pdf_page": 239,
+      "printed_page": 231,
+      "group": "真题选讲与点评",
+      "method": "分部、Cauchy、端点约束与等号",
+      "target": "第十五届A类初赛证明题，重点进阶；先把∫f²化成2∫(1−x)ff′，再Cauchy；除以∫f²前先分零情形，最后等号只能f≡0。",
+      "minutes": 25,
+      "bridge": "接3.79、3.88、3.92；这是初赛上限的重要参照，不能以“证明难”为由删掉。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-104",
+      "basic_ids": [
+        "j18",
+        "j06"
+      ],
+      "mother_ids": [
+        "i14"
+      ],
+      "bridges": [
+        "S5"
+      ]
+    },
+    {
+      "number": 105,
+      "id": "3.105",
+      "level": "C",
+      "pdf_page": 240,
+      "printed_page": 232,
+      "group": "真题选讲与点评",
+      "method": "有理式重组、整除降复杂度",
+      "target": "多项式除法、围绕分母重组的通用方法已由3.9、3.23—3.25覆盖；本题作为计算加练，值得看巧解但不再要求首轮独立熟练。",
+      "minutes": 0,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-105",
+      "basic_ids": [
+        "j05"
+      ],
+      "mother_ids": [
+        "i3"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 106,
+      "id": "3.106",
+      "level": "A",
+      "pdf_page": 240,
+      "printed_page": 232,
+      "group": "真题选讲与点评",
+      "method": "拆项分部相消、识别总导数",
+      "target": "第十一届初赛原题，重点掌握；识别被积函数是[e^x sin x/(1+cos x)]′，书中拆项分部也要看懂相消来源。",
+      "minutes": 12,
+      "bridge": "",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-106",
+      "basic_ids": [
+        "j06",
+        "b04"
+      ],
+      "mother_ids": [
+        "i1",
+        "i4"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 107,
+      "id": "3.107",
+      "level": "B",
+      "pdf_page": 240,
+      "printed_page": 232,
+      "group": "真题选讲与点评",
+      "method": "取整分段、有限三角和、因子筛选",
+      "target": "第十二届初赛原题；必须能把积分化为有限余弦和；因子和结论与三角和公式完整证明作综合选学，不要求背专用数论结论。",
+      "minutes": 15,
+      "bridge": "先核对每个[k−1,k)上[x+1]=k，再识别整周期相消；2021的因数仅是最后算术。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-107",
+      "basic_ids": [
+        "j11",
+        "j10"
+      ],
+      "mother_ids": [
+        "i6"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 108,
+      "id": "3.108",
+      "level": "A/B",
+      "pdf_page": 241,
+      "printed_page": 233,
+      "group": "真题选讲与点评",
+      "method": "凹性给弦下界、缩放、周期分解",
+      "target": "(1)(2)重点掌握，步骤短；(3)保留整周期+余段以及局部下界的拼接方法，作为进阶方法学习。",
+      "minutes": 18,
+      "bridge": "接3.74和3.45；先说明p>0时非负两边取p次幂仍保序。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-108",
+      "basic_ids": [
+        "j19",
+        "j10"
+      ],
+      "mother_ids": [
+        "i5",
+        "i15"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 109,
+      "id": "3.109",
+      "level": "A",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "group": "真题选讲与点评",
+      "method": "弧长≥弦长、Cauchy与等号",
+      "target": "虽为决赛题但方法有清晰几何意义；重点掌握一元证明及何时直线取等，不要求照抄复杂辅助函数。",
+      "minutes": 18,
+      "bridge": "接3.79；可对向量(1,f′)与弦方向的常向量逐点用Cauchy再积分。",
+      "section": "3.3 真题选讲与点评（保持原顺序）",
+      "section_id": "true-examples",
+      "dom_id": "example-3-109",
+      "basic_ids": [
+        "j18",
+        "j21"
+      ],
+      "mother_ids": [
+        "i12",
+        "i14",
+        "i15"
+      ],
+      "bridges": []
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1(1)",
+      "number": 1,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "tan x与平方三角式",
+      "reason": "短计算，检验基本变形与换元是否熟练。",
+      "examples": "3.1、3.24",
+      "hint": "可将式子改写为tan的有理式，检查新变量微分；结果求导。",
+      "minutes": 8,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-1",
+      "answer_page": 249,
+      "mother_ids": [
+        "i1",
+        "i3"
+      ]
+    },
+    {
+      "id": "1(2)",
+      "number": 1,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "四次根式与x²+1",
+      "reason": "有价值的根式结构变式，但推算比基础换元长，留作加练。",
+      "examples": "3.3、3.8、3.12",
+      "hint": "比较整体根式与x±1/x的处理；应按x正负所在区间检查根号绝对值。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-2",
+      "answer_page": 249,
+      "mother_ids": [
+        "i1",
+        "i2"
+      ]
+    },
+    {
+      "id": "1(3)",
+      "number": 1,
+      "subquestion": 3,
+      "level": "K",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "x²√(1+x²)分母",
+      "reason": "检验倒置/二次根式工具的独立使用，计算长度适中。",
+      "examples": "3.6、3.11",
+      "hint": "倒置或三角换元均可；也可反查√(1+x²)/x的导数。",
+      "minutes": 10,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-3",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2"
+      ]
+    },
+    {
+      "id": "1(4)",
+      "number": 1,
+      "subquestion": 4,
+      "level": "K",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "ln x与√(1+ln x)",
+      "reason": "检验内层函数识别、换元后系数和实数定义域。",
+      "examples": "3.1、3.9",
+      "hint": "设1+ln x或其平方根；x>0且根式分母非零的条件要保留。",
+      "minutes": 8,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-4",
+      "answer_page": 249,
+      "mother_ids": [
+        "i1",
+        "i2"
+      ]
+    },
+    {
+      "id": "1(5)",
+      "number": 1,
+      "subquestion": 5,
+      "level": "K",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "arctan√x",
+      "reason": "检验反三角复合函数的运算，包含适量方法选择。",
+      "examples": "3.6、3.14",
+      "hint": "先分部或先√x换元都可；两条路线都要减少复杂度。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-5",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4"
+      ]
+    },
+    {
+      "id": "1(6)",
+      "number": 1,
+      "subquestion": 6,
+      "level": "J",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "x tan x sec⁴x",
+      "reason": "同一积分里组合三角幂次与多项式，作分部加练。",
+      "examples": "3.19、3.21",
+      "hint": "利用d(sec⁴x)=4tan x sec⁴x dx，再把剩余三角幂积分降阶。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-6",
+      "answer_page": 249,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "1(7)",
+      "number": 1,
+      "subquestion": 7,
+      "level": "J",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "xe^x/√(e^x−2)",
+      "reason": "根式换元后还需处理对数，适合巩固较长的两步计算。",
+      "examples": "3.8、3.14",
+      "hint": "设u=√(e^x−2)，x=ln(u²+2)；先检查e^x>2。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-7",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4"
+      ]
+    },
+    {
+      "id": "1(8)",
+      "number": 1,
+      "subquestion": 8,
+      "level": "Z",
+      "pdf_page": 242,
+      "printed_page": 234,
+      "topic": "一",
+      "label": "(x²+20)/(x sin x+5cos x)²",
+      "reason": "特殊系数构造与例3.20同类，暂缓完整计算；商导数方法由1(19)检验。",
+      "examples": "3.13、3.20；练1(19)",
+      "hint": "可逆查商的求导，但不把这套特殊分母设为本轮熟练要求。",
+      "minutes": 0,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-8",
+      "answer_page": 249,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "1(9)",
+      "number": 1,
+      "subquestion": 9,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "(x+1)/√(x−x²)",
+      "reason": "检验二次根式、分子拆分及反三角条件，能覆盖常见计算模块。",
+      "examples": "3.6、3.14",
+      "hint": "先配方或拆成根式导数项与标准项；实数积分区间在0<x<1。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-9",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4"
+      ]
+    },
+    {
+      "id": "1(10)",
+      "number": 1,
+      "subquestion": 10,
+      "level": "R",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "e^x(1+sin x)/(1+cos x)",
+      "reason": "与例3.106同一被积式，只是换为不定积分；作为隔日复现，不计新题。",
+      "examples": "3.106",
+      "hint": "原函数e^x sin x/(1+cos x)；要能自己求导核对，不能只记定积分结果。",
+      "minutes": 8,
+      "seen_relation": "exact",
+      "dom_id": "exercise-1-10",
+      "answer_page": 249,
+      "mother_ids": [
+        "i1",
+        "i4"
+      ]
+    },
+    {
+      "id": "1(11)",
+      "number": 1,
+      "subquestion": 11,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "ln(1+e^(−x))/(1+e^x)",
+      "reason": "适合补练指数与对数的内层导数，核心能力已由1(4)、1(13)覆盖。",
+      "examples": "3.1、3.2",
+      "hint": "注意[ln(1+e^(−x))]′=−1/(1+e^x)。",
+      "minutes": 10,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-11",
+      "answer_page": 249,
+      "mother_ids": [
+        "i1"
+      ]
+    },
+    {
+      "id": "1(12)",
+      "number": 1,
+      "subquestion": 12,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "1/(sin2x+2sin x)",
+      "reason": "检验三角有理式的完整处理，保留万能代换这类兜底工具。",
+      "examples": "3.24",
+      "hint": "先因式分解，再试半角代换；也可比较其他三角换元，分母零点不跨越。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-12",
+      "answer_page": 249,
+      "mother_ids": [
+        "i3"
+      ]
+    },
+    {
+      "id": "1(13)",
+      "number": 1,
+      "subquestion": 13,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "1/(1+e^x)²",
+      "reason": "指数换元后检验部分分式的列式完整性，计算量可控。",
+      "examples": "3.23、3.24",
+      "hint": "t=e^x后dx=dt/t；一次重因子对应各次幂项都要列全。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-13",
+      "answer_page": 249,
+      "mother_ids": [
+        "i3"
+      ]
+    },
+    {
+      "id": "1(14)",
+      "number": 1,
+      "subquestion": 14,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "e^(arctan x)/(1+x²)^(3/2)",
+      "reason": "保留一次中档回归计算，检验是否能处理陌生外形。",
+      "examples": "3.19、3.27(II)；3.17可回看",
+      "hint": "可先x=tan t化为e^t cos t，再两次分部回归，避免硬套3.17的分子。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-14",
+      "answer_page": 249,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "1(15)",
+      "number": 1,
+      "subquestion": 15,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "1/(sin x cos³x)",
+      "reason": "三角有理式的较短变式，计算薄弱时补写。",
+      "examples": "3.24、3.25",
+      "hint": "t=tan x后转为(1+t²)/t；保留对数绝对值和定义区间。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-15",
+      "answer_page": 249,
+      "mother_ids": [
+        "i3"
+      ]
+    },
+    {
+      "id": "1(16)",
+      "number": 1,
+      "subquestion": 16,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "√x/(1+√(1+x))",
+      "reason": "检验有理化与根式运算，不让这一重要方法只停留在看例题。",
+      "examples": "3.8、3.9",
+      "hint": "乘共轭后出现√(1+x)/√x与1/√x；也可用双根式和换元。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-16",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2"
+      ]
+    },
+    {
+      "id": "1(17)",
+      "number": 1,
+      "subquestion": 17,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "(2x−1)√(x−x²)分母",
+      "reason": "带内部禁点的根式变式，留作定义域和换元的加练。",
+      "examples": "3.6、3.11、3.24",
+      "hint": "x=sin²t可化成三角有理式；x=1/2不能跨越，原函数在各连通区间理解。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-17",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i3"
+      ]
+    },
+    {
+      "id": "1(18)",
+      "number": 1,
+      "subquestion": 18,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "x⁴/(x⁴+5x²+4)",
+      "reason": "检验假分式除法、因式分解与分式积分的完整闭环。",
+      "examples": "3.9、3.23、3.25",
+      "hint": "先识别分母=(x²+1)(x²+4)，分出整式后再分解。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-18",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i3"
+      ]
+    },
+    {
+      "id": "1(19)",
+      "number": 1,
+      "subquestion": 19,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "(cos x+x sin x)/(x+cos x)²",
+      "reason": "检验商导数结构，替代特殊系数题1(8)的低效投入。",
+      "examples": "3.13、3.18",
+      "hint": "先对x/(x+cos x)求导核对；也可以由分子分母关系反推。",
+      "minutes": 10,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-19",
+      "answer_page": 249,
+      "mother_ids": [
+        "i1",
+        "i4"
+      ]
+    },
+    {
+      "id": "1(20)",
+      "number": 1,
+      "subquestion": 20,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "一",
+      "label": "arcsin x与根式、x²",
+      "reason": "反三角与根式的多步变式，原理重要但不必把每种长外形都列为核心。",
+      "examples": "3.14、3.23",
+      "hint": "设t=arcsin x后得到t(csc²t+1)，再分部；检查0及±1的区间限制。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-1-20",
+      "answer_page": 249,
+      "mother_ids": [
+        "i3",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(1)",
+      "number": 2,
+      "subquestion": 1,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "∫₀³x√(1+x)dx",
+      "reason": "常规幂函数换元，供速度和基础计算薄弱时加练。",
+      "examples": "3.6、3.27",
+      "hint": "t=1+x；注意积分限随变量改变。",
+      "minutes": 8,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-1",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(2)",
+      "number": 2,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "√(1−sin4x)",
+      "reason": "检验平方根与绝对值、周期和分段，而非机械去根号。",
+      "examples": "3.32、3.33",
+      "hint": "√(1−sin4x)=|cos2x−sin2x|，先找变号点。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-2",
+      "answer_page": 249,
+      "mother_ids": [
+        "i5",
+        "i6"
+      ]
+    },
+    {
+      "id": "2(3)",
+      "number": 2,
+      "subquestion": 3,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "1/[√x(1+x)]，区间[1,3]",
+      "reason": "短换元加练；与1(3)、7(1)合并覆盖，不增加核心重复量。",
+      "examples": "3.6、3.27",
+      "hint": "t=√x后是反正切型，改限后算端点。",
+      "minutes": 10,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-3",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(4)",
+      "number": 2,
+      "subquestion": 4,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "min{x²,1/|x|}",
+      "reason": "独立检查含最小值的分段判断，保留分段训练的思维含量。",
+      "examples": "3.29、3.32",
+      "hint": "比较交点±1，再利用偶性；x=0处可按极限补值，不影响积分。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-4",
+      "answer_page": 249,
+      "mother_ids": [
+        "i6"
+      ]
+    },
+    {
+      "id": "2(5)",
+      "number": 2,
+      "subquestion": 5,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "含参数a的x³√(2ax−x²)",
+      "reason": "参数缩放、根式和三角幂的综合计算，作为长计算储备。",
+      "examples": "3.6、3.21、3.33",
+      "hint": "先配方成a²−(x−a)²，也可缩放x=au；a>0用于方向与尺度。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-5",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i5"
+      ]
+    },
+    {
+      "id": "2(6)",
+      "number": 2,
+      "subquestion": 6,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "x²ln(x+√(1+x²))",
+      "reason": "保留对数根式的中档计算，检验选法及完整执行。",
+      "examples": "3.14、3.27",
+      "hint": "对数部分求导为1/√(1+x²)，分部后再处理根式积分。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-6",
+      "answer_page": 249,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "2(7)",
+      "number": 2,
+      "subquestion": 7,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "x sin³x/(1+cos²x)，区间[0,π]",
+      "reason": "检验对称观察能否减少计算，而不是一律先求原函数。",
+      "examples": "3.34、3.35",
+      "hint": "用x与π−x配对消去一次x，再u=cos x。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-7",
+      "answer_page": 249,
+      "mother_ids": [
+        "i5"
+      ]
+    },
+    {
+      "id": "2(8)",
+      "number": 2,
+      "subquestion": 8,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "1/[x+√(a²−x²)]",
+      "reason": "带参数的根式定积分，适合训练缩放与对称换元。",
+      "examples": "3.6、3.34、3.37",
+      "hint": "x=a sin t后，比较sin与cos互换；结果不应带尺度a。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-8",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i5"
+      ]
+    },
+    {
+      "id": "2(9)",
+      "number": 2,
+      "subquestion": 9,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "e^x(1−x)²/(1+x²)²",
+      "reason": "检验结构识别与定积分边界项，题面不同于已学例题。",
+      "examples": "3.13、3.18、3.106",
+      "hint": "尝试对e^x/(1+x²)求导，核对(1−x)²的来源。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-9",
+      "answer_page": 249,
+      "mother_ids": [
+        "i1",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(10)",
+      "number": 2,
+      "subquestion": 10,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "x²arctan√(x²−1)",
+      "reason": "根式、反三角和分部的较长组合，作耐心计算储备。",
+      "examples": "3.6、3.14",
+      "hint": "分部可将反三角导数化简，再选二次根式代换；勿丢x>0。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-10",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(11)",
+      "number": 2,
+      "subquestion": 11,
+      "level": "T",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "√(1−x²)/(a−x)，a>1",
+      "reason": "参数根式积分的综合挑战，保留方法但不挤占基础计算与证明时间。",
+      "examples": "3.6、3.23、3.34",
+      "hint": "可x=cos t转为三角有理式；a>1保证分母不为零。",
+      "minutes": 30,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-11",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i3",
+        "i5"
+      ]
+    },
+    {
+      "id": "2(12)",
+      "number": 2,
+      "subquestion": 12,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "(1−sin2x)/(1+sin2x)",
+      "reason": "短三角变形加练，同类基础已由核心2(2)、1(12)覆盖。",
+      "examples": "3.24、3.27",
+      "hint": "可化为tan²(π/4−x)，再改限积分。",
+      "minutes": 10,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-12",
+      "answer_page": 249,
+      "mother_ids": [
+        "i3",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(13)",
+      "number": 2,
+      "subquestion": 13,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "∫₀²π1/(1+cos²x)dx",
+      "reason": "检验整周期拆分及有理化换元，计算适中。",
+      "examples": "3.33、3.37(II)",
+      "hint": "先归到一个单调的四分之一周期，再t=tan x；不可跨tan极点一次换完。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-13",
+      "answer_page": 249,
+      "mother_ids": [
+        "i5"
+      ]
+    },
+    {
+      "id": "2(14)",
+      "number": 2,
+      "subquestion": 14,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "arcsin√[x/(1+x)]",
+      "reason": "有价值的反三角等价变形，作为基础恢复后的加练。",
+      "examples": "3.14、3.32",
+      "hint": "在给定非负区间可写为arctan√x；先确认主值。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-14",
+      "answer_page": 249,
+      "mother_ids": [
+        "i4",
+        "i6"
+      ]
+    },
+    {
+      "id": "2(15)",
+      "number": 2,
+      "subquestion": 15,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "x⁴√[(1+x)/(1−x)]",
+      "reason": "根式加高次幂，方法已覆盖，保留为运算储备。",
+      "examples": "3.6、3.21",
+      "hint": "可用x=cos t再处理幂；选择不会引入多余分段的区间。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-15",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(16)",
+      "number": 2,
+      "subquestion": 16,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "x(arctan x)²",
+      "reason": "多次分部加练，优先用核心题验证方法后再补。",
+      "examples": "3.14、3.27",
+      "hint": "先把x dx合并，留意后续出现ln或反三角项的处理。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-16",
+      "answer_page": 249,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "2(17)",
+      "number": 2,
+      "subquestion": 17,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "ln(1+x)/(2−x)²",
+      "reason": "检验分部后处理有理式的完整性，推理长度贴近初赛计算。",
+      "examples": "3.23、3.27",
+      "hint": "先把1/(2−x)²视为导数，再分解1/[(1+x)(2−x)]。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-17",
+      "answer_page": 249,
+      "mother_ids": [
+        "i3",
+        "i4"
+      ]
+    },
+    {
+      "id": "2(18)",
+      "number": 2,
+      "subquestion": 18,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "√(2x+x²)/(1+x)",
+      "reason": "二次根式配方的变式，可作为根式薄弱项的补练。",
+      "examples": "3.6、3.11",
+      "hint": "先写成√[(1+x)²−1]/(1+x)，再三角换元或拆式。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-18",
+      "answer_page": 249,
+      "mother_ids": [
+        "i2"
+      ]
+    },
+    {
+      "id": "2(19)",
+      "number": 2,
+      "subquestion": 19,
+      "level": "J",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "cos x/(5−4cos x)²",
+      "reason": "标准方法可做但算量偏长，作为三角有理式巩固储备。",
+      "examples": "3.24、3.26",
+      "hint": "半角代换后分解即可；不要求为这题另学积分号下对参数求导。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-19",
+      "answer_page": 249,
+      "mother_ids": [
+        "i3"
+      ]
+    },
+    {
+      "id": "2(20)",
+      "number": 2,
+      "subquestion": 20,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "二",
+      "label": "sin x/(x⁸+1)与√ln²(1−x)",
+      "reason": "检验奇偶和绝对值两种条件，避免看到平方就去掉根号。",
+      "examples": "3.32、3.33",
+      "hint": "第一项为奇函数；第二项是|ln(1−x)|，按0分段。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-2-20",
+      "answer_page": 249,
+      "mother_ids": [
+        "i5",
+        "i6"
+      ]
+    },
+    {
+      "id": "3",
+      "number": 3,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "三",
+      "label": "含√x变上限的未知函数积分",
+      "reason": "检验连续性、端点与未知函数运算；不要求先求出非初等原函数。",
+      "examples": "3.28、3.38、3.50",
+      "hint": "可对含f的积分分部；0端先截断，确认√x f(x)趋0。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-3",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i7",
+        "i8",
+        "i10"
+      ]
+    },
+    {
+      "id": "4",
+      "number": 4,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 243,
+      "printed_page": 235,
+      "topic": "三",
+      "label": "分段被积函数的变上限积分",
+      "reason": "基础条件检验题，保留作为分段点处累计量的检查。",
+      "examples": "3.29、3.38",
+      "hint": "按x≤1、x>1分段累计，后一段不能忘记[0,1]已有积分。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-4",
+      "answer_page": 250,
+      "mother_ids": [
+        "i6",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "5",
+      "number": 5,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "f由积分给出，再积f′/(1+f²)",
+      "reason": "检验对函数定义的理解与复合运算，步骤短但易混层次。",
+      "examples": "3.1、3.38",
+      "hint": "外层反正切，内层f；先求f在两个端点的值。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-5",
+      "answer_page": 250,
+      "mother_ids": [
+        "i1",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "6",
+      "number": 6,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "f(x)+f(1/x)，x>0",
+      "reason": "检验函数关系及自变量变化，保留倒置结构的迁移。",
+      "examples": "3.11、3.47",
+      "hint": "两边求导或对f(1/x)换元；链式负号及x=1处的常数要查。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-6",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i5"
+      ]
+    },
+    {
+      "id": "7(1)",
+      "number": 7,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "∫₁∞1/[x√(x−1)]dx",
+      "reason": "同时检查有限瑕点和无穷端点，作为广义积分基础代表题。",
+      "examples": "3.6、3.50",
+      "hint": "t=√(x−1)；先分别说明1端和∞端收敛。",
+      "minutes": 15,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-1",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(2)",
+      "number": 7,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "∫₀∞1/[(1+x²)(4+x²)]dx",
+      "reason": "检验有理式分解与反常端点的组合，计算长度适中。",
+      "examples": "3.23、3.50",
+      "hint": "分解为两个反正切型，端点用极限；此处各项都收敛，拆项合法。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-2",
+      "answer_page": 250,
+      "mother_ids": [
+        "i3",
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(3)",
+      "number": 7,
+      "subquestion": 3,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "arctan x/(1+x²)^(3/2)",
+      "reason": "保留广义积分的分部计算，检查有限边界及余项。",
+      "examples": "3.6、3.50",
+      "hint": "x=tan t后为∫t cos t，或直接分部；∞端的arctan不趋0。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-3",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(4)",
+      "number": 7,
+      "subquestion": 4,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "∫₀∞xe^x/(1+e^x)²dx",
+      "reason": "检验指数衰减与分部边界项，避免只做有理式反常积分。",
+      "examples": "3.50、3.55",
+      "hint": "由[1/(1+e^x)]′切入；x/(1+e^x)在∞趋0。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-4",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(5)",
+      "number": 7,
+      "subquestion": 5,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "∫₀¹ln[1/(1−x²)]dx",
+      "reason": "检验对数瑕点与可积性；不能把无界直接等同于发散。",
+      "examples": "3.50、3.53",
+      "hint": "拆ln(1−x)与ln(1+x)，或先分部；(1−x)ln(1−x)趋0。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-5",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i5",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(6)",
+      "number": 7,
+      "subquestion": 6,
+      "level": "J",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "arcsin√x/[√x√(1−x)]",
+      "reason": "同一换元同时处理反三角与瑕点，留作加练。",
+      "examples": "3.6、3.14、3.50",
+      "hint": "t=arcsin√x后变为简单多项式积分，改限体现反常端点。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-6",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(7)",
+      "number": 7,
+      "subquestion": 7,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "∫₂⁴x/√|x²−9|dx",
+      "reason": "独立检查内部瑕点两侧，避免只比较总区间的端点。",
+      "examples": "3.29、3.50",
+      "hint": "必须在3分开；每边分别取极限后才能相加。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-7",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i6",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(8)",
+      "number": 7,
+      "subquestion": 8,
+      "level": "J",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "1/[cos x√sin x]，0端",
+      "reason": "根式、三角及部分分式的综合巩固，首轮不为长式加核心量。",
+      "examples": "3.9、3.23、3.50",
+      "hint": "t=√sin x后是2/(1−t⁴)的有理式；检查0端为可积奇性。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-8",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i3",
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(9)",
+      "number": 7,
+      "subquestion": 9,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "∫₀π1/(2+tan²x)dx",
+      "reason": "检查区间内部未定义点及代换范围，能检验条件意识。",
+      "examples": "3.32、3.33、3.50",
+      "hint": "π/2为可去点；先改写成cos²x/(2cos²x+sin²x)，或分段后再tan换元。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-9",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i5",
+        "i6",
+        "i10"
+      ]
+    },
+    {
+      "id": "7(10)",
+      "number": 7,
+      "subquestion": 10,
+      "level": "J",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "∫₀¹x²ln³(1/x)dx",
+      "reason": "对数端点与重复分部的加练，兼顾后续指数积分。",
+      "examples": "3.21、3.50、3.55",
+      "hint": "u=−ln x化为∫₀∞u³e^(−3u)du；也可直接分部并逐次查边界。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-7-10",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "8",
+      "number": 8,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "四",
+      "label": "由反常积分条件求下限",
+      "reason": "方法与7(1)、7(2)有重合，留作反解参数的加练。",
+      "examples": "3.6、3.50",
+      "hint": "u=√(e^t−1)，还原反正切后求x，检查实数下限。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-8",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "9",
+      "number": 9,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "二",
+      "label": "分段f与∫f(x−2)",
+      "reason": "与例3.29结构接近，适合分段仍不熟时补写，不冒充高迁移新题。",
+      "examples": "3.29",
+      "hint": "先令u=x−2，区间变为[−1,1]，再按u=0分段。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-9",
+      "answer_page": 250,
+      "mother_ids": [
+        "i6"
+      ]
+    },
+    {
+      "id": "10",
+      "number": 10,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "有限支撑函数参与含参积分",
+      "reason": "检验参数区间判断与积分范围选择，题面虽新但不需额外理论。",
+      "examples": "3.29、3.40",
+      "hint": "先由0≤x−t≤π/2与0≤t≤x取交集，不能只按t=π/2分段。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-10",
+      "answer_page": 250,
+      "mother_ids": [
+        "i6",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "11",
+      "number": 11,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "sin²x、cos²x作积分上限",
+      "reason": "检验反三角主值、变上限及端点定常数，综合长度适中。",
+      "examples": "3.32、3.38",
+      "hint": "先求导看两项是否抵消；给定0≤x≤π/2用于确认反三角主值。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-11",
+      "answer_page": 250,
+      "mother_ids": [
+        "i6",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "12",
+      "number": 12,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "f(2)、f′(2)、∫₀²f与∫₀¹x²f″(2x)",
+      "reason": "检验换元比例与多次分部，教材原图的已知积分上限是2。",
+      "examples": "3.27、3.28",
+      "hint": "先u=2x，因子是1/8，再两次分部；不要把已知∫₀²误读为∫₀¹。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-12",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "13",
+      "number": 13,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "分段给出f′(ln x)，且f(0)=0",
+      "reason": "检验条件给的是哪个自变量下的导数，以及分段积分常数的衔接。",
+      "examples": "3.9、3.29、3.38",
+      "hint": "u=ln x先得到f′(u)；按u=0分段，随后用f(0)与连续性定常数。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-13",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i6",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "14",
+      "number": 14,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "已知f′(sin²x)求f",
+      "reason": "自变量还原的三角变式，核心13之后按薄弱情况补。",
+      "examples": "3.1、3.6、3.38",
+      "hint": "先将右边写为u=sin²x的式子；这里不是直接把题设当成[f(sin²x)]′。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-14",
+      "answer_page": 250,
+      "mother_ids": [
+        "i1",
+        "i2",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "15",
+      "number": 15,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "f式含定限积分∫₀¹f(√x)dx",
+      "reason": "检验定限积分常量及函数式闭合，与近年A类真题能力相连。",
+      "examples": "3.38(II)",
+      "hint": "设该定限积分为C，f(x)=e^x+Cx，再代回原积分求C。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-15",
+      "answer_page": 250,
+      "mother_ids": [
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "16",
+      "number": 16,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 244,
+      "printed_page": 236,
+      "topic": "三",
+      "label": "由切线斜率及极小值求f",
+      "reason": "用于第二章保温和导数—积分连接，首轮核心已有足够同类函数恢复。",
+      "examples": "第二章；3.38",
+      "hint": "先对斜率积分，用极小点给出的函数值定常数，再找另一驻点。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-16",
+      "answer_page": 250,
+      "mother_ids": [
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "17(1)",
+      "number": 17,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "∫ₓ^(x+π/2)|sin t|dt的周期",
+      "reason": "检验移动积分区间与原被积函数周期的关系。",
+      "examples": "3.36、3.45",
+      "hint": "t=u+π后，区间和被积式同时改变；周期性是对所有x的等式。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-17-1",
+      "answer_page": 250,
+      "mother_ids": [
+        "i5",
+        "i9"
+      ]
+    },
+    {
+      "id": "17(2)",
+      "number": 17,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "上述f的最大、最小值",
+      "reason": "在(1)基础上检验分段、导数符号与端点比较，不另算一套独立题干。",
+      "examples": "3.32、3.38、3.45",
+      "hint": "用一个周期，f′=|cos x|−|sin x|，再比较临界点与端点。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-17-2",
+      "answer_page": 250,
+      "mother_ids": [
+        "i5",
+        "i6",
+        "i7",
+        "i8",
+        "i9"
+      ]
+    },
+    {
+      "id": "18",
+      "number": 18,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "函数复合关系确定φ并积分",
+      "reason": "反函数与代数还原的加练，记得检查对数定义域。",
+      "examples": "3.39",
+      "hint": "先确定f，再解f(φ(x))=ln x；本题实数条件会限制x，不是任意x≠1都可。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-18",
+      "answer_page": 250,
+      "mother_ids": [
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "19",
+      "number": 19,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "含∫₀^(x²)f的函数关系，判0处极小",
+      "reason": "检查仅连续时能推出什么，避免无根据地假设更多阶导数。",
+      "examples": "3.38、3.40、3.68",
+      "hint": "由原式得f(0)=2，近0的f保持正；再用积分正性与x+1的符号即可，不必硬求f″。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-19",
+      "answer_page": 250,
+      "mother_ids": [
+        "i7",
+        "i8",
+        "i15"
+      ]
+    },
+    {
+      "id": "20",
+      "number": 20,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "四",
+      "label": "有限支撑根式权的归一化常数",
+      "reason": "反常积分的短恢复题，方法已由7(1)、7(5)覆盖，作加练。",
+      "examples": "3.6、3.50",
+      "hint": "两端分别检查；零点处补值与区间内部积分无关。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-20",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "21(1)",
+      "number": 21,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "四",
+      "label": "已知∫sin x/x，求∫(sin x/x)²",
+      "reason": "保留振荡积分与绝对收敛的区别，不能只会非负比较。",
+      "examples": "3.50、3.103核心方法",
+      "hint": "截断后分部得到sin2x/x，再缩放使用给定积分；边界在0和∞都要检查。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-21-1",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i6",
+        "i9",
+        "i10",
+        "i11"
+      ]
+    },
+    {
+      "id": "21(2)",
+      "number": 21,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "四",
+      "label": "∫sin x cos(ax)/x，参数a",
+      "reason": "有价值的条件收敛参数变式，作巩固储备，特殊分界不靠猜。",
+      "examples": "3.50、3.103核心方法",
+      "hint": "积化和差后按1+a、1−a的符号分类；频率为0时单独处理。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-21-2",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i6",
+        "i9",
+        "i10",
+        "i11"
+      ]
+    },
+    {
+      "id": "22",
+      "number": 22,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "四",
+      "label": "带参数I(a)及其在[−3,2]的积分",
+      "reason": "参数绝对值、端点和二次积分合并挑战；保留完整题供进阶。",
+      "examples": "3.6、3.32、3.50",
+      "hint": "u=cos x后端点出现|a±1|，a=0、±1分别核对，再按a区间积分。",
+      "minutes": 35,
+      "seen_relation": "variant",
+      "dom_id": "exercise-22",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i6",
+        "i10"
+      ]
+    },
+    {
+      "id": "23",
+      "number": 23,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "已知f的一个原函数sin x/x，求∫xf′",
+      "reason": "检验原函数层次，不应先把每一阶导数全部展开。",
+      "examples": "3.13、3.28",
+      "hint": "令F′=f，分部得xf−F；题中给的是F，不是f。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-23",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "24",
+      "number": 24,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "∫₀π(f+f″)sin x及端点值",
+      "reason": "检验分部与边界条件的使用，步骤短但结构典型。",
+      "examples": "3.27、3.28",
+      "hint": "两次分部后内部积分抵消，保留f(0)、f(π)边界，sin端点为0。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-24",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "25(1)",
+      "number": 25,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "F(x)=∫₋ₐᵃ|x−t|f(t)dt的F′单调",
+      "reason": "检验含绝对值参数积分，重要条件不能只停留在公式。",
+      "examples": "3.29、3.40、3.68",
+      "hint": "按t=x拆积分；f连续且正给F″=2f(x)>0。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-25-1",
+      "answer_page": 250,
+      "mother_ids": [
+        "i6",
+        "i7",
+        "i8",
+        "i15"
+      ]
+    },
+    {
+      "id": "25(2)",
+      "number": 25,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "上述F的最小值位置",
+      "reason": "利用(1)继续检查对称条件如何影响极值；与(1)共享题干。",
+      "examples": "3.38、3.68",
+      "hint": "偶性给F′(0)=0，再用F′严格递增。",
+      "minutes": 10,
+      "seen_relation": "variant",
+      "dom_id": "exercise-25-2",
+      "answer_page": 250,
+      "mother_ids": [
+        "i7",
+        "i8",
+        "i15"
+      ]
+    },
+    {
+      "id": "25(3)",
+      "number": 25,
+      "subquestion": 3,
+      "level": "J",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "由F的最小值表达式反求f",
+      "reason": "参数恒等式与函数恢复的进阶加练，需先明确条件对a的量词。",
+      "examples": "3.38、3.40",
+      "hint": "把给定最小值表达式按“对所有a>0成立”理解，再关于a求导；若只给一个固定a，不能唯一恢复整个f。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-25-3",
+      "answer_page": 250,
+      "mother_ids": [
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "26(1)",
+      "number": 26,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "f(2x+a)=xe^(x/b)后的定积分",
+      "reason": "检验平移缩放、未知函数还原及端点，作为函数关系计算代表。",
+      "examples": "3.5、3.27、3.38",
+      "hint": "先令u=2x+a，求f(u)后再积；指数的尺度是2b。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-26-1",
+      "answer_page": 250,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "26(2)",
+      "number": 26,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "恒等式对所有y成立时求a、b",
+      "reason": "在(1)上继续检验恒等式约束，保留作参数加练。",
+      "examples": "3.38、3.40",
+      "hint": "对y求导，比较函数系数，再代回检查；b≠0不能丢。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-26-2",
+      "answer_page": 250,
+      "mother_ids": [
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "27",
+      "number": 27,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "f=∫₁ˣe^(−t²)，求∫₀¹x²f(x)dx",
+      "reason": "与核心3均为未知函数分部，换了权函数；作为巩固而非重复设核心。",
+      "examples": "3.28、3.55；练3",
+      "hint": "先分部使f变为f′，剩下x³e^(−x²)可换元。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-27",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i10"
+      ]
+    },
+    {
+      "id": "28",
+      "number": 28,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "f(ln x)=ln(1+x)/x后的积分",
+      "reason": "指数对数的自变量还原与分部加练。",
+      "examples": "3.1、3.14、3.38",
+      "hint": "先写f(u)=e^(−u)ln(1+e^u)，再选分部或凑总导数。",
+      "minutes": 18,
+      "seen_relation": "variant",
+      "dom_id": "exercise-28",
+      "answer_page": 250,
+      "mother_ids": [
+        "i1",
+        "i4",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "29",
+      "number": 29,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 245,
+      "printed_page": 237,
+      "topic": "三",
+      "label": "fF已知、F为原函数且F>0",
+      "reason": "检验原函数关系、非线性形式与取根条件，不能只凭形式积分。",
+      "examples": "3.13、3.38",
+      "hint": "F′=f，利用(F²)′=2Ff；F(0)和F>0共同决定常数与根号分支。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-29",
+      "answer_page": 250,
+      "mother_ids": [
+        "i4",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "30",
+      "number": 30,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "非负f与含参积分乘积，求∫₀πf",
+      "reason": "保留多步综合检验；可完全用一元积分解决，无须强行提前用重积分。",
+      "examples": "3.38、3.40、3.45",
+      "hint": "内积分换元后是F(x)=∫₀ˣf，f=F′，所以乘积可积成F²/2；开方用非负性。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-30",
+      "answer_page": 250,
+      "mother_ids": [
+        "i5",
+        "i7",
+        "i8",
+        "i9"
+      ]
+    },
+    {
+      "id": "31",
+      "number": 31,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "取整函数参与的平均积分极限",
+      "reason": "检验周期平均与末段余量控制，方法迁移到更复杂取整题。",
+      "examples": "3.45、3.107核心方法",
+      "hint": "按整数段计算或用{t}²的周期；原解余段应为(x−n)³/3，不是平方。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-31",
+      "answer_page": 251,
+      "mother_ids": [
+        "i5",
+        "i6",
+        "i9"
+      ]
+    },
+    {
+      "id": "32",
+      "number": 32,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "含[2n/i]−2[n/i]的和式极限",
+      "reason": "取整与和式—积分转换的综合挑战，保留分块方法，不列入首轮核心。",
+      "examples": "3.45、3.107；练31、40",
+      "hint": "对应有界函数[2/x]−2[1/x]，在1/k处再分段；0附近累积不连续点需控制。",
+      "minutes": 40,
+      "seen_relation": "variant",
+      "dom_id": "exercise-32",
+      "answer_page": 251,
+      "mother_ids": [
+        "i5",
+        "i6",
+        "i9"
+      ]
+    },
+    {
+      "id": "33",
+      "number": 33,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "{x}^n+{−x}^n的积分极限",
+      "reason": "参数随n变化的周期变式，核心31之后作加练。",
+      "examples": "3.33、3.45；练31",
+      "hint": "每个整周期精确计算，非整数处{−x}=1−{x}，整数点例外不影响积分。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-33",
+      "answer_page": 252,
+      "mother_ids": [
+        "i5",
+        "i9"
+      ]
+    },
+    {
+      "id": "34",
+      "number": 34,
+      "subquestion": null,
+      "level": "R",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "五",
+      "label": "圆弧与星形线围域的旋转体积、表面积",
+      "reason": "与例3.60相同，保留隔日复现，不能当作独立新题；独立弧长/表面积见补4。",
+      "examples": "3.60",
+      "hint": "按例题检查体积、表面积各自微元和参数积分方向。",
+      "minutes": 22,
+      "seen_relation": "exact",
+      "dom_id": "exercise-34",
+      "answer_page": 252,
+      "mother_ids": [
+        "i12"
+      ]
+    },
+    {
+      "id": "35",
+      "number": 35,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "五",
+      "label": "y=x³区域分别绕x、y轴后的体积比",
+      "reason": "检验转轴改变后的建模，题量适中且不同于例题。",
+      "examples": "3.59、3.60",
+      "hint": "先画D；绕y轴可选壳层或横切片，不能只把原体积公式换字母。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-35",
+      "answer_page": 252,
+      "mother_ids": [
+        "i12"
+      ]
+    },
+    {
+      "id": "36(1)",
+      "number": 36,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "给原函数导数，求区间平均值",
+      "reason": "检验平均值与定积分的关系，不一定需要先求完整原函数。",
+      "examples": "3.28、3.38",
+      "hint": "分部时选x−3π/2消掉未知上端点项；分母与该线性因子匹配。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-36-1",
+      "answer_page": 252,
+      "mother_ids": [
+        "i4",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "36(2)",
+      "number": 36,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "证明原函数在内部有唯一零点",
+      "reason": "连接导数符号、平均值和介值定理；两部分共享题干。",
+      "examples": "3.38、3.69",
+      "hint": "先用(1)与0附近符号得存在，再由导数符号排除多个；存在与唯一要分开论证。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-36-2",
+      "answer_page": 252,
+      "mother_ids": [
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "37",
+      "number": 37,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "对数积分平移恒等式",
+      "reason": "短恒等式证明变式，核心38优先检验同类连续性条件。",
+      "examples": "3.40、3.47",
+      "hint": "可先把左边区间写为[x,x+1]，或对两边求导并核对x=0；无需对原f求导。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-37",
+      "answer_page": 252,
+      "mother_ids": [
+        "i5",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "38",
+      "number": 38,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "三",
+      "label": "连续f的积分差商极限",
+      "reason": "关键条件检验题：f未必可导，不能直接把极限移进积分并写f′。",
+      "examples": "3.38、3.40、3.44",
+      "hint": "先通过t+h换元移动积分端点，再用原函数可导性；用f连续即可。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-38",
+      "answer_page": 252,
+      "mother_ids": [
+        "i7",
+        "i8",
+        "i9",
+        "i13"
+      ]
+    },
+    {
+      "id": "39",
+      "number": 39,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "七",
+      "label": "cos^n x sin(nx)的积分公式",
+      "reason": "分部递推的综合加练；方法已由3.21学习，核心计算已有多题。",
+      "examples": "3.19、3.21、3.27",
+      "hint": "令I_n，分部后与原式相加，三角差角使阶数降到n−1，检查I_1。",
+      "minutes": 28,
+      "seen_relation": "variant",
+      "dom_id": "exercise-39",
+      "answer_page": 253,
+      "mother_ids": [
+        "i4"
+      ]
+    },
+    {
+      "id": "40(1)",
+      "number": 40,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "四",
+      "label": "[2x]−2[x]除以x²，证明收敛",
+      "reason": "检验非负比较判别，不要求先求出复杂取整积分。",
+      "examples": "3.50、3.103核心方法",
+      "hint": "先证明[2x]−2[x]只取0或1，再与1/x²比较。",
+      "minutes": 12,
+      "seen_relation": "variant",
+      "dom_id": "exercise-40-1",
+      "answer_page": 253,
+      "mother_ids": [
+        "i4",
+        "i6",
+        "i9",
+        "i10",
+        "i11"
+      ]
+    },
+    {
+      "id": "40(2)",
+      "number": 40,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "四",
+      "label": "上述取整反常积分求值",
+      "reason": "有价值的取整分段计算储备，首轮不把两部分一起压成必做。",
+      "examples": "3.50、3.107；练31、40(1)",
+      "hint": "按每个[k,k+1/2)、[k+1/2,k+1)分段，求和后取极限。",
+      "minutes": 28,
+      "seen_relation": "variant",
+      "dom_id": "exercise-40-2",
+      "answer_page": 253,
+      "mother_ids": [
+        "i4",
+        "i6",
+        "i10"
+      ]
+    },
+    {
+      "id": "41",
+      "number": 41,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 246,
+      "printed_page": 238,
+      "topic": "七",
+      "label": "单调f、0≤g≤1下的积分不等式",
+      "reason": "保留需要构造的证明题，检验条件如何控制积分上限。",
+      "examples": "3.68、3.69、3.77",
+      "hint": "以u替换上端点作差，0≤∫ₐᵘg≤u−a及f单调共同决定导数符号。",
+      "minutes": 30,
+      "seen_relation": "variant",
+      "dom_id": "exercise-41",
+      "answer_page": 253,
+      "mother_ids": [
+        "i7",
+        "i13",
+        "i15"
+      ]
+    },
+    {
+      "id": "42",
+      "number": 42,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "七",
+      "label": "函数值与积分条件推出二阶导数为负",
+      "reason": "检验中值定理链条，避免只会计算型题目。",
+      "examples": "第二章中值定理；3.48、3.77",
+      "hint": "先由积分中值找右侧低点，再分别得到正、负一阶导数值，最后对一阶导数用中值定理。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-42",
+      "answer_page": 254,
+      "mother_ids": [
+        "i7",
+        "i9",
+        "i13"
+      ]
+    },
+    {
+      "id": "43",
+      "number": 43,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "二",
+      "label": "两个指数对数定积分之和",
+      "reason": "检验整体处理和相消，防止将非初等单项当成“题不会做”。",
+      "examples": "3.18、3.27、3.37",
+      "hint": "先e^x=u，使两个区间衔接；其中一项再换元、分部，可与另一项相消。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-43",
+      "answer_page": 254,
+      "mother_ids": [
+        "i1",
+        "i4",
+        "i5"
+      ]
+    },
+    {
+      "id": "44",
+      "number": 44,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "五",
+      "label": "|ln x|+|ln y|=1围域面积",
+      "reason": "检验从隐式边界恢复区域与分段，不是简单套面积公式。",
+      "examples": "3.29、3.57、3.59",
+      "hint": "x、y均为正，先得e^(−1)≤x≤e，再按x=1列上下边界。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-44",
+      "answer_page": 254,
+      "mother_ids": [
+        "i6",
+        "i12"
+      ]
+    },
+    {
+      "id": "45",
+      "number": 45,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "五",
+      "label": "y²=x²−x⁴围域面积",
+      "reason": "检验对称、交点和边界选择，计算不长。",
+      "examples": "3.57、3.62",
+      "hint": "四象限对称；第一象限y=x√(1−x²)，直接积分即可，不必强行照书参数化。",
+      "minutes": 20,
+      "seen_relation": "variant",
+      "dom_id": "exercise-45",
+      "answer_page": 254,
+      "mother_ids": [
+        "i12"
+      ]
+    },
+    {
+      "id": "46(1)",
+      "number": 46,
+      "subquestion": 1,
+      "level": "J",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "五",
+      "label": "隐函数曲线在(1,1)的曲率",
+      "reason": "作为第二章保温和二次求导加练；不挡住本题积分部分。",
+      "examples": "第二章曲率；3.38",
+      "hint": "先隐式求y′，再求y″；用曲率公式，别把y″直接当曲率。",
+      "minutes": 22,
+      "seen_relation": "variant",
+      "dom_id": "exercise-46-1",
+      "answer_page": 255,
+      "mother_ids": [
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "46(2)",
+      "number": 46,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "三",
+      "label": "上述隐函数参与的定积分",
+      "reason": "检验把隐函数条件接入积分的方法选择；可不先完成(1)的曲率。",
+      "examples": "3.5、3.28、3.39",
+      "hint": "一次隐式求导已给出(x−f)/(x+f)=−f′，再求端点f(0)。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-46-2",
+      "answer_page": 255,
+      "mother_ids": [
+        "i2",
+        "i4",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "47",
+      "number": 47,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "五",
+      "label": "两曲线围域面积的参数最小化",
+      "reason": "几何与一元最值的综合储备，算量较长；本轮几何核心先保证建模。",
+      "examples": "3.59、3.61；第二章最值",
+      "hint": "先用通过两点消b、c，再求交点与面积函数，最后检查a<−2的最值。",
+      "minutes": 30,
+      "seen_relation": "variant",
+      "dom_id": "exercise-47",
+      "answer_page": 255,
+      "mother_ids": [
+        "i12"
+      ]
+    },
+    {
+      "id": "48",
+      "number": 48,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "三",
+      "label": "周期函数的加权反常积分极限",
+      "reason": "重要复杂方法的迁移题，保留为核心进阶，不能因证明长就删。",
+      "examples": "3.45、3.50、3.56",
+      "hint": "设周期有界余项F(x)=∫₀ˣf−kx，将f写为k+F′，分部后用|F|≤M估余项。",
+      "minutes": 35,
+      "seen_relation": "variant",
+      "dom_id": "exercise-48",
+      "answer_page": 256,
+      "mother_ids": [
+        "i4",
+        "i5",
+        "i9",
+        "i10"
+      ]
+    },
+    {
+      "id": "49",
+      "number": 49,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "五",
+      "label": "正弦曲线将余弦下方区域三等分",
+      "reason": "检验交点与区域分割的综合储备；不再加多道同类参数面积核心。",
+      "examples": "3.57、3.59",
+      "hint": "可先令每小块面积为总面积1/3，配合交点cot x=a或b列方程。",
+      "minutes": 35,
+      "seen_relation": "variant",
+      "dom_id": "exercise-49",
+      "answer_page": 257,
+      "mother_ids": [
+        "i12"
+      ]
+    },
+    {
+      "id": "50",
+      "number": 50,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "五",
+      "label": "点到圆周切线的垂足轨迹面积",
+      "reason": "先建轨迹再参数化的综合挑战，保留思路，避免首轮陷入长轨迹推算。",
+      "examples": "3.5、3.57、3.62",
+      "hint": "设圆上点(a cos t,a sin t)，由垂足条件求轨迹参数方程，再用参数面积公式。",
+      "minutes": 40,
+      "seen_relation": "variant",
+      "dom_id": "exercise-50",
+      "answer_page": 257,
+      "mother_ids": [
+        "i2",
+        "i12"
+      ]
+    },
+    {
+      "id": "51",
+      "number": 51,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "七",
+      "label": "两函数导数非负，证明混合积分不等式",
+      "reason": "检验分部、中值与单调条件的组合，证明长度贴近初赛。",
+      "examples": "3.27、3.77、3.78",
+      "hint": "将[0,a]内两项凑成(fg)′；剩余段用f(x)≥f(a)、g′≥0估计。",
+      "minutes": 28,
+      "seen_relation": "variant",
+      "dom_id": "exercise-51",
+      "answer_page": 258,
+      "mother_ids": [
+        "i4",
+        "i13"
+      ]
+    },
+    {
+      "id": "52",
+      "number": 52,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "七",
+      "label": "例3.69的非严格版本及等号",
+      "reason": "原不等式只计复现；核心新增检验是严格条件放宽后的全部等号函数，不能整题记作未见题。",
+      "examples": "3.69、3.88、3.104",
+      "hint": "等号需追踪fG≡0；若f不恒零，正值段必须f′=1，连续可导性排除拼接折点，最终f=x或0。",
+      "minutes": 22,
+      "seen_relation": "inequality_seen_equality_new",
+      "dom_id": "exercise-52",
+      "answer_page": 258,
+      "mother_ids": [
+        "i7",
+        "i14"
+      ]
+    },
+    {
+      "id": "53",
+      "number": 53,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "七",
+      "label": "函数偏离平均值的平方积分界",
+      "reason": "检验均值点与导数平方的联系，作为核心54后的巩固。",
+      "examples": "3.77、3.79",
+      "hint": "取f(c)=平均值，再用f(x)−f(c)=∫cˣf′和Cauchy；积分方向不同时用绝对长度。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-53",
+      "answer_page": 259,
+      "mother_ids": [
+        "i13",
+        "i14"
+      ]
+    },
+    {
+      "id": "54",
+      "number": 54,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 247,
+      "printed_page": 239,
+      "topic": "七",
+      "label": "f(a)=0推出函数平方受导数平方控制",
+      "reason": "Cauchy从公式到函数估计的核心迁移，与例3.104的权不同。",
+      "examples": "3.79、3.104",
+      "hint": "f(x)=∫ₐˣf′，先逐点Cauchy再积x，注意不要把x−a系数丢掉。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-54",
+      "answer_page": 259,
+      "mother_ids": [
+        "i14"
+      ]
+    },
+    {
+      "id": "55",
+      "number": 55,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "ln曲线弦斜率与中点切线斜率",
+      "reason": "检验凹凸/切线估计的解题含义，也接受正确的辅助函数求导法。",
+      "examples": "3.71、3.74",
+      "hint": "可把弦斜率写为1/x的积分平均，利用其严格凸性；或证明ln t>2(t−1)/(t+1)。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-55",
+      "answer_page": 259,
+      "mother_ids": [
+        "i15"
+      ]
+    },
+    {
+      "id": "56",
+      "number": 56,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "a>1时两个正弦积分比较",
+      "reason": "检验点态比较的建立，不能只凭两个指数大小判断积分。",
+      "examples": "3.71、3.74、3.108(1)",
+      "hint": "对0<x<1令t=x^(a−1)，由sin(tx)≥t sin x及x>sin x得到严格点态界，再积分。",
+      "minutes": 25,
+      "seen_relation": "variant",
+      "dom_id": "exercise-56",
+      "answer_page": 260,
+      "mother_ids": [
+        "i5",
+        "i15"
+      ]
+    },
+    {
+      "id": "57",
+      "number": 57,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "e^(sin x)+e^(−sin x)的积分下界",
+      "reason": "检验有限Taylor余项、奇偶相消和三角积分，覆盖重要估计方法。",
+      "examples": "3.21、3.33、3.81",
+      "hint": "不必调用完整幂级数：对e^u、e^(−u)各用五阶Taylor及正的六阶余项，保留到u⁴后积分。",
+      "minutes": 28,
+      "seen_relation": "variant",
+      "dom_id": "exercise-57",
+      "answer_page": 260,
+      "mother_ids": [
+        "i4",
+        "i5",
+        "i15"
+      ]
+    },
+    {
+      "id": "58",
+      "number": 58,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "给相同非零端点，证导数平方下界",
+      "reason": "检验平方化方法与端点变化，不能照抄例3.92的系数。",
+      "examples": "3.92、3.104",
+      "hint": "可选g=1/2−x，把目标差写为∫(f′−g)²；分部边界使用−1/6，需自己核对常数。",
+      "minutes": 30,
+      "seen_relation": "variant",
+      "dom_id": "exercise-58",
+      "answer_page": 260,
+      "mother_ids": [
+        "i8",
+        "i14"
+      ]
+    },
+    {
+      "id": "59",
+      "number": 59,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "三元分式与(1−a)(1−b)(1−c)",
+      "reason": "代数转积分的挑战题；保留转化方法，优先级低于核心函数不等式。",
+      "examples": "3.71、3.72、3.74",
+      "hint": "1/(1+b+c)=∫₀¹t^(b+c)dt，再用0≤b,c≤1时t^b≤1+b(t−1)及对称求和。",
+      "minutes": 35,
+      "seen_relation": "variant",
+      "dom_id": "exercise-59",
+      "answer_page": 261,
+      "mother_ids": [
+        "i13",
+        "i15"
+      ]
+    },
+    {
+      "id": "60",
+      "number": 60,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "含积分方程约束实参数λ",
+      "reason": "重要综合储备：积分关系转实二次方程，完整换序可接后续重积分学习。",
+      "examples": "3.38、3.40、3.99；练30",
+      "hint": "令I=∫f，换序后得I=3+λI²/2，利用实根或配方得参数界；I=0需先排除。",
+      "minutes": 35,
+      "seen_relation": "variant",
+      "dom_id": "exercise-60",
+      "answer_page": 261,
+      "mother_ids": [
+        "i7",
+        "i8",
+        "i13",
+        "i14"
+      ]
+    },
+    {
+      "id": "61",
+      "number": 61,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "正的单调f给出两种权的平均比较",
+      "reason": "有价值的加权比较巩固题，保留一元解法，不要求先学重积分。",
+      "examples": "3.68、3.73、3.77",
+      "hint": "分母均正，交叉相乘再把上限换t构造差；求导后只用f的连续性与单调性，不需f′。",
+      "minutes": 30,
+      "seen_relation": "variant",
+      "dom_id": "exercise-61",
+      "answer_page": 262,
+      "mother_ids": [
+        "i7",
+        "i13",
+        "i14",
+        "i15"
+      ]
+    },
+    {
+      "id": "62",
+      "number": 62,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "两个零矩、二阶导数界与最优常数",
+      "reason": "重要的待定权函数综合挑战，保留全部方法；与3.99连接，不因较难就删除。",
+      "examples": "3.48、3.49、3.99",
+      "hint": "先将x²换为x²+αx+β，再两次分部消边界，核函数定号后用|f″|≤1估计；等号函数还要验证零矩。",
+      "minutes": 40,
+      "seen_relation": "variant",
+      "dom_id": "exercise-62",
+      "answer_page": 263,
+      "mother_ids": [
+        "i7",
+        "i8",
+        "i9",
+        "i13",
+        "i14"
+      ]
+    },
+    {
+      "id": "63",
+      "number": 63,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "三",
+      "label": "加权积分中值点的局部极限",
+      "reason": "概念与局部展开的高价值巩固，避免把中值点位置只当“存在”。",
+      "examples": "3.41、3.44、3.77",
+      "hint": "g(a)>0与f′₊(a)≠0给一阶局部展开；先证ξ→a，再比较平均增量与端点增量。",
+      "minutes": 30,
+      "seen_relation": "variant",
+      "dom_id": "exercise-63",
+      "answer_page": 264,
+      "mother_ids": [
+        "i7",
+        "i9",
+        "i13"
+      ]
+    },
+    {
+      "id": "64",
+      "number": 64,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 248,
+      "printed_page": 240,
+      "topic": "七",
+      "label": "积分等于含同一个ξ的导数组合",
+      "reason": "保留Taylor、积分余项和介值定理的实际检验，对应例3.48—3.49的重要方法。",
+      "examples": "3.48、3.49",
+      "hint": "设F(x)=xf(x)，用中心Taylor后奇次项积分消失；用F″的整体上下界夹积分，再用介值定理取同一个ξ。",
+      "minutes": 30,
+      "seen_relation": "variant",
+      "dom_id": "exercise-64",
+      "answer_page": 264,
+      "mother_ids": [
+        "i7",
+        "i9",
+        "i13"
+      ]
+    },
+    {
+      "id": "65",
+      "number": 65,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 249,
+      "printed_page": 241,
+      "topic": "七",
+      "label": "三个零矩推出至少三个零点",
+      "reason": "保留构造定号权多项式的复杂方法，适合作压轴综合，不要求首轮无提示完成。",
+      "examples": "3.95、3.99；第二章零点",
+      "hint": "若只有至多两个变号零点，用这些点构成次数≤2的多项式使乘积定号，积分与零矩矛盾；不要直接假设除去零点后的商连续。",
+      "minutes": 40,
+      "seen_relation": "variant",
+      "dom_id": "exercise-65",
+      "answer_page": 265,
+      "mother_ids": [
+        "i8",
+        "i13",
+        "i14"
+      ]
+    },
+    {
+      "id": "66",
+      "number": 66,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 249,
+      "printed_page": 241,
+      "topic": "五",
+      "label": "抛物线与斜直线围域绕斜轴旋转",
+      "reason": "保留斜轴建模的几何挑战，与例3.91的方法相连，完整坐标/微元计算后补。",
+      "examples": "3.59、3.61、3.91",
+      "hint": "距离使用|kx−y|/√(1+k²)，可旋转坐标；如用形心定理必须说明适用条件，不能无说明套式。",
+      "minutes": 40,
+      "seen_relation": "variant",
+      "dom_id": "exercise-66",
+      "answer_page": 265,
+      "mother_ids": [
+        "i12"
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "id": "补1",
+      "topic": "六",
+      "minutes": 12,
+      "label": "细棒质量与质心",
+      "question": "细棒位于x轴的[0,2]，线密度ρ(x)=1+x。求总质量及质心横坐标。",
+      "answer": "M=4，质心横坐标为7/6。由dm=(1+x)dx分别计算总质量及一次矩，再相除。"
+    },
+    {
+      "id": "补2",
+      "topic": "六",
+      "minutes": 15,
+      "label": "抽水功",
+      "question": "竖直圆柱水箱内半径为1m、底部高度为0，水深为1m，出水口高度为2m。将水全部抽到出水口，求最少做功。水密度为ρ，重力加速度为g，忽略损耗。",
+      "answer": "W=(3/2)ρgπ。以高度y分层，dW=ρgπ(2−y)dy，y从0到1；不得用总水重乘同一提升距离。"
+    },
+    {
+      "id": "补3",
+      "topic": "六",
+      "minutes": 15,
+      "label": "静水压力",
+      "question": "宽1m、高2m的矩形闸板竖直浸在水中，上边缘与水面齐平。水密度为ρ，重力加速度为g，求水对闸板一侧的总压力（以表压计）。",
+      "answer": "F=2ρg。以液深h分条带，dF=ρg h·1·dh，h从0到2；区分压强与压力。"
+    },
+    {
+      "id": "补4(1)",
+      "topic": "五",
+      "minutes": 15,
+      "label": "参数曲线弧长",
+      "question": "a>0，曲线由x=a(t−sin t)、y=a(1−cos t)，0≤t≤2π给出。求这一段曲线的弧长。",
+      "answer": "弧长8a。ds=2a sin(t/2)dt，本区间sin(t/2)≥0；端点的零速度不妨碍积分。"
+    },
+    {
+      "id": "补4(2)",
+      "topic": "五",
+      "minutes": 18,
+      "label": "上述曲线绕x轴的表面积",
+      "question": "将补4给出的曲线绕x轴旋转一周，求生成曲面的面积。",
+      "answer": "S=(64/3)πa²。用dS=2πy ds，代入补4(1)所得微元；不是体积公式πy²dx。"
+    }
+  ],
+  "mothers": [
+    {
+      "id": "i1",
+      "title": "原函数、基本积分与凑微分",
+      "mother": "A · 复合分式：找内层导数",
+      "example_numbers": [
+        1,
+        2,
+        3,
+        4,
+        18,
+        83,
+        106
+      ]
+    },
+    {
+      "id": "i2",
+      "title": "换元：根式、三角、倒置与双向结构",
+      "mother": "A · 复合分式：找内层导数",
+      "example_numbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        46,
+        51,
+        52,
+        54
+      ]
+    },
+    {
+      "id": "i3",
+      "title": "部分分式与三角有理式",
+      "mother": "B · 有理式：先因式分解",
+      "example_numbers": [
+        23,
+        24,
+        25,
+        26,
+        86,
+        105
+      ]
+    },
+    {
+      "id": "i4",
+      "title": "分部积分、循环与递推",
+      "mother": "C · 乘积：让一层变简单",
+      "example_numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        27,
+        28,
+        50,
+        53,
+        55,
+        83,
+        106
+      ]
+    },
+    {
+      "id": "i5",
+      "title": "对称、周期、配对与 Wallis",
+      "mother": "D · 区间对称：配对而非硬算",
+      "example_numbers": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        45,
+        47,
+        53,
+        87,
+        93,
+        108
+      ]
+    },
+    {
+      "id": "i6",
+      "title": "绝对值、分段与取整函数积分",
+      "mother": "E · 分段条件：先找所有断点",
+      "example_numbers": [
+        29,
+        30,
+        31,
+        32,
+        89,
+        103,
+        107
+      ]
+    },
+    {
+      "id": "i7",
+      "title": "微积分基本定理与变限求导",
+      "mother": "F · 积分定义函数：先求导",
+      "example_numbers": [
+        38,
+        39,
+        40,
+        41,
+        48,
+        49,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "i8",
+      "title": "积分方程：常数联立与求导还原",
+      "mother": "F · 积分定义函数：先求导",
+      "example_numbers": [
+        38,
+        39,
+        40,
+        92,
+        99
+      ]
+    },
+    {
+      "id": "i9",
+      "title": "积分极限：估阶、夹逼与边界层",
+      "mother": "G · 极限目标：先查能否一致控制",
+      "example_numbers": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        48,
+        49,
+        58,
+        94,
+        100,
+        102,
+        103
+      ]
+    },
+    {
+      "id": "i10",
+      "title": "反常积分：计算、比较与绝对／条件收敛",
+      "mother": "H · 奇点与无穷：先判敛散",
+      "example_numbers": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        87,
+        102,
+        103
+      ]
+    },
+    {
+      "id": "i11",
+      "title": "振荡积分：Dirichlet 与 Abel 的核心",
+      "mother": "H · 奇点与无穷：先判敛散",
+      "example_numbers": [
+        87,
+        102,
+        103
+      ]
+    },
+    {
+      "id": "i12",
+      "title": "面积、体积、弧长、侧面积与物理微元",
+      "mother": "I · 几何应用：先画微元",
+      "example_numbers": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        89,
+        91,
+        109
+      ]
+    },
+    {
+      "id": "i13",
+      "title": "积分中值、零点与加权估值",
+      "mother": "J · 抽象积分：找符号与权重",
+      "example_numbers": [
+        44,
+        48,
+        49,
+        70,
+        72,
+        77,
+        78,
+        84,
+        94,
+        95,
+        99,
+        101
+      ]
+    },
+    {
+      "id": "i14",
+      "title": "积分柯西、配平方与分部联动",
+      "mother": "K · 不等式：先凑内积或平方",
+      "example_numbers": [
+        73,
+        79,
+        88,
+        92,
+        93,
+        97,
+        99,
+        104,
+        109
+      ]
+    },
+    {
+      "id": "i15",
+      "title": "凸性、Jensen、Kantorovich 与和式积分比较",
+      "mother": "K · 不等式：先凑内积或平方",
+      "example_numbers": [
+        68,
+        70,
+        71,
+        73,
+        74,
+        75,
+        76,
+        81,
+        82,
+        85,
+        90,
+        93,
+        97,
+        98,
+        108,
+        109
+      ]
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-10-16",
+      "title": "不定积分：按书建立工具箱",
+      "example_range": [
+        1,
+        26
+      ],
+      "examples": [
+        "3.1",
+        "3.3",
+        "3.5",
+        "3.6",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.18",
+        "3.19",
+        "3.21",
+        "3.23",
+        "3.24",
+        "3.25"
+      ],
+      "core": [
+        "1(1)",
+        "1(3)",
+        "1(4)",
+        "1(9)",
+        "1(16)"
+      ],
+      "supplements": [],
+      "extra": [
+        "1(2)",
+        "1(6)",
+        "1(11)"
+      ],
+      "example_minutes": 229,
+      "exercise_minutes": 56,
+      "extra_minutes": 43,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 345,
+      "total_minutes": 408
+    },
+    {
+      "date": "2026-10-17",
+      "title": "定积分：分段、对称与选法",
+      "example_range": [
+        27,
+        37
+      ],
+      "examples": [
+        "3.27",
+        "3.28",
+        "3.29",
+        "3.30",
+        "3.32",
+        "3.33",
+        "3.34",
+        "3.35",
+        "3.36",
+        "3.37"
+      ],
+      "core": [
+        "1(5)",
+        "1(12)",
+        "1(13)",
+        "1(14)",
+        "1(18)",
+        "1(19)",
+        "2(2)",
+        "2(4)",
+        "2(6)",
+        "2(7)"
+      ],
+      "supplements": [],
+      "extra": [
+        "1(20)",
+        "2(5)",
+        "2(8)",
+        "2(14)"
+      ],
+      "example_minutes": 131,
+      "exercise_minutes": 159,
+      "extra_minutes": 80,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 350,
+      "total_minutes": 450
+    },
+    {
+      "date": "2026-10-18",
+      "title": "积分函数、极限与误差",
+      "example_range": [
+        38,
+        49
+      ],
+      "examples": [
+        "3.38",
+        "3.39",
+        "3.40",
+        "3.41",
+        "3.42",
+        "3.44",
+        "3.45",
+        "3.47",
+        "3.48",
+        "3.49"
+      ],
+      "core": [
+        "2(9)",
+        "2(13)",
+        "2(17)",
+        "2(20)",
+        "3",
+        "4",
+        "5",
+        "6",
+        "43"
+      ],
+      "supplements": [],
+      "extra": [
+        "33",
+        "37"
+      ],
+      "example_minutes": 147,
+      "exercise_minutes": 157,
+      "extra_minutes": 42,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 364,
+      "total_minutes": 426
+    },
+    {
+      "date": "2026-10-19",
+      "title": "广义积分：先查瑕点，再计算",
+      "example_range": [
+        50,
+        56
+      ],
+      "examples": [
+        "3.50",
+        "3.52",
+        "3.53",
+        "3.54",
+        "3.55",
+        "3.56"
+      ],
+      "core": [
+        "7(1)",
+        "7(2)",
+        "7(3)",
+        "7(4)",
+        "7(5)",
+        "7(7)",
+        "7(9)",
+        "21(1)",
+        "40(1)",
+        "10",
+        "11",
+        "12"
+      ],
+      "supplements": [],
+      "extra": [
+        "7(6)",
+        "7(8)",
+        "7(10)",
+        "21(2)"
+      ],
+      "example_minutes": 90,
+      "exercise_minutes": 225,
+      "extra_minutes": 87,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 10,
+      "main_minutes": 375,
+      "total_minutes": 472
+    },
+    {
+      "date": "2026-10-20",
+      "title": "几何与物理：把微元独立列出来",
+      "example_range": [
+        57,
+        67
+      ],
+      "examples": [
+        "3.57",
+        "3.59",
+        "3.60",
+        "3.61",
+        "3.62",
+        "3.63",
+        "3.64",
+        "3.65",
+        "3.66",
+        "3.67"
+      ],
+      "core": [
+        "35",
+        "44",
+        "45"
+      ],
+      "supplements": [
+        "补1",
+        "补2",
+        "补3",
+        "补4(1)",
+        "补4(2)"
+      ],
+      "extra": [
+        "47",
+        "39"
+      ],
+      "example_minutes": 147,
+      "exercise_minutes": 142,
+      "extra_minutes": 58,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 349,
+      "total_minutes": 427
+    },
+    {
+      "date": "2026-10-21",
+      "title": "不等式：条件与证明入口",
+      "example_range": [
+        68,
+        82
+      ],
+      "examples": [
+        "3.68",
+        "3.69",
+        "3.70",
+        "3.71",
+        "3.72",
+        "3.73",
+        "3.74",
+        "3.76",
+        "3.77",
+        "3.79",
+        "3.81"
+      ],
+      "core": [
+        "41",
+        "42",
+        "51",
+        "54",
+        "13",
+        "15"
+      ],
+      "supplements": [],
+      "extra": [
+        "53",
+        "61"
+      ],
+      "example_minutes": 178,
+      "exercise_minutes": 146,
+      "extra_minutes": 55,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 384,
+      "total_minutes": 459
+    },
+    {
+      "date": "2026-10-22",
+      "title": "真题前段：方法串联与等号",
+      "example_range": [
+        83,
+        92
+      ],
+      "examples": [
+        "3.83",
+        "3.84",
+        "3.87",
+        "3.88",
+        "3.89",
+        "3.90",
+        "3.91",
+        "3.92"
+      ],
+      "core": [
+        "52",
+        "55",
+        "56",
+        "57",
+        "17(1)",
+        "17(2)",
+        "19"
+      ],
+      "supplements": [],
+      "extra": [
+        "63",
+        "40(2)"
+      ],
+      "example_minutes": 150,
+      "exercise_minutes": 156,
+      "extra_minutes": 58,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 366,
+      "total_minutes": 444
+    },
+    {
+      "date": "2026-10-23",
+      "title": "真题中段：权函数、积分约束",
+      "example_range": [
+        93,
+        101
+      ],
+      "examples": [
+        "3.93",
+        "3.94",
+        "3.95",
+        "3.96",
+        "3.97",
+        "3.98",
+        "3.99",
+        "3.100",
+        "3.101"
+      ],
+      "core": [
+        "58",
+        "64",
+        "23",
+        "24",
+        "25(1)",
+        "25(2)",
+        "26(1)",
+        "29"
+      ],
+      "supplements": [],
+      "extra": [
+        "25(3)",
+        "26(2)"
+      ],
+      "example_minutes": 153,
+      "exercise_minutes": 171,
+      "extra_minutes": 50,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 384,
+      "total_minutes": 454
+    },
+    {
+      "date": "2026-10-24",
+      "title": "真题后段：完成核心、回接难方法",
+      "example_range": [
+        102,
+        109
+      ],
+      "examples": [
+        "3.102",
+        "3.103",
+        "3.104",
+        "3.106",
+        "3.107",
+        "3.108",
+        "3.109"
+      ],
+      "core": [
+        "30",
+        "31",
+        "36(1)",
+        "36(2)",
+        "38",
+        "46(2)",
+        "48"
+      ],
+      "supplements": [],
+      "extra": [
+        "62",
+        "66"
+      ],
+      "example_minutes": 124,
+      "exercise_minutes": 171,
+      "extra_minutes": 80,
+      "review_minutes": 45,
+      "warmup_minutes": 15,
+      "extra_review_minutes": 20,
+      "main_minutes": 355,
+      "total_minutes": 455
+    }
+  ],
+  "counts": {
+    "examples": 109,
+    "example_required": 88,
+    "exercise_units": 121,
+    "core": 67,
+    "supplement_core": 5
+  },
+  "extra_pool": [
+    "1(2)",
+    "1(6)",
+    "1(11)",
+    "1(20)",
+    "2(5)",
+    "2(8)",
+    "2(14)",
+    "33",
+    "37",
+    "7(6)",
+    "7(8)",
+    "7(10)",
+    "21(2)",
+    "47",
+    "39",
+    "53",
+    "61",
+    "63",
+    "40(2)",
+    "25(3)",
+    "26(2)",
+    "62",
+    "66"
+  ]
+}
