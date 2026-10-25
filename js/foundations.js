@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s),meta=JSON.parse($('#foundation-meta').textC
 try{recalled=new Set(JSON.parse(localStorage.getItem(key)||'[]'));}catch{}
 const esc=s=>String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
 const norm=s=>String(s).toLowerCase().replace(/\s+/g,'').replace(/复合函数求导法则/g,'复合函数求导').replace(/复合求导/g,'链式').replace(/牛顿莱布尼茨/g,'牛顿—莱布尼茨');
-const scope=new URLSearchParams(location.search).get('chapter');if(scope==='2'||scope==='3')$('#basic-scope').value=scope;
+const scope=new URLSearchParams(location.search).get('chapter');if(Object.hasOwn(meta.chapters,scope))$('#basic-scope').value=scope;
 function apply(){const q=norm($('#basic-search').value),s=$('#basic-scope').value,st=$('#basic-status').value;const allowed=s==='all'?null:new Set(meta.chapters[s]);let visible=[];
 units.forEach(u=>{const hit=(!allowed||allowed.has(u.id))&&(!q||norm(u.dataset.search).includes(q))&&(st==='all'||(st==='done')===recalled.has(u.id));u.hidden=!hit;u.classList.toggle('recalled',recalled.has(u.id));u.querySelector('[data-recalled]').checked=recalled.has(u.id);if(hit)visible.push(u);});
 groups.forEach(g=>g.hidden=![...g.querySelectorAll('.basic-unit')].some(u=>!u.hidden));$('#foundation-empty').hidden=visible.length>0;$('#foundation-count').textContent='当前显示 '+visible.length+' / '+units.length+' 项 · 点击条目展开，答案先独立尝试再看';$('#recall-progress').textContent=meta.units.filter(u=>recalled.has(u.id)).length+' / '+units.length;

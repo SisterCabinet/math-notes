@@ -1,0 +1,119 @@
+{
+  "stage": 3,
+  "status": "待用户确认",
+  "study_start": "2026-10-25",
+  "exam_date": "2026-11-14",
+  "stats": [
+    {
+      "chapter": 4,
+      "original_big_questions": 39,
+      "original_units": 61,
+      "level_counts": {
+        "K": 29,
+        "J": 29,
+        "T": 3
+      },
+      "level_minutes": {
+        "K": 500,
+        "J": 480,
+        "T": 91,
+        "R": 0,
+        "Z": 0
+      },
+      "supplement_units": 0,
+      "core_original_units": 29,
+      "core_total_units": 29,
+      "core_full_minutes": 500,
+      "core_current_minutes": 500,
+      "core_later_minutes": 0,
+      "core_shared_prompt_additions": 1,
+      "all_pool_minutes": 1071
+    },
+    {
+      "chapter": 5,
+      "original_big_questions": 40,
+      "original_units": 44,
+      "level_counts": {
+        "K": 21,
+        "J": 18,
+        "T": 4,
+        "R": 1
+      },
+      "level_minutes": {
+        "K": 326,
+        "J": 266,
+        "T": 106,
+        "R": 8,
+        "Z": 0
+      },
+      "supplement_units": 0,
+      "core_original_units": 21,
+      "core_total_units": 21,
+      "core_full_minutes": 326,
+      "core_current_minutes": 326,
+      "core_later_minutes": 0,
+      "core_shared_prompt_additions": 3,
+      "all_pool_minutes": 706
+    },
+    {
+      "chapter": 6,
+      "original_big_questions": 52,
+      "original_units": 54,
+      "level_counts": {
+        "J": 18,
+        "K": 26,
+        "R": 5,
+        "Z": 3,
+        "T": 2
+      },
+      "level_minutes": {
+        "K": 450,
+        "J": 326,
+        "T": 60,
+        "R": 50,
+        "Z": 0
+      },
+      "supplement_units": 3,
+      "core_original_units": 26,
+      "core_total_units": 29,
+      "core_full_minutes": 504,
+      "core_current_minutes": 497,
+      "core_later_minutes": 7,
+      "core_shared_prompt_additions": 0,
+      "all_pool_minutes": 940
+    }
+  ],
+  "original_big_questions": 131,
+  "original_units": 159,
+  "original_level_counts": {
+    "K": 76,
+    "J": 65,
+    "T": 9,
+    "R": 6,
+    "Z": 3
+  },
+  "supplement_units": 3,
+  "core_total_units": 79,
+  "core_current_minutes": 1323,
+  "core_later_minutes": 7,
+  "core_full_minutes": 1330,
+  "all_pool_minutes": 2717,
+  "required_example_minutes": 1562,
+  "scope_note": "核心单元含正式小问及共享题干的新增目标，不等于79道互不相关的未见题；原书159单元另加3组自编。",
+  "examples_and_current_core_minutes": 2885,
+  "examples_and_full_core_minutes": 2892,
+  "planning_scenarios": [
+    {
+      "days": 8,
+      "old_review_per_day_minutes": 35,
+      "correction_minutes": 360,
+      "total_minutes": 3525
+    },
+    {
+      "days": 10,
+      "old_review_per_day_minutes": 40,
+      "correction_minutes": 480,
+      "total_minutes": 3765
+    }
+  ]
+}

@@ -1,0 +1,1075 @@
+{
+  "chapter": 5,
+  "title": "向量代数与空间解析几何",
+  "stage": "第二步：例题筛选，待用户确认",
+  "study_start": "2026-10-25",
+  "exam_date": "2026-11-14",
+  "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+  "source_pdf_pages": [
+    7,
+    35
+  ],
+  "source_offset": 6,
+  "estimated_minutes": 302,
+  "level_counts": {
+    "A": 21,
+    "B": 12,
+    "C": 10,
+    "D": 2
+  },
+  "required_example_ids": [
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.6",
+    "5.8",
+    "5.9",
+    "5.12",
+    "5.13",
+    "5.14",
+    "5.15",
+    "5.16",
+    "5.17",
+    "5.18",
+    "5.19",
+    "5.20",
+    "5.22",
+    "5.23",
+    "5.24",
+    "5.26",
+    "5.27",
+    "5.29",
+    "5.30",
+    "5.31",
+    "5.34",
+    "5.35",
+    "5.37",
+    "5.38",
+    "5.42",
+    "5.43",
+    "5.44",
+    "5.45"
+  ],
+  "examples": [
+    {
+      "id": "5.1",
+      "number": 1,
+      "level": "A",
+      "pdf_page": 7,
+      "printed_page": 1,
+      "section": "题型一、向量代数",
+      "group": "向量基本运算",
+      "method": "模平方展开与有理化极限",
+      "target": "重点是|a u+b v|²的交叉项及单位向量条件，再有理化取极限；不用背原书极限的参数结果。",
+      "minutes": 7,
+      "bridge_ids": [],
+      "pdf_end_page": 8,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.2",
+      "number": 2,
+      "level": "A",
+      "pdf_page": 8,
+      "printed_page": 2,
+      "section": "题型一、向量代数",
+      "group": "向量基本运算",
+      "method": "方向余弦、投影、混合积体积",
+      "target": "三问都掌握：标量投影可为负，向量投影另乘单位方向；固定|c|时体积最大要求c平行a×b，最后保留±方向。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 9,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.3",
+      "number": 3,
+      "level": "B",
+      "pdf_page": 9,
+      "printed_page": 3,
+      "section": "题型一、向量代数",
+      "group": "恒等式与化简",
+      "method": "二重向量积公式与括号",
+      "target": "会使用a×(b×c)及(a×b)×c，知道向量积不满足结合律；完整坐标长展开选学，用简单正交向量检查符号即可。",
+      "minutes": 6,
+      "bridge_ids": [
+        "5-S1"
+      ],
+      "pdf_end_page": 9,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.4",
+      "number": 4,
+      "level": "B",
+      "pdf_page": 9,
+      "printed_page": 3,
+      "section": "题型一、向量代数",
+      "group": "恒等式与化简",
+      "method": "向量积的数量积化四个数量积",
+      "target": "保留恒等式及令c=a,d=b得到|a×b|²的应用；不要求逐坐标证明两遍。不得把该恒等式与多元极值的Lagrange乘数法混为一谈。",
+      "minutes": 6,
+      "bridge_ids": [
+        "5-S1"
+      ],
+      "pdf_end_page": 10,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.5",
+      "number": 5,
+      "level": "A",
+      "pdf_page": 10,
+      "printed_page": 4,
+      "section": "题型一、向量代数",
+      "group": "向量方法解几何题",
+      "method": "对称单位向量和为零",
+      "target": "会用旋转不变性或首尾相接说明正多边形顶点向径之和为零；本题简短且连到6.73方向导数求和，不要求记递推系数。",
+      "minutes": 6,
+      "bridge_ids": [],
+      "pdf_end_page": 10,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.6",
+      "number": 6,
+      "level": "A",
+      "pdf_page": 10,
+      "printed_page": 4,
+      "section": "题型一、向量代数",
+      "group": "向量方法解几何题",
+      "method": "距离平方恒等式转垂直",
+      "target": "以向径表示边，展开并化为对角线数量积；掌握把度量条件转点积为零的路线，而非背四边形专用公式。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 11,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.7",
+      "number": 7,
+      "level": "C",
+      "pdf_page": 11,
+      "printed_page": 5,
+      "section": "题型一、向量代数",
+      "group": "向量方法解几何题",
+      "method": "中线垂直转数量积与三角方程",
+      "target": "向量化和点积展开已由5.2、5.6覆盖；本题余下为平面三角化简，作为几何薄弱时的加练，不另设必做。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 11,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.8",
+      "number": 8,
+      "level": "B",
+      "pdf_page": 11,
+      "printed_page": 5,
+      "section": "题型一、向量代数",
+      "group": "向量方法解几何题",
+      "method": "分解为沿棱与垂棱分量求二面角",
+      "target": "保留投影分解解释二面角的思路，能写向量分量与点积；不硬背三角余弦公式，接5.9注意法向量角与指定二面角可能互补。",
+      "minutes": 8,
+      "bridge_ids": [
+        "5-S1"
+      ],
+      "pdf_end_page": 12,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.9",
+      "number": 9,
+      "level": "A",
+      "pdf_page": 12,
+      "printed_page": 6,
+      "section": "题型一、向量代数",
+      "group": "向量方法解几何题",
+      "method": "两平面法向量、向量积恒等式",
+      "target": "会选法向量并算夹角，再依图形确定所问二面角；直接取绝对值只适于无定向锐夹角，不能忽略指定半平面。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 13,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.10",
+      "number": 10,
+      "level": "D",
+      "pdf_page": 13,
+      "printed_page": 7,
+      "section": "题型一、向量代数",
+      "group": "向量方法解几何题",
+      "method": "凸四边形内外判定的长参数构造",
+      "target": "暂缓整题的三角形内外区域与多参数不等式；向量坐标化、共线与线性组合由5.6、5.14、5.16保留，不另投入长纯几何构造。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 14,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.11",
+      "number": 11,
+      "level": "C",
+      "pdf_page": 14,
+      "printed_page": 8,
+      "section": "题型一、向量代数",
+      "group": "向量方法解几何题",
+      "method": "循环分点、面积比与向量积",
+      "target": "面积的向量积、共线线性表示已由5.2、5.6覆盖；本题循环比例与长面积推算留作进阶，不据此删除面积和体积基础公式。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 16,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.12",
+      "number": 12,
+      "level": "A",
+      "pdf_page": 16,
+      "printed_page": 10,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·基本方法",
+      "method": "方向向量垂直两已知向量",
+      "target": "先把线平行平面、线垂直线转为两个点积条件，叉积求方向再单位化；只给方向条件不应臆造唯一一条直线。",
+      "minutes": 7,
+      "bridge_ids": [],
+      "pdf_end_page": 16,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": [
+        "a17-plane"
+      ]
+    },
+    {
+      "id": "5.13",
+      "number": 13,
+      "level": "A",
+      "pdf_page": 16,
+      "printed_page": 10,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·基本方法",
+      "method": "平面内过点作垂线",
+      "target": "找点、方向两个要素；与给定直线垂直且在平面内，方向可由两向量的叉积得到，最后检验确实相交。",
+      "minutes": 7,
+      "bridge_ids": [],
+      "pdf_end_page": 16,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.14",
+      "number": 14,
+      "level": "B",
+      "pdf_page": 16,
+      "printed_page": 10,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·基本方法",
+      "method": "多条直线相交的待定参数",
+      "target": "保留“先设各交点→共线→再查第四条线”的路线，防止只用共面条件误判相交；长参数消元可对照，不必把全部系数背成套路。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 18,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.15",
+      "number": 15,
+      "level": "A",
+      "pdf_page": 18,
+      "printed_page": 12,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·待定参数",
+      "method": "等距、点到平面距离与内切球",
+      "target": "先写距离相等，再用四面体内部条件去掉绝对值选正确符号；由球心和半径建立球方程。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 18,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.16",
+      "number": 16,
+      "level": "A",
+      "pdf_page": 18,
+      "printed_page": 12,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·待定参数",
+      "method": "已知方向的相交直线",
+      "target": "由两平面法向量定方向，在线上设一个参数点后利用相交条件定点；尽量减少未知量，不先设全部六个参数。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 19,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": [
+        "a17-plane"
+      ]
+    },
+    {
+      "id": "5.17",
+      "number": 17,
+      "level": "A",
+      "pdf_page": 19,
+      "printed_page": 13,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·待定参数",
+      "method": "关于平面对称的垂足法",
+      "target": "沿法向量找垂足H，再由P′=2H−P求对称点；距离相等本身还不能区分原点和对称点。",
+      "minutes": 7,
+      "bridge_ids": [
+        "5-S2"
+      ],
+      "pdf_end_page": 19,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.18",
+      "number": 18,
+      "level": "A",
+      "pdf_page": 19,
+      "printed_page": 13,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·平面束",
+      "method": "过交线平面与夹角",
+      "target": "掌握μF+λG=0的齐次参数形式，保留μ=0的平面；若只用F+tG=0要另外检查遗漏成员，角度条件含绝对值。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 20,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.19",
+      "number": 19,
+      "level": "A",
+      "pdf_page": 20,
+      "printed_page": 14,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·平面束",
+      "method": "投影直线为两平面交线",
+      "target": "过原直线作垂直于投影面的辅助平面，再求交线；同时理解投影方向d−(d·n)n/|n|²，遇投影为一点须另查。",
+      "minutes": 10,
+      "bridge_ids": [
+        "5-S2",
+        "5-S5"
+      ],
+      "pdf_end_page": 20,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": [
+        "a16-proj"
+      ]
+    },
+    {
+      "id": "5.20",
+      "number": 20,
+      "level": "A",
+      "pdf_page": 20,
+      "printed_page": 14,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·向量投影",
+      "method": "点到直线距离",
+      "target": "选线上定点，分解点向量的平行和垂直分量；能用投影平方差或叉积除方向模算距离，结果为非负长度。",
+      "minutes": 7,
+      "bridge_ids": [],
+      "pdf_end_page": 20,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.21",
+      "number": 21,
+      "level": "C",
+      "pdf_page": 20,
+      "printed_page": 14,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·向量投影",
+      "method": "点到直线距离的短变式",
+      "target": "与5.20工具相同，仅换数据；点选取技巧读懂即可，保留为闭卷短练，不另计必学。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 21,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.22",
+      "number": 22,
+      "level": "A",
+      "pdf_page": 21,
+      "printed_page": 15,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·向量投影",
+      "method": "异面直线距离与混合积",
+      "target": "先查两方向不平行，距离为连点向量在公法向上的投影绝对值；平行情形不能套叉积为零的分母。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 21,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.23",
+      "number": 23,
+      "level": "B",
+      "pdf_page": 21,
+      "printed_page": 15,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·辅助平面",
+      "method": "先作垂线再定平面",
+      "target": "保留用过点且垂直原直线的辅助平面找垂足，进而以所求面内两方向定法向量；和5.24共同掌握辅助平面的作用。",
+      "minutes": 8,
+      "bridge_ids": [
+        "5-S2"
+      ],
+      "pdf_end_page": 22,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.24",
+      "number": 24,
+      "level": "A",
+      "pdf_page": 22,
+      "printed_page": 16,
+      "section": "题型二、空间直线与平面",
+      "group": "直线平面·辅助平面",
+      "method": "公垂线方向与垂足",
+      "target": "方向d₁×d₂还不够，须求一点且检验与两线相交；可选双垂足参数法或原书辅助平面法完整做一条。",
+      "minutes": 12,
+      "bridge_ids": [
+        "5-S2"
+      ],
+      "pdf_end_page": 23,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.25",
+      "number": 25,
+      "level": "C",
+      "pdf_page": 23,
+      "printed_page": 17,
+      "section": "题型三、曲面与方程",
+      "group": "典型二次曲面",
+      "method": "球内三正交弦的向量不变量",
+      "target": "模平方展开、垂直消交叉项和球面定模已由5.2、5.6覆盖；本题长动点构造选学。球面方程及识别须先在本节基础表掌握。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 24,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.26",
+      "number": 26,
+      "level": "B",
+      "pdf_page": 24,
+      "printed_page": 18,
+      "section": "题型三、曲面与方程",
+      "group": "典型二次曲面",
+      "method": "椭球圆截面与退化曲面组合",
+      "target": "保留“加辅助球面→两二次式线性组合→退化成平面”的构造方法；先学5-S3，原题参数计算可对照，不把特殊椭球圆截面整类删去。",
+      "minutes": 12,
+      "bridge_ids": [
+        "5-S3"
+      ],
+      "pdf_end_page": 24,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.27",
+      "number": 27,
+      "level": "B",
+      "pdf_page": 24,
+      "printed_page": 18,
+      "section": "题型三、曲面与方程",
+      "group": "典型二次曲面",
+      "method": "正交方向余弦的平方和",
+      "target": "会代入椭球方程得到每条射线长，再利用三正交单位向量的列也正交求和；不要求引入完整矩阵理论，先用Parseval式解释。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 25,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.28",
+      "number": 28,
+      "level": "C",
+      "pdf_page": 25,
+      "printed_page": 19,
+      "section": "题型三、曲面与方程",
+      "group": "典型二次曲面",
+      "method": "最低点、切线与投影的跨章综合",
+      "target": "配方识别最低点及投影由5.19覆盖，交线切向量在6.31学习；整题暂作第6章后综合，不在此增加先修障碍。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 26,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.29",
+      "number": 29,
+      "level": "B",
+      "pdf_page": 26,
+      "printed_page": 20,
+      "section": "题型三、曲面与方程",
+      "group": "典型二次曲面",
+      "method": "锥面截线退化，平面束与球面相切",
+      "target": "(1)会从重根判单一直线，(2)会列过线平面且球心到面距离=半径；先完成建模，再对照长系数消元。须检查被假设非零的参数。",
+      "minutes": 12,
+      "bridge_ids": [
+        "5-S3"
+      ],
+      "pdf_end_page": 27,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.30",
+      "number": 30,
+      "level": "B",
+      "pdf_page": 27,
+      "printed_page": 21,
+      "section": "题型三、曲面与方程",
+      "group": "一般旋转曲面",
+      "method": "绕斜轴旋转的两个不变量",
+      "target": "方法必须覆盖：轴向投影相同、到轴距离相同，或同垂直截面且到原点等距；用参数母线消参，不硬背原书二次式。",
+      "minutes": 12,
+      "bridge_ids": [
+        "5-S4"
+      ],
+      "pdf_end_page": 28,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.31",
+      "number": 31,
+      "level": "B",
+      "pdf_page": 28,
+      "printed_page": 22,
+      "section": "题型三、曲面与方程",
+      "group": "一般旋转曲面",
+      "method": "动直线与两准线及平面的参数消元",
+      "target": "会设两交点、用方向与法向点积为零联系参数，再描述连线消参；原书平面束长解选学，保留直纹曲面的基本建模法。",
+      "minutes": 10,
+      "bridge_ids": [
+        "5-S4"
+      ],
+      "pdf_end_page": 29,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.32",
+      "number": 32,
+      "level": "D",
+      "pdf_page": 29,
+      "printed_page": 23,
+      "section": "题型三、曲面与方程",
+      "group": "一般旋转曲面",
+      "method": "三准线共面条件与三阶行列式消元",
+      "target": "暂缓完整系数行列式构造；参数建模由5.31保留，共面与相交区别由5.14、5.24负责。注意三重积为零还可能是平行，不能单独当相交充分条件。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 30,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.33",
+      "number": 33,
+      "level": "C",
+      "pdf_page": 30,
+      "printed_page": 24,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "异面直线距离",
+      "target": "初赛短题，工具已由5.22覆盖；作为一道很合适的闭卷复习题保留，学过解答后不再计未见检测。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 30,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.34",
+      "number": 34,
+      "level": "A",
+      "pdf_page": 30,
+      "printed_page": 24,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "平面束中选过点及垂直平面",
+      "target": "完整掌握两个条件分别定参数；检查法向量非零和被参数化遗漏的平面，是平面束的初赛代表。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 31,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.35",
+      "number": 35,
+      "level": "B",
+      "pdf_page": 31,
+      "printed_page": 25,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "半圆锥面的准线与射线参数",
+      "target": "重点保留按原图确定准线、用过顶点射线消参的路线；不凭OCR省掉题干或图形，半锥的方向限制需随方程保留。",
+      "minutes": 10,
+      "bridge_ids": [
+        "5-S4"
+      ],
+      "pdf_end_page": 31,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.36",
+      "number": 36,
+      "level": "C",
+      "pdf_page": 31,
+      "printed_page": 25,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "给定交线与法向量求平面",
+      "target": "法向量和点定平面由5.12—5.16覆盖；原书给的平面只含交线一支，若题指全部交线则不成立。留作条件审查，见附录，不照抄成完整答案。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 31,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.37",
+      "number": 37,
+      "level": "A",
+      "pdf_page": 31,
+      "printed_page": 25,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "过两点且垂直给定平面",
+      "target": "虽有决赛标签，与2025年A类填空同结构；用已知连点向量和给定面法向量的叉积求所求面法向量。",
+      "minutes": 6,
+      "bridge_ids": [],
+      "pdf_end_page": 31,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": [
+        "a17-plane"
+      ]
+    },
+    {
+      "id": "5.38",
+      "number": 38,
+      "level": "B",
+      "pdf_page": 31,
+      "printed_page": 25,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "三平行母线确定圆柱面",
+      "target": "保留正截面上三点定圆，再写到轴距离为常数；不能简单把斜柱面当作z轴圆柱，多步几何仍在初赛要求内。",
+      "minutes": 12,
+      "bridge_ids": [
+        "5-S4"
+      ],
+      "pdf_end_page": 32,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.39",
+      "number": 39,
+      "level": "C",
+      "pdf_page": 32,
+      "printed_page": 26,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "平面束求投影直线",
+      "target": "同类方法在5.19、5.45已安排，保留为读完例题后的复现备用；不要将已经看过的同题当新检验。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 33,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.40",
+      "number": 40,
+      "level": "C",
+      "pdf_page": 33,
+      "printed_page": 27,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "待定二次曲线与椭圆最长弦",
+      "target": "代点定系数与配方识别椭圆可作加练；主要方程与距离方法由5.15—5.16、曲面基础表覆盖，不另设五点长联立必学。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 33,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.41",
+      "number": 41,
+      "level": "C",
+      "pdf_page": 33,
+      "printed_page": 27,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "向量模的差商极限",
+      "target": "与5.1同用模平方和有理化，作为第一章衔接复习备用，不重复安排。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 33,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.42",
+      "number": 42,
+      "level": "A",
+      "pdf_page": 33,
+      "printed_page": 27,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "关于空间直线的点对称",
+      "target": "作过点且垂直直线的平面求垂足，再用中点公式；与5.17的平面对称对照，避免混用法向量与方向向量。",
+      "minutes": 8,
+      "bridge_ids": [
+        "5-S2"
+      ],
+      "pdf_end_page": 34,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.43",
+      "number": 43,
+      "level": "A",
+      "pdf_page": 34,
+      "printed_page": 28,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "平面内同时交两线的方向",
+      "target": "先求两线各自与所给平面的交点，再连点单位化；虽为决赛题，计算短且基础，不因标签删去。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 34,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.44",
+      "number": 44,
+      "level": "A",
+      "pdf_page": 34,
+      "printed_page": 28,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "向量距离平方与参数区间最小化",
+      "target": "两问掌握：(1)先求无约束驻点，再按λ∈[0,1]截断并查端点；(2)按题给0<λ<1/5反求夹角范围，不只机械求导。",
+      "minutes": 15,
+      "bridge_ids": [],
+      "pdf_end_page": 35,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": []
+    },
+    {
+      "id": "5.45",
+      "number": 45,
+      "level": "A",
+      "pdf_page": 35,
+      "printed_page": 29,
+      "section": "5.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "投影方向及单位化",
+      "target": "2024年A类原题；用投影公式或两次叉积完整做一法，解释为何±均可；原线垂直投影面时投影退化成点须另查。",
+      "minutes": 10,
+      "bridge_ids": [
+        "5-S2"
+      ],
+      "pdf_end_page": 35,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(下册)(第2版).pdf",
+      "anchor_ids": [
+        "a16-proj"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "first": 1,
+      "last": 11,
+      "title": "题型一、向量代数",
+      "focus": "计算、几何翻译与恒等变形；让所选向量直接表达题目的角、面积、体积或垂直条件。",
+      "concept": "先区分标量/向量输出和非零条件，再选择点积、叉积、混合积。长纯几何构造可以暂缓，常用运算和投影分解保留。"
+    },
+    {
+      "first": 12,
+      "last": 24,
+      "title": "题型二、空间直线与平面",
+      "focus": "几何条件翻译为主，适量联立计算；先找方向或法向，再找点，避免从一开始引入大量未知系数。",
+      "concept": "平行方向不自动排除直线包含于平面；两直线共面还可能平行。线面角使用法向量时须取余角，投影直线要先排退化为点。"
+    },
+    {
+      "first": 25,
+      "last": 32,
+      "title": "题型三、曲面与方程",
+      "focus": "截面与轨迹观察、参数化和消元；识别曲面是第7章区域建模的先修。",
+      "concept": "常见二次曲面、柱面和旋转面都需识别；消元之后须验证实参数存在，保留半锥、根式和投影范围限制。"
+    },
+    {
+      "first": 33,
+      "last": 45,
+      "title": "5.3 真题选讲与点评",
+      "focus": "初赛可用很短向量法，也可考圆柱、参数区间与投影的多步组合。",
+      "concept": "5.37有决赛标签但与2025年A类填空同结构；反之原书初赛题也不免除条件核查。"
+    }
+  ],
+  "method_coverage": [
+    {
+      "method": "模平方、方向余弦、点积/叉积/混合积",
+      "examples": "5.1—5.2、5.6；5-S1",
+      "condition": "长度与面积体积取非负；向量方向保留正负、数量投影可带符号。"
+    },
+    {
+      "method": "二重向量积与Lagrange恒等式",
+      "examples": "5.3—5.4、5.9；5-S1",
+      "condition": "公式会用，长坐标证明选学；括号和反交换符号不可省。"
+    },
+    {
+      "method": "向量几何与对称求和",
+      "examples": "5.5—5.6、5.8—5.9、5.44",
+      "condition": "正多边形向径和用于6.73；二面角还需依图判断是否取补角。"
+    },
+    {
+      "method": "线/面方程、夹角、距离与点对称",
+      "examples": "5.12—5.17、5.20、5.42—5.43；5-S2",
+      "condition": "点到平面、点到直线、异面直线距离分别检查分母条件；包含、相交、平行分开。"
+    },
+    {
+      "method": "平面束、投影、辅助平面、公垂线",
+      "examples": "5.18—5.19、5.22—5.24、5.34、5.45；5-S2",
+      "condition": "齐次参数形式避免漏掉平面束成员；公垂方向之外还需垂足。"
+    },
+    {
+      "method": "常见二次曲面、圆截面与退化截线",
+      "examples": "本节曲面基础表、5.15、5.26—5.29；5-S3",
+      "condition": "以配方、截面和符号识别球、椭球、锥、柱、抛物面及单双叶双曲面，不能只背名字。"
+    },
+    {
+      "method": "旋转面、直纹面、斜圆柱",
+      "examples": "5.30—5.31、5.35、5.38；5-S4",
+      "condition": "轴向投影和到轴距离不变量；直纹面参数点、正截面三点定圆。"
+    },
+    {
+      "method": "空间曲线与曲面投影的不同",
+      "examples": "5-S5；第6章6.72回访",
+      "condition": "曲面投影可能是区域；消元需实数存在条件，投影后的平面坐标还要补z=0。"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "5-S1",
+      "chapter": 5,
+      "title": "点积、叉积与二重叉积各自输出什么",
+      "kind": "恢复工具",
+      "condition": "点积是标量，a·b=0对非零向量表示垂直；叉积是向量，其模为平行四边形面积，a×b=0表示共线（也包括零向量）。叉积反交换且不结合。",
+      "question": "设a=(1,0,1)，b=(0,1,1)，c=(1,1,0)。算(a×b)×c、a×(b×c)，并核对$|a\\times b|^2=|a|^2|b|^2-(a\\cdot b)^2$。",
+      "steps": [
+        "$a\\times b=(-1,-1,1)$，$(a\\times b)\\times c=(-1,1,0)$；而$b\\times c=(-1,1,-1)$，$a\\times(b\\times c)=(-1,0,1)$，两者不同。",
+        "用公式$a\\times(b\\times c)=b(a\\cdot c)-c(a\\cdot b)$可核对第二个结果。",
+        "模平方为3，右边为$2\\cdot2-1^2=3$。更一般$(a\\times b)\\cdot(c\\times d)=(a\\cdot c)(b\\cdot d)-(a\\cdot d)(b\\cdot c)$；三重积的绝对值才是平行六面体体积。"
+      ],
+      "connection": "先恢复基本运算，再接5.3—5.4及5.9；涉及二面角时还须用图确定法向量夹角是否需要取补角。",
+      "examples": [
+        "5.3",
+        "5.4",
+        "5.8"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "5-S2",
+      "chapter": 5,
+      "title": "投影、对称与公垂线都先找垂足",
+      "kind": "初赛方法训练",
+      "condition": "法向量n的正交投影是d−(d·n)n/|n|²；平面对称沿法向，直线对称沿到线的垂线。方向分量求出后仍要有点才能定直线。",
+      "question": "设$L:(x,y,z)=(0,0,1)+t(1,1,1)$。求L在z=0上的投影，并求M=(1,0,1)关于L的对称点。另说明x轴与$(x,y,z)=(0,1,s)$的公垂线。",
+      "steps": [
+        "投影点为(t,t,0)，故投影直线$x=y,z=0$，单位方向$\\pm(1,1,0)/\\sqrt2$。只要求方向时无须求整条投影线。",
+        "L的垂足$H=A+[(M-A)\\cdot d/|d|^2]d=(1/3,1/3,4/3)$，对称点$2H-M=(-1/3,2/3,5/3)$。若关于z=0对称，则另得(1,0,−1)，不能混用。",
+        "两条给定线的公垂方向是(0,1,0)，垂足为(0,0,0)和(0,1,0)，故公垂线$x=z=0$，距离1。一般题设两个线上参数点，用连线同时垂直两方向来定参数。"
+      ],
+      "connection": "接5.17、5.19、5.23—5.24、5.42、5.45；投影方向若为零，原直线投影为一个点，不存在投影直线方向。",
+      "examples": [
+        "5.17",
+        "5.19",
+        "5.23",
+        "5.24",
+        "5.42",
+        "5.45"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "5-S3",
+      "chapter": 5,
+      "title": "用辅助球面认出椭球圆截面",
+      "kind": "初赛方法训练",
+      "condition": "平面中的圆可表示为球面与平面的交线；把二次式线性组合只给必要条件，最终仍要代回，排除多出来的点。",
+      "question": "证明椭球$x^2+2y^2+3z^2=1$在平面z=x上的截线是圆，并求圆心与半径。",
+      "steps": [
+        "在z=x上，$x^2+2y^2+3z^2=2(x^2+y^2+z^2)$，故截线也位于球面$x^2+y^2+z^2=1/2$。",
+        "反过来，在z=x与该球面的交线上，原椭球式等于1，所以两条截线完全相同。平面过球心，圆心为原点，半径$1/\\sqrt2$。",
+        "接原题5.26，未知平面时先引入半径r的辅助球，两个二次式相减以找可能退化平面，再逐一验证；不能把某个坐标投影的“椭圆”误当空间截线不是圆。"
+      ],
+      "connection": "接5.26的特殊圆截面和5.29中二次式退化的观察；先会双向验证，再做未知参数分类。",
+      "examples": [
+        "5.26",
+        "5.29"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "5-S4",
+      "chapter": 5,
+      "title": "旋转面靠不变量，直纹面靠参数点",
+      "kind": "初赛方法训练",
+      "condition": "绕通过原点、单位方向e的轴旋转，轴向分量P·e与到轴距离保持不变；也可结合P·e与|P|²。轴不经过原点时先平移。",
+      "question": "求直线$(x,y,z)=(1,t,t)$绕z轴旋转形成的曲面方程，并解释所得曲面的类型。",
+      "steps": [
+        "母线点Q=(1,t,t)的高度为t，到z轴距离平方为1+t²；旋转点P保持z=t和x²+y²=1+t²。",
+        "消t得$x^2+y^2-z^2=1$，是单叶双曲面。反过来每个z截面都是母线对应点旋转形成的圆，故没有漏掉或凭消元添加其他点。",
+        "接5.30改为斜轴时，用两条不变量替代“z相同”；5.31则设两准线上的参数点，用连线方向与给定面法向量点积为零消一个参数。"
+      ],
+      "connection": "服务5.30—5.31、5.35、5.38的轨迹建模；常见球面、椭球、锥面、柱面和单双叶双曲面的截面识别列入基础，不依例题频次删掉。",
+      "examples": [
+        "5.30",
+        "5.31",
+        "5.35",
+        "5.38"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "5-S5",
+      "chapter": 5,
+      "title": "投影曲线与投影区域的区别",
+      "kind": "恢复工具与条件判断",
+      "condition": "投影到xOy平面时落点的z=0；消掉原空间点的z时，还须保留“存在实数z”的条件。投影曲线一般是方程，曲面投影可以是区域。",
+      "question": "①球面$x^2+y^2+z^2=1$在xOy平面的投影是什么？②该球面与平面z=x的交线在xOy平面的投影又是什么？",
+      "steps": [
+        "①对给定(x,y)存在实z等价于$x^2+y^2\\le1$；所以是$z=0$平面上的闭圆盘，不是只有圆周。",
+        "②交线代入z=x，得$2x^2+y^2=1$，每个这样的(x,y)都有唯一原z=x，所以投影是$xOy$平面上的椭圆周：$2x^2+y^2=1,z=0$。",
+        "空间切线的投影还需非退化条件；这留到6.72用切向量或Jacobian说明。"
+      ],
+      "connection": "补本章考纲要点中投影曲线的独立基础入口，避免只会直线投影；接第7章区域投影判断，及6.72的投影切线。",
+      "examples": [
+        "5.19",
+        "5.28",
+        "6.72"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a17-plane",
+      "exam": "第17届A类2025·一(2)",
+      "pdf": [
+        3,
+        4
+      ],
+      "focus": "过原点、过给定点、垂直已知平面；与教材决赛例5.37同结构，标签不代替难度判断。",
+      "examples": [
+        "5.12",
+        "5.16",
+        "5.37"
+      ]
+    },
+    {
+      "id": "a16-proj",
+      "exam": "第16届A类2024·一(4)",
+      "pdf": [
+        17,
+        18
+      ],
+      "focus": "投影直线的单位方向；教材5.45同题，不必先求整条直线才求方向。",
+      "examples": [
+        "5.19",
+        "5.45"
+      ]
+    }
+  ],
+  "source_notes": "\n### 平面束的参数不能无意漏一员\n\n用μF+λG=0且(μ,λ)≠(0,0)较完整；若使用F+tG=0，另检查G=0。例5.18恰有一支对应μ=0，不能只解出有限t后结束。\n\n### 共面、平行、相交要分开\n\n当两方向不平行时，连点向量与两个方向的混合积为零可推出两线相交；方向平行时，同一混合积也为零，不能靠它判相交。例5.32的行列式思路须检查这些退化情形，不能把一个必要条件当充分条件。\n\n### 投影方向可能为零，图形方程需要范围\n\n投影公式d−(d·n)n/|n|²若为零，线投影为点，不能再单位化。半圆锥、只取某一叶的曲面及曲面投影要保留方向和不等式限制。例5.35应依原图与题干判断半锥方向，不把消元后的双锥方程单独当成完整答案。\n\n### 例5.36：一个点在平面上，不代表整条交线在平面上\n\n原式$x^2/4+y^2/2-2z^2=1$与$x^2+y^2+z^2=4$相减可得y²=9z²，所以交线含y=3z、y=−3z两支。原书平面y−3z=0仅含前一支；如取$(0,3\\sqrt{2/5},-\\sqrt{2/5})$，它满足两曲面方程却不在该面上。若题目指整条交线，原书结论不成立。本题列C，保留“包含整个对象”的检查，不再练错误前提下的求面。\n"
+}

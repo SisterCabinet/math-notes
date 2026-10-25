@@ -1,0 +1,4959 @@
+{
+  "number": 4,
+  "title": "常微分方程",
+  "path": "04-常微分方程",
+  "schema": 1,
+  "sections": [
+    {
+      "first": 1,
+      "last": 18,
+      "title": "题型一、一阶方程的解法",
+      "focus": "识别类型与计算并重；先观察变量组合、导数位置和是否能交换变量，再决定分离、齐次、线性、全微分或积分因子。",
+      "concept": "先说原方程哪里定义、换元哪里可逆、除数哪里非零；求出一族不代表已核查全部特殊解。",
+      "id": "type-1",
+      "basics": [
+        "o01",
+        "o02",
+        "o03",
+        "o04",
+        "o05"
+      ]
+    },
+    {
+      "first": 19,
+      "last": 32,
+      "title": "题型二、高阶方程的解法",
+      "focus": "降阶、解的结构和常系数计算；共振、初值和正常区间是失分点。Euler虽为变系数，也应保留变换方法。",
+      "concept": "缺y用p(x)=y′，缺x用p(y)=y′；非齐次解之差是齐次解。常系数三种根型、自由项叠加和共振乘幂须一起掌握。",
+      "id": "type-2",
+      "basics": [
+        "o06",
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "first": 33,
+      "last": 42,
+      "title": "题型三、微分方程的应用",
+      "focus": "以思路和建模为主；文字条件转函数关系、切线/面积/弧长或速度关系，最后才求解。",
+      "concept": "求导后用原式恢复定解条件；几何长度有非负性，物理正向和单位要一致。跨第6章的偏导题先给最少链式提示，完整求导后续回访。",
+      "id": "type-3",
+      "basics": [
+        "o09",
+        "o10"
+      ]
+    },
+    {
+      "first": 43,
+      "last": 63,
+      "title": "4.3 真题选讲与点评",
+      "focus": "既有短计算，也有变换链和证明；不按初赛/决赛标签直接定学习程度。",
+      "concept": "4.55与6.69同题，仅在6.69计必学；4.59与4.36重复，不重复计量。读过解答的真题不能再当未见检测。",
+      "id": "true-examples",
+      "basics": [
+        "o01",
+        "o02",
+        "o03",
+        "o04",
+        "o05",
+        "o06",
+        "o07",
+        "o08",
+        "o09",
+        "o10"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "4.1",
+      "number": 1,
+      "level": "A",
+      "pdf_page": 267,
+      "printed_page": 259,
+      "section": "题型一、一阶方程的解法",
+      "group": "可分离变量",
+      "method": "三角恒等变形后分离变量",
+      "target": "能把两项三角函数作差，再分离；除以sin(y/2)前补查常值解y=2kπ，不只抄隐式结果。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 267,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-1",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-5"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.2",
+      "number": 2,
+      "level": "B",
+      "pdf_page": 267,
+      "printed_page": 259,
+      "section": "题型一、一阶方程的解法",
+      "group": "可分离变量",
+      "method": "整体代换u=1/(xy)",
+      "target": "保留从xy及其导数选整体变量的思路；写出代换后的可分离方程并补查xy=±2。特殊分式整理不背。",
+      "minutes": 10,
+      "bridge_ids": [
+        "4-S1"
+      ],
+      "pdf_end_page": 268,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-2",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.3",
+      "number": 3,
+      "level": "B",
+      "pdf_page": 268,
+      "printed_page": 260,
+      "section": "题型一、一阶方程的解法",
+      "group": "可分离变量",
+      "method": "x与1/x配对，构造不变量",
+      "target": "先把x换成1/x，再用链式法则证f(x)f(1/x)为常数；随后分离求解并回代。保留配对构造，不要求首次猜出。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 268,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-3",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-7"
+      ],
+      "basics": [
+        "o02",
+        "o04",
+        "o09"
+      ]
+    },
+    {
+      "id": "4.4",
+      "number": 4,
+      "level": "A",
+      "pdf_page": 268,
+      "printed_page": 260,
+      "section": "题型一、一阶方程的解法",
+      "group": "齐次方程",
+      "method": "y=ux与根式符号",
+      "target": "会算y′=u+xu′；√(x²−y²)=|x|√(1−u²)，按x的符号和根式条件讨论，补y=±x。原书简式只在合适区间成立。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 269,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-4",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.5",
+      "number": 5,
+      "level": "A",
+      "pdf_page": 269,
+      "printed_page": 261,
+      "section": "题型一、一阶方程的解法",
+      "group": "齐次方程",
+      "method": "平移消常数与一阶线性的比较",
+      "target": "按本节先平移识别齐次结构；再用线性法核对，知道x=1为奇点，所得非零区间解不能任意跨过。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 269,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-5",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.6",
+      "number": 6,
+      "level": "B",
+      "pdf_page": 269,
+      "printed_page": 261,
+      "section": "题型一、一阶方程的解法",
+      "group": "齐次方程",
+      "method": "平方代换、平移后化齐次",
+      "target": "必须会写u=x²、v=y²，再找两条仿射式共同零点；完整分离过程在4.61独立掌握，本题用于建立方法链，不重复长算。",
+      "minutes": 12,
+      "bridge_ids": [
+        "4-S1"
+      ],
+      "pdf_end_page": 269,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [
+        "a15-ode"
+      ],
+      "kind": "example",
+      "dom_id": "example-4-6",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.7",
+      "number": 7,
+      "level": "A",
+      "pdf_page": 269,
+      "printed_page": 261,
+      "section": "题型一、一阶方程的解法",
+      "group": "一阶线性·直接型",
+      "method": "复合偏导关系化一元线性方程",
+      "target": "掌握f′(u)−4f(u)=u这一降维入口及初值定常数；当前只补链式求导，偏导细节第6章回访，不在此扩展偏微分方程理论。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 270,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-7",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-2"
+      ],
+      "basics": [
+        "o03"
+      ]
+    },
+    {
+      "id": "4.8",
+      "number": 8,
+      "level": "B",
+      "pdf_page": 270,
+      "printed_page": 262,
+      "section": "题型一、一阶方程的解法",
+      "group": "一阶线性·直接型",
+      "method": "用积分表示解，极限排除增长项",
+      "target": "会用定积分形式表示非初等原函数，依据极限挑初值，再对尾积分使用L’Hospital。保留增长项必须抵消的思路。",
+      "minutes": 15,
+      "bridge_ids": [
+        "4-S6"
+      ],
+      "pdf_end_page": 271,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-8",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-2",
+        "m4-8"
+      ],
+      "basics": [
+        "o03",
+        "o10"
+      ]
+    },
+    {
+      "id": "4.9",
+      "number": 9,
+      "level": "A",
+      "pdf_page": 271,
+      "printed_page": 263,
+      "section": "题型一、一阶方程的解法",
+      "group": "一阶线性·交换变量",
+      "method": "把x看作y的函数",
+      "target": "识别dx/dy+P(y)x=Q(y)，不是强行对y线性化；列积分因子、求通解，检查交换变量的局部条件。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 272,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-9",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-2",
+        "m4-3"
+      ],
+      "basics": [
+        "o03"
+      ]
+    },
+    {
+      "id": "4.10",
+      "number": 10,
+      "level": "A",
+      "pdf_page": 272,
+      "printed_page": 264,
+      "section": "题型一、一阶方程的解法",
+      "group": "一阶线性·Bernoulli",
+      "method": "u=1/y化线性",
+      "target": "完整掌握代换及换回；x>0，先独立补查y≡0，并检查非零解的分母和存在区间。",
+      "minutes": 10,
+      "bridge_ids": [
+        "4-S1"
+      ],
+      "pdf_end_page": 272,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [
+        "a17-ode",
+        "a16-ode"
+      ],
+      "kind": "example",
+      "dom_id": "example-4-10",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.11",
+      "number": 11,
+      "level": "A",
+      "pdf_page": 272,
+      "printed_page": 264,
+      "section": "题型一、一阶方程的解法",
+      "group": "一阶线性·其他代换",
+      "method": "u=tan y化线性并求积分",
+      "target": "两问掌握：导数与三角项一起匹配，先解u再求目标积分；tan代换未覆盖的常值解须查回原方程。",
+      "minutes": 15,
+      "bridge_ids": [],
+      "pdf_end_page": 273,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [
+        "a17-ode"
+      ],
+      "kind": "example",
+      "dom_id": "example-4-11",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.12",
+      "number": 12,
+      "level": "B",
+      "pdf_page": 273,
+      "printed_page": 265,
+      "section": "题型一、一阶方程的解法",
+      "group": "一阶线性·积分微分关系",
+      "method": "先除以x再求导，令u=y′/x降阶",
+      "target": "保留“先化简再求导”的选择，写出降阶路线及用极限定常数；求导后要用原式恢复丢失的约束。特殊积分整理可对照。",
+      "minutes": 15,
+      "bridge_ids": [
+        "4-S4"
+      ],
+      "pdf_end_page": 274,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-12",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-2",
+        "m4-4",
+        "m4-7",
+        "m4-8"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.13",
+      "number": 13,
+      "level": "A",
+      "pdf_page": 274,
+      "printed_page": 266,
+      "section": "题型一、一阶方程的解法",
+      "group": "全微分方程",
+      "method": "恰当条件与势函数",
+      "target": "先查P_y=Q_x，再用凑微分或对x积分补h(y)完成一条解法；曲线积分法暂后置第7章，不要求三法全做。",
+      "minutes": 10,
+      "bridge_ids": [
+        "4-S2"
+      ],
+      "pdf_end_page": 275,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-13",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-3"
+      ],
+      "basics": [
+        "o05"
+      ]
+    },
+    {
+      "id": "4.14",
+      "number": 14,
+      "level": "A",
+      "pdf_page": 275,
+      "printed_page": 267,
+      "section": "题型一、一阶方程的解法",
+      "group": "全微分方程",
+      "method": "先约去因子再重组全微分",
+      "target": "说明除以x限定x≠0；会重组d(x²y²/2)、d(x+y)等，原式在被除因子为零处另查。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 276,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-14",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ],
+      "basics": [
+        "o05"
+      ]
+    },
+    {
+      "id": "4.15",
+      "number": 15,
+      "level": "A",
+      "pdf_page": 276,
+      "printed_page": 268,
+      "section": "题型一、一阶方程的解法",
+      "group": "积分因子",
+      "method": "只依赖x的积分因子或整体变量",
+      "target": "会检验(P_y−Q_x)/Q只依赖x，求μ后查全微分；另一法设u=xy+sin y只作比较，不双倍计时。",
+      "minutes": 10,
+      "bridge_ids": [
+        "4-S2"
+      ],
+      "pdf_end_page": 276,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [
+        "a16-ode"
+      ],
+      "kind": "example",
+      "dom_id": "example-4-15",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ],
+      "basics": [
+        "o05"
+      ]
+    },
+    {
+      "id": "4.16",
+      "number": 16,
+      "level": "B",
+      "pdf_page": 276,
+      "printed_page": 268,
+      "section": "题型一、一阶方程的解法",
+      "group": "积分因子",
+      "method": "只依赖y的积分因子与交换变量",
+      "target": "写出μ(y)的来源；同时会认出关于x(y)的一阶线性形式，不靠背μ=y⁻³。除以y的步骤补查y=0。",
+      "minutes": 10,
+      "bridge_ids": [
+        "4-S2"
+      ],
+      "pdf_end_page": 277,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-16",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-2",
+        "m4-3"
+      ],
+      "basics": [
+        "o05"
+      ]
+    },
+    {
+      "id": "4.17",
+      "number": 17,
+      "level": "A",
+      "pdf_page": 277,
+      "printed_page": 269,
+      "section": "题型一、一阶方程的解法",
+      "group": "积分因子",
+      "method": "凑d(x/y)，与Bernoulli对应",
+      "target": "能由交叉微分项选比值，补查y≡0；也可用Bernoulli核对，掌握一条完整路线即可。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 277,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-17",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ],
+      "basics": [
+        "o05"
+      ]
+    },
+    {
+      "id": "4.18",
+      "number": 18,
+      "level": "C",
+      "pdf_page": 277,
+      "printed_page": 269,
+      "section": "题型一、一阶方程的解法",
+      "group": "积分因子",
+      "method": "凑d(x²/y)",
+      "target": "比值微分与漏解检查由4.17保留，Bernoulli由4.10、4.63覆盖；本题留作相同结构补弱，非另一个必学方法。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 278,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-18",
+      "section_id": "type-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ],
+      "basics": [
+        "o02",
+        "o04",
+        "o05"
+      ]
+    },
+    {
+      "id": "4.19",
+      "number": 19,
+      "level": "A",
+      "pdf_page": 278,
+      "printed_page": 270,
+      "section": "题型二、高阶方程的解法",
+      "group": "可降阶高阶方程",
+      "method": "连续积分并逐次用初值",
+      "target": "每次积分引入一个常数，及时代入对应初值；ln x限定x>0，不能只在最后凭阶数凑常数。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 278,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-19",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-4"
+      ],
+      "basics": [
+        "o06"
+      ]
+    },
+    {
+      "id": "4.20",
+      "number": 20,
+      "level": "A",
+      "pdf_page": 278,
+      "printed_page": 270,
+      "section": "题型二、高阶方程的解法",
+      "group": "可降阶高阶方程",
+      "method": "不显含y，令p=y′",
+      "target": "完整降到可分离一阶方程，再积分恢复y；由初值选分支，检查1−x²及解区间。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 278,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-20",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-1",
+        "m4-4"
+      ],
+      "basics": [
+        "o06"
+      ]
+    },
+    {
+      "id": "4.21",
+      "number": 21,
+      "level": "B",
+      "pdf_page": 278,
+      "printed_page": 270,
+      "section": "题型二、高阶方程的解法",
+      "group": "可降阶高阶方程",
+      "method": "不显含x，y″=p·dp/dy",
+      "target": "重点掌握两种降阶公式的区别，并把相切转为同点同斜率；特殊端点与分支不要求首次独立猜，参看区间提醒。",
+      "minutes": 12,
+      "bridge_ids": [
+        "4-S3"
+      ],
+      "pdf_end_page": 280,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-21",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-4"
+      ],
+      "basics": [
+        "o06"
+      ]
+    },
+    {
+      "id": "4.22",
+      "number": 22,
+      "level": "A",
+      "pdf_page": 280,
+      "printed_page": 272,
+      "section": "题型二、高阶方程的解法",
+      "group": "线性解的结构",
+      "method": "非齐次解作差与线性无关",
+      "target": "会说明为何作差得到齐次解，非齐次线性组合的系数和须为1；题中是二阶方程，不能只数已知解的个数。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 280,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-22",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-4",
+        "m4-5"
+      ],
+      "basics": [
+        "o01",
+        "o07"
+      ]
+    },
+    {
+      "id": "4.23",
+      "number": 23,
+      "level": "B",
+      "pdf_page": 280,
+      "printed_page": 272,
+      "section": "题型二、高阶方程的解法",
+      "group": "线性解的结构",
+      "method": "已知y₁，令y=y₁u降阶",
+      "target": "必须会代入消掉u项再令u′为新变量；先在y₁≠0处操作，最终解在原方程的正常区间检查延拓。",
+      "minutes": 12,
+      "bridge_ids": [
+        "4-S3"
+      ],
+      "pdf_end_page": 281,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-23",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-4"
+      ],
+      "basics": [
+        "o06"
+      ]
+    },
+    {
+      "id": "4.24",
+      "number": 24,
+      "level": "C",
+      "pdf_page": 281,
+      "printed_page": 273,
+      "section": "题型二、高阶方程的解法",
+      "group": "线性解的结构",
+      "method": "互为倒数的解与对数导数",
+      "target": "特殊反求变系数问题选学；代换降阶由4.23保留。原书只取一个特解不能推出一般结论，修正见附录，不照抄指数中的固定系数。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 283,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-24",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-4",
+        "m4-5"
+      ],
+      "basics": [
+        "o01",
+        "o07"
+      ]
+    },
+    {
+      "id": "4.25",
+      "number": 25,
+      "level": "A",
+      "pdf_page": 283,
+      "printed_page": 275,
+      "section": "题型二、高阶方程的解法",
+      "group": "二阶常系数非齐次",
+      "method": "特征根与待定系数，零根共振",
+      "target": "完整掌握特解要乘x的原因，再比较系数；齐次解的三种根型须连同本节公式一起掌握，不能因例题只出现某类根而遗漏。",
+      "minutes": 10,
+      "bridge_ids": [
+        "4-S7"
+      ],
+      "pdf_end_page": 283,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-25",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.26",
+      "number": 26,
+      "level": "B",
+      "pdf_page": 283,
+      "printed_page": 275,
+      "section": "题型二、高阶方程的解法",
+      "group": "二阶常系数非齐次",
+      "method": "二重共振与方程两边积分",
+      "target": "会列x²乘一次多项式的试探特解；优先学由解的衰减和原方程求积分，避免为积分目标机械求全解全部系数。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 284,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-26",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.27",
+      "number": 27,
+      "level": "A",
+      "pdf_page": 284,
+      "printed_page": 276,
+      "section": "题型二、高阶方程的解法",
+      "group": "二阶常系数非齐次",
+      "method": "复根共振与sin/cos配套设特解",
+      "target": "必须能用实数待定系数法做完；复指数取虚部法可选。只设sin不设cos会漏项，共振需乘x。",
+      "minutes": 12,
+      "bridge_ids": [
+        "4-S7"
+      ],
+      "pdf_end_page": 284,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-27",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.28",
+      "number": 28,
+      "level": "B",
+      "pdf_page": 284,
+      "printed_page": 276,
+      "section": "题型二、高阶方程的解法",
+      "group": "二阶常系数非齐次",
+      "method": "复合二阶偏导化常系数方程",
+      "target": "保留相加消f′项的降维结构，解f″−4f=u并用初值；第6章学完整二阶链式计算后回访，不在本轮重复长求导。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 285,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-28",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.29",
+      "number": 29,
+      "level": "A",
+      "pdf_page": 285,
+      "printed_page": 277,
+      "section": "题型二、高阶方程的解法",
+      "group": "二阶常系数非齐次",
+      "method": "自由项叠加与相切初值",
+      "target": "指数项和三角项分别找特解后相加；相切给函数值与导数值两个条件，缺一不能定出两个常数。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 286,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-29",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.30",
+      "number": 30,
+      "level": "B",
+      "pdf_page": 286,
+      "printed_page": 278,
+      "section": "题型二、高阶方程的解法",
+      "group": "二阶常系数非齐次",
+      "method": "反函数二阶导数转回原函数",
+      "target": "保留d²x/dy²=−y″/(y′)³及y′≠0条件，转回y″−y=sin x后按常规求解；不死记反函数形式。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 286,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-30",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-1",
+        "m4-4",
+        "m4-6"
+      ],
+      "basics": [
+        "o06",
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.31",
+      "number": 31,
+      "level": "A",
+      "pdf_page": 286,
+      "printed_page": 278,
+      "section": "题型二、高阶方程的解法",
+      "group": "二阶常系数非齐次",
+      "method": "分段方程的拼接条件",
+      "target": "分别解两段，用题设“可导”要求函数值与一阶导数衔接；不额外要求二阶导数在分界处连续。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 287,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-31",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.32",
+      "number": 32,
+      "level": "B",
+      "pdf_page": 287,
+      "printed_page": 279,
+      "section": "题型二、高阶方程的解法",
+      "group": "Euler方程",
+      "method": "t=ln|x|化常系数，必要时再降阶",
+      "target": "方法必须覆盖：xy′=D y，x²y″=(D²−D)y；先做二阶铺垫，再写本题三阶变换和求解路线，长展开可对照。",
+      "minutes": 15,
+      "bridge_ids": [
+        "4-S7"
+      ],
+      "pdf_end_page": 288,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-32",
+      "section_id": "type-2",
+      "mother_ids": [
+        "m4-4",
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.33",
+      "number": 33,
+      "level": "C",
+      "pdf_page": 288,
+      "printed_page": 280,
+      "section": "题型三、微分方程的应用",
+      "group": "函数方程应用",
+      "method": "反函数参与的积分方程",
+      "target": "求导转线性方程由4.48、第三章反函数题已覆盖；本题全实轴反函数条件还需单独核查，留作条件审查选学，不照抄局部公式为全局解。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 289,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-33",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.34",
+      "number": 34,
+      "level": "B",
+      "pdf_page": 289,
+      "printed_page": 281,
+      "section": "题型三、微分方程的应用",
+      "group": "函数方程应用",
+      "method": "径向复合函数化Euler方程并求最值",
+      "target": "保留“设u=x²+y²→链式求导→Euler→最值”路线；先用给出的降维方程学习ODE，二阶偏导在第6章回访。",
+      "minutes": 12,
+      "bridge_ids": [
+        "4-S7"
+      ],
+      "pdf_end_page": 290,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-34",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-1",
+        "m4-6",
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.35",
+      "number": 35,
+      "level": "A",
+      "pdf_page": 290,
+      "printed_page": 282,
+      "section": "题型三、微分方程的应用",
+      "group": "函数方程应用",
+      "method": "增量恒等式转导数定义",
+      "target": "先由h=0判f(0)，再对差商取极限得到f′=1−f²；解后回代原恒等式，不能只验证导数关系。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 290,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-35",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-7",
+        "m4-8"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.36",
+      "number": 36,
+      "level": "B",
+      "pdf_page": 290,
+      "printed_page": 282,
+      "section": "题型三、微分方程的应用",
+      "group": "函数方程应用",
+      "method": "分段核积分方程，求导两次与边值",
+      "target": "会在y=x处分成两段、第一次求导消移动端点项，第二次得f″+f=0；边值来自原式，最后须回代或证明等价。",
+      "minutes": 15,
+      "bridge_ids": [
+        "4-S4"
+      ],
+      "pdf_end_page": 291,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-36",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.37",
+      "number": 37,
+      "level": "A",
+      "pdf_page": 291,
+      "printed_page": 283,
+      "section": "题型三、微分方程的应用",
+      "group": "几何应用",
+      "method": "解族中的体积最小化",
+      "target": "先求y=x+Cx²，再将旋转体体积写成C的函数；求最值时用平方半径，曲线过轴不改变截面积表达式。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 291,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-37",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-1",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.38",
+      "number": 38,
+      "level": "B",
+      "pdf_page": 291,
+      "printed_page": 283,
+      "section": "题型三、微分方程的应用",
+      "group": "几何应用",
+      "method": "任意弧段等式转局部微元关系",
+      "target": "核心是由任意区间积分相等推出√(1+y′²)=y；原书分离时漏y≡1，光滑仅C¹时不能声称cosh是唯一解，见提醒。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 292,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-38",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-1",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.39",
+      "number": 39,
+      "level": "C",
+      "pdf_page": 292,
+      "printed_page": 284,
+      "section": "题型三、微分方程的应用",
+      "group": "几何应用",
+      "method": "切线倾角导数与降阶",
+      "target": "倾角关系转二阶方程的应用变式；降阶由4.20—4.21、切线初值由4.29覆盖。曲率/倾角基础仍保留，不另要求长反三角积分。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 292,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-39",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-4",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.40",
+      "number": 40,
+      "level": "B",
+      "pdf_page": 292,
+      "printed_page": 284,
+      "section": "题型三、微分方程的应用",
+      "group": "几何应用",
+      "method": "截距面积建模，交换变量化线性",
+      "target": "必须会从切线方程写截距与梯形面积，再看x(y)更容易线性化；按图形条件检查截距符号，特殊系数计算可对照。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 293,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-40",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-2",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.41",
+      "number": 41,
+      "level": "B",
+      "pdf_page": 293,
+      "printed_page": 285,
+      "section": "题型三、微分方程的应用",
+      "group": "物理应用",
+      "method": "追击方向、速度比与弧长建模",
+      "target": "保留图示、切线斜率关系、等时弧长关系及初值，能列出降阶方程；完整分离积分与击中坐标的长算选学，不省掉追击模型。",
+      "minutes": 12,
+      "bridge_ids": [
+        "4-S5"
+      ],
+      "pdf_end_page": 295,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-41",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-1",
+        "m4-4",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.42",
+      "number": 42,
+      "level": "A",
+      "pdf_page": 295,
+      "printed_page": 287,
+      "section": "题型三、微分方程的应用",
+      "group": "物理应用",
+      "method": "阻力比例模型与v·dv/dx",
+      "target": "能写m v′=−kv及初值，比较直接求v(t)与改用位移变量两法；统一速度和k的单位，极限距离不等于有限时刻真正停住。",
+      "minutes": 10,
+      "bridge_ids": [
+        "4-S5"
+      ],
+      "pdf_end_page": 295,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-42",
+      "section_id": "type-3",
+      "mother_ids": [
+        "m4-8",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.43",
+      "number": 43,
+      "level": "C",
+      "pdf_page": 295,
+      "printed_page": 287,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "全微分的短解",
+      "target": "虽为决赛题，方法基础且短；全微分已由4.13—4.15负责，作为快速闭卷回忆备用，不因标签判难也不重复设任务。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 296,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-43",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-3",
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.44",
+      "number": 44,
+      "level": "A",
+      "pdf_page": 296,
+      "printed_page": 288,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "由齐次解反求特征方程",
+      "target": "初赛代表；从eˣ、xeˣ识别重根，再写微分方程，不把两个函数当作两个不同特征根。",
+      "minutes": 6,
+      "bridge_ids": [],
+      "pdf_end_page": 296,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-44",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ],
+      "basics": [
+        "o01",
+        "o07"
+      ]
+    },
+    {
+      "id": "4.45",
+      "number": 45,
+      "level": "C",
+      "pdf_page": 296,
+      "printed_page": 288,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "y′代换与初值",
+      "target": "降阶由4.20负责，非线性初值由4.21补充；本题可作短练，关注对数定义区间，不新增强制例题。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 296,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-45",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-4"
+      ],
+      "basics": [
+        "o06"
+      ]
+    },
+    {
+      "id": "4.46",
+      "number": 46,
+      "level": "C",
+      "pdf_page": 296,
+      "printed_page": 288,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "降阶与常数解补查",
+      "target": "同类降阶已覆盖于4.20—4.21；保留“除p前补p=0”的提醒，完整根式解作补弱。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 297,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-46",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-4",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.47",
+      "number": 47,
+      "level": "C",
+      "pdf_page": 297,
+      "printed_page": 289,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "复合偏导转一阶方程",
+      "target": "方法由4.7、4.10及第6章链式法覆盖；回访时可快速复现，不因初赛身份再重复计必做量。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 297,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-47",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.48",
+      "number": 48,
+      "level": "A",
+      "pdf_page": 297,
+      "printed_page": 289,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "积分方程求导与初值回取",
+      "target": "完整掌握，求导得到线性方程，f(0)从原式取；除cos x后在非零区间求解，再依原条件核对奇点。",
+      "minutes": 12,
+      "bridge_ids": [
+        "4-S4"
+      ],
+      "pdf_end_page": 297,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-48",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.49",
+      "number": 49,
+      "level": "A",
+      "pdf_page": 297,
+      "printed_page": 289,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "定限积分设常数，再积分定常数",
+      "target": "虽为决赛题，结构基础且迁移高；区分固定积分常数与变上限积分，不对定限积分误求导，最后用自洽方程求常数。",
+      "minutes": 10,
+      "bridge_ids": [],
+      "pdf_end_page": 298,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-49",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-5",
+        "m4-7"
+      ],
+      "basics": [
+        "o01",
+        "o07"
+      ]
+    },
+    {
+      "id": "4.50",
+      "number": 50,
+      "level": "C",
+      "pdf_page": 298,
+      "printed_page": 290,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "沿对角线的全导数",
+      "target": "链式沿曲线求导的常规变式，ODE部分由4.7保留，全导数由6.14、沿线段构造由6.16学习；第6章可回看。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 298,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-50",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.51",
+      "number": 51,
+      "level": "A",
+      "pdf_page": 298,
+      "printed_page": 290,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "由常系数导数关系提高可导阶数",
+      "target": "必须会区分系数为零与非零，并用关系式逐次推出更高阶导数；可直接归纳，不必先求显式通解。",
+      "minutes": 8,
+      "bridge_ids": [],
+      "pdf_end_page": 299,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-51",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-6",
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.52",
+      "number": 52,
+      "level": "B",
+      "pdf_page": 299,
+      "printed_page": 291,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "积分微分关系、降阶与比较证明",
+      "target": "保留先乘掉分母再求导，得到f′及单调性，作差证明指数下界；不必求非初等原函数来证明夹界。",
+      "minutes": 15,
+      "bridge_ids": [
+        "4-S4"
+      ],
+      "pdf_end_page": 300,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-52",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-4",
+        "m4-5",
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.53",
+      "number": 53,
+      "level": "C",
+      "pdf_page": 300,
+      "printed_page": 292,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "线性方程接集中型积分极限",
+      "target": "方程求解由4.10—4.11覆盖，后问极限的误差估计属于第三章方法，可作跨章加练，不新增全部长证明要求。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 300,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-53",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-8"
+      ],
+      "basics": [
+        "o10"
+      ]
+    },
+    {
+      "id": "4.54",
+      "number": 54,
+      "level": "A",
+      "pdf_page": 300,
+      "printed_page": 292,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "由非齐次解作差反求方程",
+      "target": "原书初赛题；作差找齐次解，重建常系数算子，再代回一个非齐次解求自由项，完整掌握。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 301,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-54",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ],
+      "basics": [
+        "o01",
+        "o07"
+      ]
+    },
+    {
+      "id": "4.55",
+      "number": 55,
+      "level": "C",
+      "pdf_page": 301,
+      "printed_page": 293,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "复合偏导接函数方程",
+      "target": "与6.69为同一题，不在两章重复计必学；统一在6.69学指定部分，当前按书序标注后继续。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 302,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-55",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-7",
+        "m4-8"
+      ],
+      "basics": [
+        "o09",
+        "o10"
+      ]
+    },
+    {
+      "id": "4.56",
+      "number": 56,
+      "level": "A",
+      "pdf_page": 302,
+      "printed_page": 294,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "参数二阶导数化降阶方程",
+      "target": "掌握d²y/dx²=(ψ″x′−ψ′x″)/(x′)³，参数切线条件确定初值；先核查x′≠0，不把参数导数当x导数。",
+      "minutes": 15,
+      "bridge_ids": [],
+      "pdf_end_page": 303,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-56",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-4",
+        "m4-9"
+      ],
+      "basics": [
+        "o09",
+        "o06"
+      ]
+    },
+    {
+      "id": "4.57",
+      "number": 57,
+      "level": "B",
+      "pdf_page": 303,
+      "printed_page": 295,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "分离积分、单调性与有界性反证",
+      "target": "初赛中有证明型ODE；保留构造单调H(f(x))与右端积分有界、比较端点可达范围的思路，不能仅凭右端有界推出f有界。",
+      "minutes": 18,
+      "bridge_ids": [
+        "4-S6"
+      ],
+      "pdf_end_page": 304,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-57",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-1",
+        "m4-8"
+      ],
+      "basics": [
+        "o10"
+      ]
+    },
+    {
+      "id": "4.58",
+      "number": 58,
+      "level": "B",
+      "pdf_page": 304,
+      "printed_page": 296,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "因式分解降为两个稳定一阶方程",
+      "target": "必须会用y′+ay降低阶数，并用指数核积分估出界；给定有界连续自由项不要求求出显式原函数，不能跳过有界性证明。",
+      "minutes": 18,
+      "bridge_ids": [
+        "4-S6"
+      ],
+      "pdf_end_page": 305,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [
+        "book4-bound"
+      ],
+      "kind": "example",
+      "dom_id": "example-4-58",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-8"
+      ],
+      "basics": [
+        "o10"
+      ]
+    },
+    {
+      "id": "4.59",
+      "number": 59,
+      "level": "C",
+      "pdf_page": 305,
+      "printed_page": 297,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "分段积分核与边值方程",
+      "target": "与4.36为同一结构且原式等价，不重复安排；4.36已经保留两次求导和原式验证。",
+      "minutes": 0,
+      "bridge_ids": [],
+      "pdf_end_page": 305,
+      "is_required": false,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-59",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-7"
+      ],
+      "basics": [
+        "o09"
+      ]
+    },
+    {
+      "id": "4.60",
+      "number": 60,
+      "level": "B",
+      "pdf_page": 305,
+      "printed_page": 297,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "径向复合导数化不显含f的方程",
+      "target": "先写出f″+f′/u=u²并按降阶做完；与6.67径向公式相接，二阶偏导推导在第6章回访，方法不可整类省略。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 306,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-60",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-4",
+        "m4-6"
+      ],
+      "basics": [
+        "o07",
+        "o08"
+      ]
+    },
+    {
+      "id": "4.61",
+      "number": 61,
+      "level": "A",
+      "pdf_page": 306,
+      "printed_page": 298,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "平方代换、平移、齐次的三段组合",
+      "target": "2023年A类原题，完整掌握这条初赛方法链；先确定u,v的新域，再换w=V/U，分离时补查常值比解，不能只记最终三次式。",
+      "minutes": 22,
+      "bridge_ids": [
+        "4-S1"
+      ],
+      "pdf_end_page": 306,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [
+        "a15-ode"
+      ],
+      "kind": "example",
+      "dom_id": "example-4-61",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-1"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    },
+    {
+      "id": "4.62",
+      "number": 62,
+      "level": "B",
+      "pdf_page": 306,
+      "printed_page": 298,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "参数切线与等距条件转线性方程",
+      "target": "保留切线截距、距离平方关系、用正性确定符号的建模路线；三角积分长算选学，几何化ODE的一般方法仍需掌握。",
+      "minutes": 12,
+      "bridge_ids": [],
+      "pdf_end_page": 307,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [],
+      "kind": "example",
+      "dom_id": "example-4-62",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-1",
+        "m4-8",
+        "m4-9"
+      ],
+      "basics": [
+        "o10"
+      ]
+    },
+    {
+      "id": "4.63",
+      "number": 63,
+      "level": "A",
+      "pdf_page": 307,
+      "printed_page": 299,
+      "section": "4.3 真题选讲与点评",
+      "group": "真题选讲",
+      "method": "y²代换化线性，比较全微分法",
+      "target": "2024年A类原题；独立写出一条完整解法及区间检查。其他三法只对照入口，不要求四法都复现；参看2025年真题代换的同类迁移。",
+      "minutes": 18,
+      "bridge_ids": [
+        "4-S1"
+      ],
+      "pdf_end_page": 309,
+      "is_required": true,
+      "source_book": "全国大学生数学竞赛解析教程(非数学专业类)(上册)(第2版).pdf",
+      "anchor_ids": [
+        "a17-ode",
+        "a16-ode"
+      ],
+      "kind": "example",
+      "dom_id": "example-4-63",
+      "section_id": "true-examples",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ],
+      "basics": [
+        "o02",
+        "o04"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "4-练1(1)",
+      "local_id": "1(1)",
+      "number": 1,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "y′=cos(x−y)",
+      "reason": "检验能否主动整理陌生外形，并保留被变换排除的解。",
+      "example_refs_text": "4.1、4.2",
+      "example_ids": [
+        "4.1",
+        "4.2"
+      ],
+      "hint": "设u=x−y后u′=1−cos u；分离前另查u为2kπ的直线解，最后回代原式。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 12,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 12,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ]
+    },
+    {
+      "id": "4-练1(2)",
+      "local_id": "1(2)",
+      "number": 1,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "分子含3x²+y²−6x+3",
+      "reason": "检验多步变换及实数区间，推理长度贴近初赛。",
+      "example_refs_text": "4.5、4.6、4.61",
+      "example_ids": [
+        "4.5",
+        "4.6",
+        "4.61"
+      ],
+      "hint": "先令X=x−1，再比较y/X；隐式式可写3(x−1)²−y²=C(x−1)，操作时检查y及x−1的零点。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 15,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 15,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-2",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ]
+    },
+    {
+      "id": "4-练1(3)",
+      "local_id": "1(3)",
+      "number": 1,
+      "subquestion": 3,
+      "level": "J",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "eʸdx+(xeʸ−2y)dy=0",
+      "reason": "短计算储备，适合检查原函数恢复的准确性。",
+      "example_refs_text": "4.13、4.14",
+      "example_ids": [
+        "4.13",
+        "4.14"
+      ],
+      "hint": "可直接识别d(xeʸ−y²)，不必先解出y(x)。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 8,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 8,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-3",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ]
+    },
+    {
+      "id": "4-练1(4)",
+      "local_id": "1(4)",
+      "number": 1,
+      "subquestion": 4,
+      "level": "K",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "y′=sec y/(x+2sin y)",
+      "reason": "检验选取变量和解的条件，不只按外形套公式。",
+      "example_refs_text": "4.9、4.40",
+      "example_ids": [
+        "4.9",
+        "4.40"
+      ],
+      "hint": "交换变量得dx/dy−cos y·x=2sin y cos y，积分因子e^(−sin y)；保留原式cos y及分母非零的区间。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 14,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 14,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-4",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ]
+    },
+    {
+      "id": "4-练1(5)",
+      "local_id": "1(5)",
+      "number": 1,
+      "subquestion": 5,
+      "level": "J",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "(x²−1)y′−cos x+2xy=0",
+      "reason": "短计算及奇点检查储备；直接线性工具已由核心34(1)独立检验。",
+      "example_refs_text": "4.7、4.15",
+      "example_ids": [
+        "4.7",
+        "4.15"
+      ],
+      "hint": "左侧的两项组成[(x²−1)y]′；在x≠±1区间求解，若要包含奇点须另检查极限与可导性。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 10,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 10,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-5",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ]
+    },
+    {
+      "id": "4-练1(6)",
+      "local_id": "1(6)",
+      "number": 1,
+      "subquestion": 6,
+      "level": "K",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "xy′−y ln y=x²y",
+      "reason": "检验对复合表达的判断和换回后的实数定义域。",
+      "example_refs_text": "4.10、4.11",
+      "example_ids": [
+        "4.10",
+        "4.11"
+      ],
+      "hint": "y>0时设u=ln y，得到xu′−u=x²；不能把y=0当作原方程的常值解，因为ln y无定义。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 12,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 12,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-6",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ]
+    },
+    {
+      "id": "4-练1(7)",
+      "local_id": "1(7)",
+      "number": 1,
+      "subquestion": 7,
+      "level": "J",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "y dx+(2x²y−x)dy=0",
+      "reason": "保留反向选变量的变式；核心1(4)已检验同类选择。",
+      "example_refs_text": "4.9、4.16",
+      "example_ids": [
+        "4.9",
+        "4.16"
+      ],
+      "hint": "可写dx/dy−x/y=−2x²，视为关于x(y)的Bernoulli；除xy之前检查相应零解或直线。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 15,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 15,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-7",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ]
+    },
+    {
+      "id": "4-练1(8)",
+      "local_id": "1(8)",
+      "number": 1,
+      "subquestion": 8,
+      "level": "K",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "(x−y²)dx+2xy dy=0",
+      "reason": "检验对整体量的识别，并检查隐式解是否仍满足原式。",
+      "example_refs_text": "4.10、4.63",
+      "example_ids": [
+        "4.10",
+        "4.63"
+      ],
+      "hint": "设u=y²，得到xu′−u=−x；原函数族可写y²+x ln|x|=Cx，正常计算先取x≠0。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 14,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 14,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-8",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ]
+    },
+    {
+      "id": "4-练1(9)",
+      "local_id": "1(9)",
+      "number": 1,
+      "subquestion": 9,
+      "level": "J",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "xy′−y=x²+y²",
+      "reason": "巩固含二次式的变式，补查特殊点时有价值。",
+      "example_refs_text": "4.4、4.61",
+      "example_ids": [
+        "4.4",
+        "4.61"
+      ],
+      "hint": "在x≠0时设y=xu，得u′=1+u²；写成y=x tan(x+C)后，仍需核对原式在x=0及tan极点附近能否延拓。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 12,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 12,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-9",
+      "mother_ids": [
+        "m4-1",
+        "m4-2"
+      ]
+    },
+    {
+      "id": "4-练1(10)",
+      "local_id": "1(10)",
+      "number": 1,
+      "subquestion": 10,
+      "level": "K",
+      "pdf_page": 309,
+      "printed_page": 301,
+      "topic": "一",
+      "label": "(eˣ+3y²)dx+2xy dy=0",
+      "reason": "检验给定条件之外主动寻找可行结构的能力。",
+      "example_refs_text": "4.13、4.15、4.17",
+      "example_ids": [
+        "4.13",
+        "4.15",
+        "4.17"
+      ],
+      "hint": "(P_y−Q_x)/Q=2/x，取μ=x²；势函数为eˣ(x²−2x+2)+x³y²，结果用微分验证。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 16,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "1",
+      "defer_until_chapter": null,
+      "current_minutes": 16,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-1-10",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ]
+    },
+    {
+      "id": "4-练2(1)",
+      "local_id": "2(1)",
+      "number": 2,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "一",
+      "label": "f(x)=∫₀ˣe^(−f(t))dt",
+      "reason": "检验函数由积分定义时如何确认光滑性和原始约束。",
+      "example_refs_text": "4.35、4.48",
+      "example_ids": [
+        "4.35",
+        "4.48"
+      ],
+      "hint": "连续性先给f′=e^(−f)，原式给f(0)=0；解为ln(1+x)，在包含0的x>−1区间验证。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 12,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "2",
+      "defer_until_chapter": null,
+      "current_minutes": 12,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-2-1",
+      "mother_ids": [
+        "m4-1"
+      ]
+    },
+    {
+      "id": "4-练2(2)",
+      "local_id": "2(2)",
+      "number": 2,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "一",
+      "label": "d f(cos x)/d(cos x)=1+sin²x",
+      "reason": "用于检查求导记号的含义，适合作短时补练。",
+      "example_refs_text": "4.7、第2章链式法",
+      "example_ids": [
+        "4.7"
+      ],
+      "hint": "求导变量是cos x，不是x；设u=cos x，则f′(u)=2−u²，在该关系覆盖的u区间内积分。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 8,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "2",
+      "defer_until_chapter": null,
+      "current_minutes": 8,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-2-2",
+      "mother_ids": [
+        "m4-1"
+      ]
+    },
+    {
+      "id": "4-练2(3)",
+      "local_id": "2(3)",
+      "number": 2,
+      "subquestion": 3,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "一",
+      "label": "∫₀¹f(xt)dt=f(x)/2+1",
+      "reason": "检验自由变量与积分变量，以及求导后恢复条件的能力。",
+      "example_refs_text": "4.12、4.48",
+      "example_ids": [
+        "4.12",
+        "4.48"
+      ],
+      "hint": "对x≠0换元成∫₀ˣf(u)du=x[f(x)/2+1]，得xf′−f=2；解为f=Cx−2，并直接代回原积分式检查x=0。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 14,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "2",
+      "defer_until_chapter": null,
+      "current_minutes": 14,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-2-3",
+      "mother_ids": [
+        "m4-1"
+      ]
+    },
+    {
+      "id": "4-练3",
+      "local_id": "3",
+      "number": 3,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "一",
+      "label": "给定x²f(y)形式的积分因子",
+      "reason": "保留一次参数型条件推导，检验方法能否独立落地。",
+      "example_refs_text": "4.13、4.15、4.16",
+      "example_ids": [
+        "4.13",
+        "4.15",
+        "4.16"
+      ],
+      "hint": "乘因子后列恰当条件，由y f′=3f得f=Cy³；可用μ=x²y³，通解x³y⁴(1+xy)=C₀。积分因子取非零常数倍并说明局部非零域。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 18,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 18,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-3",
+      "mother_ids": [
+        "m4-3"
+      ]
+    },
+    {
+      "id": "4-练4",
+      "local_id": "4",
+      "number": 4,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "一",
+      "label": "一阶方程两个解与任意解的关系",
+      "reason": "有价值的结构证明，作为核心24之后的短回测。",
+      "example_refs_text": "4.22、4.49",
+      "example_ids": [
+        "4.22",
+        "4.49"
+      ],
+      "hint": "任意解与y₁之差、y₂与y₁之差满足同一齐次一阶方程；在正常连通区间内两者成常数倍，不必求原非齐次方程。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 12,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 12,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-4",
+      "mother_ids": [
+        "m4-1",
+        "m4-8"
+      ]
+    },
+    {
+      "id": "4-练5(1)",
+      "local_id": "5(1)",
+      "number": 5,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y″+2x(y′)²=0及两个初值",
+      "reason": "检验类型识别、降阶和初值共同决定区间。",
+      "example_refs_text": "4.20、4.21",
+      "example_ids": [
+        "4.20",
+        "4.21"
+      ],
+      "hint": "设p=y′得到p′+2xp²=0，由p(0)=−1/2得p=1/(x²−2)，再用y(0)=1；含0的正常区间不跨±√2。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 16,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "5",
+      "defer_until_chapter": null,
+      "current_minutes": 16,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-5-1",
+      "mother_ids": [
+        "m4-4"
+      ]
+    },
+    {
+      "id": "4-练5(2)",
+      "local_id": "5(2)",
+      "number": 5,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y″−(y′)²−2y′−1=0",
+      "reason": "保留带平移的非线性导数变式，核心5(1)后按需补练。",
+      "example_refs_text": "4.20、4.21",
+      "example_ids": [
+        "4.20",
+        "4.21"
+      ],
+      "hint": "设p=y′，有p′=(p+1)²；本初值给y=1−x−ln(1−x)，含0区间x<1。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 15,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "5",
+      "defer_until_chapter": null,
+      "current_minutes": 15,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-5-2",
+      "mother_ids": [
+        "m4-1",
+        "m4-4"
+      ]
+    },
+    {
+      "id": "4-练6",
+      "local_id": "6",
+      "number": 6,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "曲线在(0,1)与抛物线相切",
+      "reason": "检验从几何条件提取完整定解条件，再完成求解。",
+      "example_refs_text": "4.25、4.29",
+      "example_ids": [
+        "4.25",
+        "4.29"
+      ],
+      "hint": "相切给y(0)=1、y′(0)=−1；右端2eˣ与齐次根1共振，最终可核对y=(1−2x)eˣ。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 15,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 15,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-6",
+      "mother_ids": [
+        "m4-9",
+        "m4-5",
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练7(1)",
+      "local_id": "7(1)",
+      "number": 7,
+      "subquestion": 1,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y″−y′=e^(−x)",
+      "reason": "非共振短计算，供基本根型与待定系数补弱。",
+      "example_refs_text": "4.25、4.29",
+      "example_ids": [
+        "4.25",
+        "4.29"
+      ],
+      "hint": "齐次根0、1；特解可取e^(−x)/2，常数解分支不要漏掉。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 10,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 10,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-1",
+      "mother_ids": [
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练7(2)",
+      "local_id": "7(2)",
+      "number": 7,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y″−4y′+3y=2xe^(3x)",
+      "reason": "检验指数乘多项式时是否正确处理共振及系数。",
+      "example_refs_text": "4.25、4.27",
+      "example_ids": [
+        "4.25",
+        "4.27"
+      ],
+      "hint": "根1、3，指数3是单根；特解设x(Ax+B)e^(3x)，代入后比较系数，不能只乘原多项式而漏x。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 16,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 16,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-2",
+      "mother_ids": [
+        "m4-6",
+        "m4-5"
+      ]
+    },
+    {
+      "id": "4-练7(3)",
+      "local_id": "7(3)",
+      "number": 7,
+      "subquestion": 3,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y″+4y=x sin²x",
+      "reason": "保留一次需要先处理自由项的计算，覆盖振荡共振。",
+      "example_refs_text": "4.25、4.27",
+      "example_ids": [
+        "4.25",
+        "4.27"
+      ],
+      "hint": "先写sin²x=(1−cos2x)/2，分别求多项式与共振三角特解；sin、cos多项式需配套设。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-3",
+      "mother_ids": [
+        "m4-6",
+        "m4-5"
+      ]
+    },
+    {
+      "id": "4-练7(4)",
+      "local_id": "7(4)",
+      "number": 7,
+      "subquestion": 4,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y″+4y′+4y=e^(−2x)",
+      "reason": "二重共振回测；核心8在Euler变换后已独立检验同一重根机制。",
+      "example_refs_text": "4.26、4.27、4-S7",
+      "example_ids": [
+        "4.26",
+        "4.27",
+        "4-S7"
+      ],
+      "hint": "齐次根−2二重，特解乘x²，可取x²e^(−2x)/2；齐次解本身仍含C₁+C₂x。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 12,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 12,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-4",
+      "mother_ids": [
+        "m4-6",
+        "m4-5"
+      ]
+    },
+    {
+      "id": "4-练7(5)",
+      "local_id": "7(5)",
+      "number": 7,
+      "subquestion": 5,
+      "level": "T",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y‴+y=eˣ sin2x",
+      "reason": "高阶常系数计算储备；特征根和叠加方法已在必学例题覆盖。",
+      "example_refs_text": "4.27、4.32",
+      "example_ids": [
+        "4.27",
+        "4.32"
+      ],
+      "hint": "先因式分解λ³+1，再对eˣ sin2x设配套特解；高阶阶数不改变线性解结构，只增加常数与算量。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 28,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 28,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-5",
+      "mother_ids": [
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练7(6)",
+      "local_id": "7(6)",
+      "number": 7,
+      "subquestion": 6,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "y″−2y′−3y=e^(3x)+cos x",
+      "reason": "把共振与非共振叠加的完整计算作为加练储备。",
+      "example_refs_text": "4.27、4.29",
+      "example_ids": [
+        "4.27",
+        "4.29"
+      ],
+      "hint": "根3、−1；指数部分乘x，三角部分独立设A cos x+B sin x，最后相加并求导核对。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 18,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 18,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-6",
+      "mother_ids": [
+        "m4-6",
+        "m4-5"
+      ]
+    },
+    {
+      "id": "4-练7(7)",
+      "local_id": "7(7)",
+      "number": 7,
+      "subquestion": 7,
+      "level": "T",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "四阶方程y⁽⁴⁾−2y‴+y″=x",
+      "reason": "保留高阶重根结构，首轮不为长常数式挤占建模与证明。",
+      "example_refs_text": "4.22、4.25、4.32",
+      "example_ids": [
+        "4.22",
+        "4.25",
+        "4.32"
+      ],
+      "hint": "特征多项式λ²(λ−1)²；零根二重决定多项式特解乘x²，也可先设p=y″降到二阶再积分。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 28,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 28,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-7",
+      "mother_ids": [
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练7(8)",
+      "local_id": "7(8)",
+      "number": 7,
+      "subquestion": 8,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "三阶方程含参数a>0",
+      "reason": "作为参数和高阶常数项的巩固，不要求清空所有高阶题。",
+      "example_refs_text": "4.25、4.27、4.32",
+      "example_ids": [
+        "4.25",
+        "4.27",
+        "4.32"
+      ],
+      "hint": "先设p=y′，得到p″+6p′+(9+a²)p=1；解后积分，恢复额外的一个任意常数。",
+      "answer_pdf_pages": [
+        313,
+        313
+      ],
+      "minutes": 20,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "7",
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-7-8",
+      "mother_ids": [
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练8",
+      "local_id": "8",
+      "number": 8,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "x³y″−x²y′+xy=x²+1及初值",
+      "reason": "独立检验Euler工具和初值，右端比铺垫多一个分量。",
+      "example_refs_text": "4.32、4-S7",
+      "example_ids": [
+        "4.32",
+        "4-S7"
+      ],
+      "hint": "先除以x，再令t=ln x；变为Y″−2Y′+Y=eᵗ+e^(−t)，一项共振一项不共振。y′(1)需换为Y′(0)。",
+      "answer_pdf_pages": [
+        313,
+        314
+      ],
+      "minutes": 20,
+      "seen_relation": "near",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-8",
+      "mother_ids": [
+        "m4-6",
+        "m4-5"
+      ]
+    },
+    {
+      "id": "4-练9",
+      "local_id": "9",
+      "number": 9,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "已知初值的解在[0,∞)的积分",
+      "reason": "用于检验是否能围绕目标减少计算，作为短回测。",
+      "example_refs_text": "4.26、4.29",
+      "example_ids": [
+        "4.26",
+        "4.29"
+      ],
+      "hint": "解为xe^(−3x)，积分1/9；也可对方程积分并先证明边界衰减，不能仅凭初值把无穷边界设成0。",
+      "answer_pdf_pages": [
+        314,
+        314
+      ],
+      "minutes": 10,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 10,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-9",
+      "mother_ids": [
+        "m4-3",
+        "m4-5",
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练10",
+      "local_id": "10",
+      "number": 10,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "三角系数的二阶方程",
+      "reason": "保留适当换自变量的变式，核心Euler之外按需加练。",
+      "example_refs_text": "4.30、4.32、6.20",
+      "example_ids": [
+        "4.30",
+        "4.32",
+        "6.20"
+      ],
+      "hint": "设t=tan x并完整计算一、二阶导数，化为Y″+2Y′+Y=t；在cos x≠0的正常区间换回。",
+      "answer_pdf_pages": [
+        314,
+        314
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-10",
+      "mother_ids": [
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练11(1)",
+      "local_id": "11(1)",
+      "number": 11,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "三",
+      "label": "同时含f(t)与t f(t−x)的积分关系",
+      "reason": "检验未知函数关系中的连续性提升、反射变量和原式验证。",
+      "example_refs_text": "4.3、4.12、4.35、4.48",
+      "example_ids": [
+        "4.3",
+        "4.12",
+        "4.35",
+        "4.48"
+      ],
+      "hint": "先把第二项换成∫₋ₓ⁰(u+x)f(u)du，得1=f(x)+∫₋ₓ⁰f；继续得f′=−f(−x)、f″+f=0，原式给f(0)=1，最终f=cos x−sin x。",
+      "answer_pdf_pages": [
+        314,
+        314
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "11",
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-11-1",
+      "mother_ids": [
+        "m4-7"
+      ]
+    },
+    {
+      "id": "4-练11(2)",
+      "local_id": "11(2)",
+      "number": 11,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "三",
+      "label": "∫₋π/4^(3π/4)|f(x)|ⁿdx",
+      "reason": "共享(1)的f，用作旧章周期、绝对值与递推复习，不计两道完全陌生题。",
+      "example_refs_text": "4.11、第三章Wallis与周期对称",
+      "example_ids": [
+        "4.11"
+      ],
+      "hint": "这里有绝对值，奇数n也不能按奇函数消成0；平移后等于2^(n/2)·2∫₀^(π/2)cosⁿu du，再用递推。",
+      "answer_pdf_pages": [
+        315,
+        315
+      ],
+      "minutes": 14,
+      "seen_relation": "partial",
+      "depends_on": [
+        "4-练11(1)"
+      ],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "11",
+      "defer_until_chapter": null,
+      "current_minutes": 14,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-11-2",
+      "mother_ids": [
+        "m4-7"
+      ]
+    },
+    {
+      "id": "4-练12",
+      "local_id": "12",
+      "number": 12,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "已知y₁=eˣ、y₂=u(x)eˣ及u的两处值",
+      "reason": "检验已知一个解后的求解，以及解的独立性。",
+      "example_refs_text": "4.22、4.23",
+      "example_ids": [
+        "4.22",
+        "4.23"
+      ],
+      "hint": "代入后得到(2x−1)u″+(2x−3)u′=0；先解u′，再恢复u。可核对u=−e^(−x)(2x+1)，通解为D₁eˣ+D₂(2x+1)。",
+      "answer_pdf_pages": [
+        315,
+        315
+      ],
+      "minutes": 20,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-12",
+      "mother_ids": [
+        "m4-3",
+        "m4-4"
+      ]
+    },
+    {
+      "id": "4-练13",
+      "local_id": "13",
+      "number": 13,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 310,
+      "printed_page": 302,
+      "topic": "二",
+      "label": "含x、2x+1的变系数非齐次方程",
+      "reason": "保留观察已知解后再计算的巩固题。",
+      "example_refs_text": "4.23、4.32",
+      "example_ids": [
+        "4.23",
+        "4.32"
+      ],
+      "hint": "先观察齐次方程有解eˣ，设y=u eˣ降阶；在x≠0区间求解，ln x应按所用实数区间写ln|x|。",
+      "answer_pdf_pages": [
+        315,
+        316
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-13",
+      "mother_ids": [
+        "m4-4"
+      ]
+    },
+    {
+      "id": "4-练14",
+      "local_id": "14",
+      "number": 14,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "二",
+      "label": "y″+(4x+e^(2y))(y′)³=0，y′≠0",
+      "reason": "保留交换因变量后的二阶变换，方法有价值但算量另留余量。",
+      "example_refs_text": "4.9、4.30",
+      "example_ids": [
+        "4.9",
+        "4.30"
+      ],
+      "hint": "用d²x/dy²=−y″/(y′)³，化为x_yy−4x=e^(2y)；在x(y)局部可逆处换回，不能丢y′≠0条件。",
+      "answer_pdf_pages": [
+        316,
+        316
+      ],
+      "minutes": 20,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-14",
+      "mother_ids": [
+        "m4-3",
+        "m4-4"
+      ]
+    },
+    {
+      "id": "4-练15",
+      "local_id": "15",
+      "number": 15,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "二",
+      "label": "自由项f(x)趋A，求每个解的极限",
+      "reason": "独立检验渐近证明；有界与有极限不同，不能只练求通解。",
+      "example_refs_text": "4.58、4-S6",
+      "example_ids": [
+        "4.58",
+        "4-S6"
+      ],
+      "hint": "对y″+6y′+5y=f作两次一阶分解，指数核加权积分趋A/a；可分早晚两段估计，再得y→A/5，不得无依据声称y′、y″趋0。",
+      "answer_pdf_pages": [
+        316,
+        317
+      ],
+      "minutes": 24,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 24,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-15",
+      "mother_ids": [
+        "m4-8"
+      ]
+    },
+    {
+      "id": "4-练16",
+      "local_id": "16",
+      "number": 16,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "给定法线斜率且曲线过(e,1)",
+      "reason": "检验文字建模及定义域，不把法线斜率直接当y′。",
+      "example_refs_text": "4.29、4.39、4.40",
+      "example_ids": [
+        "4.29",
+        "4.39",
+        "4.40"
+      ],
+      "hint": "法线与切线斜率互为负倒数；得到y′−y/x=1/ln x，含e的区间x>1，答案可核对y=x/e+x ln(ln x)。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 18,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 18,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-16",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练17",
+      "local_id": "17",
+      "number": 17,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "弦AP与曲线之间面积等于x³",
+      "reason": "面积关系的几何建模储备，核心16、29已留足独立时间。",
+      "example_refs_text": "4.37、4.38",
+      "example_ids": [
+        "4.37",
+        "4.38"
+      ],
+      "hint": "依图先写有向面积∫₀ˣf(t)dt−x[1+f(x)]/2=x³，求导并用A、B两端条件，最后核对曲线与弦的相对位置。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-17",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练18",
+      "local_id": "18",
+      "number": 18,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "含f′、f及变上限积分和cos3x",
+      "reason": "积分微分关系的非齐次变式，按错误补练。",
+      "example_refs_text": "4.12、4.48",
+      "example_ids": [
+        "4.12",
+        "4.48"
+      ],
+      "hint": "先从原式核对给定初值相容，再求导得到二阶方程；把求出的f代回原关系，避免增加伪解。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-18",
+      "mother_ids": [
+        "m4-7"
+      ]
+    },
+    {
+      "id": "4-练19",
+      "local_id": "19",
+      "number": 19,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "核(t+1)与f′(x−t)的积分式",
+      "reason": "保留另一种卷积还原；核心2(1)、2(3)、11(1)已检验求导、变量判断及原式约束。",
+      "example_refs_text": "4.12、4.36、4.48",
+      "example_ids": [
+        "4.12",
+        "4.36",
+        "4.48"
+      ],
+      "hint": "先换元再分部，原积分等于f(x)−(x+1)f(0)+∫₀ˣf；原式给f(0)=1，化成2f′+f=2x+eˣ+1，最后回代。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-19",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练20",
+      "local_id": "20",
+      "number": 20,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "f=sin x−∫₀ˣ(x−t)f(t)dt",
+      "reason": "与铺垫共享核，但自由项和符号不同；作为计算与原式验证加练。",
+      "example_refs_text": "4.36、4-S4",
+      "example_ids": [
+        "4.36",
+        "4-S4"
+      ],
+      "hint": "两次求导得f″+f=−sin x，初值由原式给0、1；可核对f=(x cos x+sin x)/2。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 18,
+      "seen_relation": "near",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 18,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-20",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练21",
+      "local_id": "21",
+      "number": 21,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "二",
+      "label": "积分曲线与隐式曲线有公共切线",
+      "reason": "不同形式的切线定解条件储备，核心6已检验基本相切。",
+      "example_refs_text": "4.29、4.56、6.17",
+      "example_ids": [
+        "4.29",
+        "4.56",
+        "6.17"
+      ],
+      "hint": "先在x=0的原隐式曲线找接触点并隐式求导，再写y(0)、y′(0)；不把曲线方程当作y的显式式子。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 20,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-21",
+      "mother_ids": [
+        "m4-9",
+        "m4-5",
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练22",
+      "local_id": "22",
+      "number": 22,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "只知f在0可导及加法恒等式",
+      "reason": "保留从局部可导推出处处可导的证明，不能擅自对未知全局f求导。",
+      "example_refs_text": "4.35、4.51",
+      "example_ids": [
+        "4.35",
+        "4.51"
+      ],
+      "hint": "先由原式得f(0)=0；对增量差商利用f′(0)=2，推出f′(x)−f(x)=2eˣ；求解并回代得f=2xeˣ。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 16,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 16,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-22",
+      "mother_ids": [
+        "m4-7"
+      ]
+    },
+    {
+      "id": "4-练23",
+      "local_id": "23",
+      "number": 23,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "二",
+      "label": "一个给定特解反求a、b、c",
+      "reason": "检验常系数逆问题与共振，和已知三解作差的工具互补。",
+      "example_refs_text": "4.44、4.54",
+      "example_ids": [
+        "4.44",
+        "4.54"
+      ],
+      "hint": "将(1+x)eˣ+e^(2x)代入，按e^(2x)、xeˣ、eˣ分别比较；可核对a=−3、b=2、c=−1。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 16,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 16,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-23",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练24",
+      "local_id": "24",
+      "number": 24,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "二",
+      "label": "三个非齐次特解与两个初值",
+      "reason": "检验解结构的直接使用，不必先求出p、Q、f。",
+      "example_refs_text": "4.22、4.54",
+      "example_ids": [
+        "4.22",
+        "4.54"
+      ],
+      "hint": "在x、eˣ、e^(2x)之间作系数和为1的组合，利用初值；可核对y=2e^(2x)−eˣ。正常区间的线性无关性要说明。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 14,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 14,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-24",
+      "mother_ids": [
+        "m4-5",
+        "m4-6"
+      ]
+    },
+    {
+      "id": "4-练25",
+      "local_id": "25",
+      "number": 25,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "一",
+      "label": "未知f使一阶形式恰当，再求通解",
+      "reason": "保留跨阶综合；未知函数由恰当条件确定已在核心3及第6章26(1)落地，二阶组合另作储备。",
+      "example_refs_text": "4.13、4.25、4.28",
+      "example_ids": [
+        "4.13",
+        "4.25",
+        "4.28"
+      ],
+      "hint": "由恰当条件得f″+f=x²并用f(0)=0、f′(0)=1；势函数可组织为y f′(x)+x²y²/2，避免重新做很长的积分。",
+      "answer_pdf_pages": [
+        317,
+        317
+      ],
+      "minutes": 24,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 24,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-25",
+      "mother_ids": [
+        "m4-3"
+      ]
+    },
+    {
+      "id": "4-练26",
+      "local_id": "26",
+      "number": 26,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "切线在y轴截距等于到原点距离",
+      "reason": "保留含距离与符号的几何变式。",
+      "example_refs_text": "4.4、4.40",
+      "example_ids": [
+        "4.4",
+        "4.40"
+      ],
+      "hint": "由切线写截距y−xy′，等于非负距离；可在x>0先设y=xu，得到曲线y=(1−x²)/2，再回原等式验证符号。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 20,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-26",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练27",
+      "local_id": "27",
+      "number": 27,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "2π周期函数与平移π后的导数关系",
+      "reason": "检验周期条件能提供什么约束，保留思维型函数方程训练。",
+      "example_refs_text": "4.35、4.51、4.58",
+      "example_ids": [
+        "4.35",
+        "4.51",
+        "4.58"
+      ],
+      "hint": "先把原式平移π，再利用周期性联立消去平移函数；得到9f″−f=−sin x−3cos x，周期排除两个指数齐次项。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-27",
+      "mother_ids": [
+        "m4-1",
+        "m4-7"
+      ]
+    },
+    {
+      "id": "4-练28",
+      "local_id": "28",
+      "number": 28,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "切线与向径交定角α",
+      "reason": "保留几何转斜率或极坐标的变式，按需选作。",
+      "example_refs_text": "4.4、4.39",
+      "example_ids": [
+        "4.4",
+        "4.39"
+      ],
+      "hint": "可用极坐标描述切向量与径向量夹角；固定角给dr/dθ与r的比例关系，符号、角度和过轴处需按分支解释。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-28",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练29",
+      "local_id": "29",
+      "number": 29,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 311,
+      "printed_page": 303,
+      "topic": "三",
+      "label": "曲率等于法线段长的倒数",
+      "reason": "检验曲率、长度与初值能否正确组合，模型有明确迁移价值。",
+      "example_refs_text": "4.21、4.39、第2章曲率",
+      "example_ids": [
+        "4.21",
+        "4.39"
+      ],
+      "hint": "y>0且向上凹时，法线段长=y√(1+y′²)，得到y y″=1+y′²；用y(1)=1、y′(1)=0，解为cosh(x−1)，须检查符号及初值。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 24,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 24,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-29",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练30",
+      "local_id": "30",
+      "number": 30,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "极坐标扇形面积等于弧长",
+      "reason": "保留极坐标应用，不要求每种几何模型都挤进主线。",
+      "example_refs_text": "4.38、第三章极坐标面积与弧长",
+      "example_ids": [
+        "4.38"
+      ],
+      "hint": "用r(0)=2√2，先写r²/2=√(r²+r′²)；平方后须保留r>0及局部分支，初值可能给两种斜率而非唯一曲线。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-30",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练31",
+      "local_id": "31",
+      "number": 31,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "两物体速度比2且始终追向目标",
+      "reason": "只要求建方程与初值，独立检验建模；初始相对方向与铺垫不同。",
+      "example_refs_text": "4.41、4-S5",
+      "example_ids": [
+        "4.41",
+        "4-S5"
+      ],
+      "hint": "设B轨迹y(x)，A=(0,1+vt)，由斜率消t；得到−2x y″=√(1+y′²)，初值y(−1)=0、y′(−1)=1，所用片段x<0。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 18,
+      "seen_relation": "near",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 18,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-31",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练32",
+      "local_id": "32",
+      "number": 32,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "五个重物换为四个后的弹簧运动",
+      "reason": "保留独立物理模型，检验新旧平衡位置和初值。",
+      "example_refs_text": "4.25、4.29、4.42",
+      "example_ids": [
+        "4.25",
+        "4.29",
+        "4.42"
+      ],
+      "hint": "由5mg对应伸长5a得k=mg/a；去掉一个后质量为4m，新平衡伸长4a。用新平衡为原点，初位移a、初速度0。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 20,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-32",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练33",
+      "local_id": "33",
+      "number": 33,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "竖直发射，阻力与速度平方成正比",
+      "reason": "补充例题线性阻力之外的独立建模，不省略力方向及升降分段。",
+      "example_refs_text": "4.20、4.42",
+      "example_ids": [
+        "4.20",
+        "4.42"
+      ],
+      "hint": "只算上升段：m v′=−mg−kv²；最大高度用v·dv/dh，时间用dv/dt分离，不能把上升段阻力符号直接套到下降。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 22,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 22,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-33",
+      "mother_ids": [
+        "m4-1",
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练34(1)",
+      "local_id": "34(1)",
+      "number": 34,
+      "subquestion": 1,
+      "level": "K",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "一",
+      "label": "含初值y₀的一阶方程，x≥1",
+      "reason": "与4.8工具相近但数据不同，先独立求含参数解，为下一问准备。",
+      "example_refs_text": "4.8、4.15",
+      "example_ids": [
+        "4.8",
+        "4.15"
+      ],
+      "hint": "积分因子μ=x e^(−x²)；可组织为y=−(x+1/x)/2+C e^(x²)/x，C由y₀确定。",
+      "answer_pdf_pages": [
+        318,
+        318
+      ],
+      "minutes": 14,
+      "seen_relation": "near",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "34",
+      "defer_until_chapter": null,
+      "current_minutes": 14,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-34-1",
+      "mother_ids": [
+        "m4-1",
+        "m4-3"
+      ]
+    },
+    {
+      "id": "4-练34(2)",
+      "local_id": "34(2)",
+      "number": 34,
+      "subquestion": 2,
+      "level": "K",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "一",
+      "label": "y(x)/x存在有限极限时定y₀",
+      "reason": "共享(1)的解，只把极限判别与初值选择作为新增任务。",
+      "example_refs_text": "4.8、4-S6",
+      "example_ids": [
+        "4.8",
+        "4-S6"
+      ],
+      "hint": "有界极限要求增长项C=0，故y₀=−1，y/x→−1/2；不能只说“指数增长快”而不说明系数为何必须为0。",
+      "answer_pdf_pages": [
+        318,
+        319
+      ],
+      "minutes": 10,
+      "seen_relation": "partial",
+      "depends_on": [
+        "4-练34(1)"
+      ],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "34",
+      "defer_until_chapter": null,
+      "current_minutes": 10,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-34-2",
+      "mother_ids": [
+        "m4-8",
+        "m4-3"
+      ]
+    },
+    {
+      "id": "4-练35",
+      "local_id": "35",
+      "number": 35,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "沿气味最浓方向搜寻的路径",
+      "reason": "跨第6章梯度的回访题，当前未学梯度时先后置。",
+      "example_refs_text": "4.41、6.25、6.27",
+      "example_ids": [
+        "4.41",
+        "6.25",
+        "6.27"
+      ],
+      "hint": "先求浓度梯度及行进方向，轨迹满足dy/dx=2y/x，再用(1,1)确定y=x²并说明实际向原点行进的那段。",
+      "answer_pdf_pages": [
+        319,
+        320
+      ],
+      "minutes": 14,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": 6,
+      "current_minutes": 0,
+      "later_minutes": 14,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-35",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练36(1)",
+      "local_id": "36(1)",
+      "number": 36,
+      "subquestion": 1,
+      "level": "J",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "双层积分给出的y是否满足初值问题",
+      "reason": "保留连续自由项构造特解的证明储备；例4.36与核心2(1)、11(1)已覆盖逐次提升光滑性。",
+      "example_refs_text": "4.36、4.48、4-S4",
+      "example_ids": [
+        "4.36",
+        "4.48",
+        "4-S4"
+      ],
+      "hint": "先设F(s)=∫₀ˢf(u)du，再把外层写成∫₀ˣcos(x−s)F(s)ds；连续性允许逐次求导，边界项最终给y″+y=f。",
+      "answer_pdf_pages": [
+        319,
+        320
+      ],
+      "minutes": 20,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "36",
+      "defer_until_chapter": null,
+      "current_minutes": 20,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-36-1",
+      "mother_ids": [
+        "m4-5"
+      ]
+    },
+    {
+      "id": "4-练36(2)",
+      "local_id": "36(2)",
+      "number": 36,
+      "subquestion": 2,
+      "level": "J",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "二",
+      "label": "用(1)结果写非齐次通解",
+      "reason": "只把通解结构作为新增目标，不重复计算两次积分。",
+      "example_refs_text": "4.22、4.25",
+      "example_ids": [
+        "4.22",
+        "4.25"
+      ],
+      "hint": "把(1)得到的特解加上C₁cos x+C₂sin x即可；前问只给某个特解，不应漏掉齐次解。",
+      "answer_pdf_pages": [
+        319,
+        320
+      ],
+      "minutes": 8,
+      "seen_relation": "partial",
+      "depends_on": [
+        "4-练36(1)"
+      ],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": "36",
+      "defer_until_chapter": null,
+      "current_minutes": 8,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-36-2",
+      "mother_ids": [
+        "m4-5"
+      ]
+    },
+    {
+      "id": "4-练37",
+      "local_id": "37",
+      "number": 37,
+      "subquestion": null,
+      "level": "J",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "互相关联的f、g参与定积分",
+      "reason": "作为旧章结构识别与ODE求值的综合储备。",
+      "example_refs_text": "4.29、4.49、第三章商导数",
+      "example_ids": [
+        "4.29",
+        "4.49"
+      ],
+      "hint": "先识别[f(x)/(1+x)]′；由f′=g、g′=2eˣ−f推出f″+f=2eˣ，仅求目标端点值即可。",
+      "answer_pdf_pages": [
+        320,
+        321
+      ],
+      "minutes": 18,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 18,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-37",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练38",
+      "local_id": "38",
+      "number": 38,
+      "subquestion": null,
+      "level": "T",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "ODE解与分段g的min广义积分",
+      "reason": "保留综合挑战；含后续级数求和，放在第8章后回访。",
+      "example_refs_text": "4.27、第三章分段与广义积分；第8章后",
+      "example_ids": [
+        "4.27"
+      ],
+      "hint": "先求f=−e^(−x)sin x/5，再按n奇偶比较f与g；分别估计大小并分段求和。绝不能先把两个分别不便处理的式子直接相减。",
+      "answer_pdf_pages": [
+        320,
+        321
+      ],
+      "minutes": 35,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": false,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": 8,
+      "current_minutes": 0,
+      "later_minutes": 35,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-38",
+      "mother_ids": [
+        "m4-9"
+      ]
+    },
+    {
+      "id": "4-练39",
+      "local_id": "39",
+      "number": 39,
+      "subquestion": null,
+      "level": "K",
+      "pdf_page": 312,
+      "printed_page": 304,
+      "topic": "三",
+      "label": "由初值方程证明积分统一上界",
+      "reason": "保留求解后服务估计的独立证明，不让训练仅剩通解计算。",
+      "example_refs_text": "4.20、4.52、4.57；第三章积分估计",
+      "example_ids": [
+        "4.20",
+        "4.52",
+        "4.57"
+      ],
+      "hint": "先得f(t)=(3+t)(1−t)，看F(x)=∫₀ˣf(t)sin^(2n−2)t dt在x=1取最大；在[0,1]用sin t≤t估计，权f≥0时才保留不等号方向。",
+      "answer_pdf_pages": [
+        321,
+        321
+      ],
+      "minutes": 24,
+      "seen_relation": "new",
+      "depends_on": [],
+      "is_authored": false,
+      "is_core": true,
+      "is_default_fresh_candidate": true,
+      "shared_prompt": null,
+      "defer_until_chapter": null,
+      "current_minutes": 24,
+      "later_minutes": 0,
+      "completion_scope": "原题所列目标完整作答",
+      "kind": "exercise",
+      "dom_id": "exercise-4-39",
+      "mother_ids": [
+        "m4-8"
+      ]
+    }
+  ],
+  "supplements": [],
+  "mothers": [
+    {
+      "id": "m4-1",
+      "title": "变量成组：分离、比值、平移、幂代换",
+      "signal": "先看变量怎样组合，再选可逆代换。",
+      "basics": [
+        "o02",
+        "o04"
+      ],
+      "example_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        61,
+        63
+      ],
+      "pattern": "分离|齐次型|Bernoulli|平移|平方|y²|整体"
+    },
+    {
+      "id": "m4-2",
+      "title": "线性乘积：积分因子与交换变量",
+      "signal": "凑(μy)′；原变量不线性可试交换。",
+      "basics": [
+        "o03"
+      ],
+      "example_numbers": [
+        7,
+        8,
+        9
+      ],
+      "pattern": "一阶线性|增长项|交换变量"
+    },
+    {
+      "id": "m4-3",
+      "title": "全微分：先验恰当，再补因子",
+      "signal": "势函数积分后保留另一变量函数。",
+      "basics": [
+        "o05"
+      ],
+      "example_numbers": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "pattern": "恰当|全微分|积分因子"
+    },
+    {
+      "id": "m4-4",
+      "title": "降阶：缺y、缺x、已知一个解",
+      "signal": "先标p的自变量，别漏p=0。",
+      "basics": [
+        "o06"
+      ],
+      "example_numbers": [
+        19,
+        20,
+        21,
+        23,
+        30
+      ],
+      "pattern": "降阶|缺x|缺y|已知解"
+    },
+    {
+      "id": "m4-5",
+      "title": "线性结构：作差、叠加与初值",
+      "signal": "齐次基解＋一个非齐次特解。",
+      "basics": [
+        "o01",
+        "o07"
+      ],
+      "example_numbers": [
+        22,
+        24,
+        44,
+        49,
+        54
+      ],
+      "pattern": "解结构|线性无关|作差|三个|特解"
+    },
+    {
+      "id": "m4-6",
+      "title": "常系数与Euler：先查共振重数",
+      "signal": "自由项定形，特征根定补幂。",
+      "basics": [
+        "o07",
+        "o08"
+      ],
+      "example_numbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        60
+      ],
+      "pattern": "共振|Euler|常系数|特征|三阶|四阶"
+    },
+    {
+      "id": "m4-7",
+      "title": "积分/函数关系：恢复原式约束",
+      "signal": "求导前查条件，求导后取回初值。",
+      "basics": [
+        "o09"
+      ],
+      "example_numbers": [
+        3,
+        12,
+        33,
+        34,
+        35,
+        36,
+        43,
+        48,
+        50,
+        51,
+        52,
+        59
+      ],
+      "pattern": "积分关系|积分微分|变上限|定限积分|函数方程|周期|恒等式|平移π"
+    },
+    {
+      "id": "m4-8",
+      "title": "有界与渐近：核估计或排增长项",
+      "signal": "有界、收敛、导数趋零不能混用。",
+      "basics": [
+        "o10"
+      ],
+      "example_numbers": [
+        8,
+        57,
+        58,
+        62
+      ],
+      "pattern": "有界|极限|统一|上界|估计"
+    },
+    {
+      "id": "m4-9",
+      "title": "几何/运动：先列量，再列方程",
+      "signal": "方向、长度、受力和平衡位置先说清。",
+      "basics": [
+        "o09",
+        "o06"
+      ],
+      "example_numbers": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        46,
+        47,
+        56
+      ],
+      "pattern": "切线|法线|曲率|几何|物理|追|弹簧|阻力|速度|面积|运动"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "4-S1",
+      "chapter": 4,
+      "title": "整体代换后重新识别类型",
+      "kind": "初赛方法训练",
+      "condition": "先检查定义域和被除因子；Bernoulli y′+Py=Qyⁿ在y≠0处令u=y^(1−n)，其余解回原方程补查。平移应使两个仿射式同时去常数。",
+      "question": "①解$y'-y=y^2$，满足$y(0)=1$。②将$y'=(2x+y+3)/(x+2y+3)$化为齐次可分离方程，写出隐式解并检查分离时的常值比。",
+      "steps": [
+        "①令$u=1/y$，得$u'+u=-1$，由$u(0)=1$得$u=2e^{-x}-1$，所以$y=1/(2e^{-x}-1)$，含0的最大区间为$x<\\ln2$。原方程还有常值解$y=0$，但不满足本初值。",
+        "②令$X=x+1,Y=y+1$，方程变为$dY/dX=(2X+Y)/(X+2Y)$。在$X\\ne0$处令$w=Y/X$，得$Xw'=2(1-w^2)/(1+2w)$。",
+        "分离积分给$(X-Y)^3(X+Y)=C$，即$(x-y)^3(x+y+2)=C$。$w=\\pm1$也是比值常解，包含于$C=0$；$X+2Y=0$处原显式方程不定义，不能任意跨过。"
+      ],
+      "connection": "4.2、4.6看为什么要换整体；4.10练非线性化线性；4.61先平方后平移，4.63用y²。例题学习时可先做①，学到平移时再做②，合计计入对应例题预算。",
+      "examples": [
+        "4.2",
+        "4.6",
+        "4.10",
+        "4.61",
+        "4.63"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "4-S2",
+      "chapter": 4,
+      "title": "不恰当时先找只依赖一个变量的积分因子",
+      "kind": "初赛方法训练",
+      "condition": "P,Q具有连续偏导；局部恰当条件P_y=Q_x。若(P_y−Q_x)/Q只依赖x，可取μ(x)=exp∫(P_y−Q_x)/Q dx；涉及分母时先在其非零区域操作，再核对结果。",
+      "question": "在$x\\ne0$的区间求$(1+x)y\\,dx+x\\,dy=0$的通解。",
+      "steps": [
+        "$P_y=1+x,Q_x=1$，相差$x$，故原式一般不恰当；但$(P_y-Q_x)/Q=1$，取$\\mu=e^x$。",
+        "乘后为$d(xye^x)=0$，故$xye^x=C$。用全微分直接验证，而非只因公式算出μ便不再检查。",
+        "若改用y为变量，积分因子公式为$\\mu(y)=\\exp\\int(Q_x-P_y)/P\\,dy$，两式符号和分母不同。有些方程直接凑全微分或交换变量更短。"
+      ],
+      "connection": "接4.13先检验和补另一变量函数，再接4.15—4.17选择积分因子；这是对凑微分的系统补充。",
+      "examples": [
+        "4.13",
+        "4.15",
+        "4.16"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "4-S3",
+      "chapter": 4,
+      "title": "缺哪个变量，就选对应的降阶公式",
+      "kind": "初赛方法训练",
+      "condition": "不显含y时设p(x)=y′，有y″=p′(x)；不显含x时在可将y作局部变量的区间设p(y)=y′，有y″=p·dp/dy。换变量时p=0的解不能直接除掉。",
+      "question": "求$y''=2yy'$满足$y(0)=0,y'(0)=1$的解。",
+      "steps": [
+        "本题不显含x，令$p(y)=y'$。局部$p\\ne0$，故$p\\,dp/dy=2yp$，得到$p=y^2+C_1$。",
+        "初值给$C_1=1$，于是$dy/dx=1+y^2$，积分为$\\arctan y=x$，故$y=\\tan x$，含0的区间为$(-\\pi/2,\\pi/2)$。",
+        "若求原方程全部解，$p=0$还给任意常值解。已知线性解$y_1$时，另设$y=y_1u$消掉u项，可再以u′降阶；这是4.23的另一种降阶入口。"
+      ],
+      "connection": "对照4.20与4.21，分清p依赖x还是y；4.23需先代入消项，不能直接照搬同一个p公式。",
+      "examples": [
+        "4.21",
+        "4.23"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "4-S4",
+      "chapter": 4,
+      "title": "积分关系求导后，必须恢复原式的约束",
+      "kind": "初赛方法训练",
+      "condition": "积分核和连续性允许时可用微积分基本定理；求导常把原方程变成必要条件，初值或边值必须从原式提取，最后证明等价。",
+      "question": "求连续函数$f$，使$f(x)=1+\\int_0^x(x-t)f(t)\\,dt$。",
+      "steps": [
+        "展开为$x\\int_0^xf(t)dt-\\int_0^xtf(t)dt$，由连续性先知f可导，得$f'(x)=\\int_0^xf(t)dt$，再得$f''=f$。原式给$f(0)=1,f'(0)=0$。",
+        "解得$f(x)=\\cosh x=(e^x+e^{-x})/2$。",
+        "验证：令$E=f-1-\\int_0^x(x-t)f(t)dt$，有$E''=0,E(0)=E'(0)=0$，所以E恒为0。只列$f''=f$会多出不满足原式的解。"
+      ],
+      "connection": "接4.12、4.36、4.48、4.52；定限积分则按4.49先设常数，不作同样求导处理。",
+      "examples": [
+        "4.12",
+        "4.36",
+        "4.48",
+        "4.52"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "4-S5",
+      "chapter": 4,
+      "title": "先列速度方向与等时关系，再决定如何求解",
+      "kind": "恢复工具与建模",
+      "condition": "阻力与速度大小的比例模型要先定正向、统一单位；追击方向是目标点连线，速度比给同一段时间的路程比，不是两条轨迹斜率比。",
+      "question": "①质量m的物体以速度$v_0>0$沿正向运动，阻力为$-kv$，k>0，求最终路程。②目标从(1,0)沿y正向以速率a运动，追击者从原点以速率2a始终朝向目标，列轨迹方程与初值，不要求积分。",
+      "steps": [
+        "①$m\\,dv/dt=-kv$，$v=v_0e^{-kt/m}$，位移$s=(mv_0/k)(1-e^{-kt/m})$，故极限路程$mv_0/k$；有限t速度仍为正。也可用$dv/dt=v\\,dv/ds$化简。",
+        "②在追击者点(x,y)，斜率为$y'=(at-y)/(1-x)$，故$at=y+(1-x)y'$；等时路程为$\\int_0^x\\sqrt{1+(y'(u))^2}du=2at$。",
+        "消t并求导得$\\sqrt{1+(y')^2}=2(1-x)y''$，初值$y(0)=0,y'(0)=0$。先解释方程每项，再考虑p=y′降阶。"
+      ],
+      "connection": "4.42的数值依赖单位，先掌握①的符号表达；4.41保留②的建模，不强求特殊速度比下的整段长积分。",
+      "examples": [
+        "4.41",
+        "4.42"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "4-S6",
+      "chapter": 4,
+      "title": "增长项的筛选与指数核的有界估计",
+      "kind": "初赛证明方法",
+      "condition": "y′+ay=f，a>0，x≥0，f连续且|f|≤M。积分因子给衰减核；若符号改成y′−ay=f，齐次项会增长，不能照搬同一结论。",
+      "question": "①$y'-y=1$的哪个解在$[0,\\infty)$有界？②若$y'+ay=f(x)$且$|f|\\le M$，给出对所有x≥0的界，并说明如何用于二阶方程。",
+      "steps": [
+        "①$y=Ce^x-1$，有界迫使C=0，所以y恒为−1。接4.8，非初等积分也可通过排掉增长项选初值。",
+        "②$y=e^{-ax}y(0)+\\int_0^xe^{-a(x-t)}f(t)dt$，于是$|y|\\le |y(0)|e^{-ax}+(M/a)(1-e^{-ax})\\le |y(0)|+M/a$。",
+        "例如$y''+3y'+2y=f$，先设$u=y'+y$得到$u'+2u=f$，两次用上面的界即可证明y有界。也可写非负核$K(s)=e^{-s}-e^{-2s}$，其积分≤1/2，得到特解界M/2。",
+        "接4.57，若$H(f(x))=R(x)$且R有界，仍要看R的范围是否远离H在无穷处的有限极限；H=arctan就是“R有界不能直接推出f有界”的提醒。"
+      ],
+      "connection": "接4.8的增长项、4.57的范围比较和4.58的指数核估计；在这些原题中分别复现适用的那一段，不要求背通用PDE结论。",
+      "examples": [
+        "4.8",
+        "4.57",
+        "4.58"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    },
+    {
+      "id": "4-S7",
+      "chapter": 4,
+      "title": "Euler方程接常系数重根共振",
+      "kind": "初赛方法训练",
+      "condition": "x>0取t=ln x；x<0时另在负半轴用ln|x|。xy′=Y_t，x²y″=Y_tt−Y_t，不能漏掉减去的一阶项。",
+      "question": "在$x>0$求$x^2y''-xy'+y=x$的通解。",
+      "steps": [
+        "令$Y(t)=y(e^t)$，得到$Y''-2Y'+Y=e^t$。特征根1为二重根，齐次解为$(C_1+C_2t)e^t$。",
+        "因为右端的指数1已是二重根，试探特解要乘t²，取$Y_*=At^2e^t$，代入得A=1/2。",
+        "换回得$y=x[C_1+C_2\\ln x+(\\ln x)^2/2]$。一般$e^{\\alpha x}(P\\cos\\beta x+Q\\sin\\beta x)$要同时设sin/cos两类多项式；与齐次重合时按特征根重数乘x。"
+      ],
+      "connection": "接4.25—4.27的待定系数与共振，4.32的Euler变换；本题两步合在一起，避免给三阶算子长式另设一套记忆。",
+      "examples": [
+        "4.25",
+        "4.27",
+        "4.32",
+        "4.34"
+      ],
+      "is_authored": true,
+      "is_independent_test": false
+    }
+  ],
+  "source_notes": "\n### 例4.4：根式符号与常值比解\n\n代y=ux时，√(x²−y²)=|x|√(1−u²)，不是在所有x≠0处都等于x√(1−u²)。除√(1−u²)前还要补y=±x。即便写成y=x sin(ln|x|+C)，也需核对原方程对cos符号的限制，不能将反三角变形所得表达式无条件延到整个半轴。学习重点是齐次代换和区间检查。\n\n### 例4.21、4.33：局部公式不能冒充全局解\n\n4.21原书得到y=1+1/(2x−1)，在x=1/2处有极点。可用于对应正常区间内的代入和相切判断，但不能声称它是在包含0、1的单个区间上的经典解。\n\n4.33按原式推导所得$f(x)=((x-1)e^x+1)/x$（x≠0，f(0)=0），必须另查题设的全实轴反函数要求：$f(-1)=2/e-1<0$，而$x\\to-\\infty$时f→0且f(0)=0，所以它在负半轴不单调，全实轴上不可能连续且单射。原书给出的局部求解路线有参考价值，不能直接称为满足全部全局条件的函数。本题列C，通用方法已由其他题覆盖。\n\n### 例4.24：选到一个解，不代表已求出所有可能系数\n\n原书在$z'=z/x$处只取z=2x。一般应为z=kx。若$y_1'=zy_1$且$y_1y_2=1$，则在不跨0的连通区间上，$y_1=Ae^{kx^2/2}$、$a(x)=-k^2x^2$，A≠0。k≠0时，对应方程通解为$C_1e^{kx^2/2}+C_2e^{-kx^2/2}$；k=0时a=0，方程通解为C₁+C₂x²。这里固定k确定一个方程，不能把k又当成同一固定方程通解的额外任意常数。\n\n### 例4.38：分离时漏掉水平直线\n\n由任意弧段积分等式得到√(1+y′²)=y是关键。y≡1也满足原题条件，不能在除√(y²−1)时遗漏。原题“光滑”若仅按C¹理解，还可出现一段y=1再接平移cosh的C¹解；本轮保留建模方法，不把原书cosh解宣称为唯一。无需为这些附加分支安排大量首轮计算。\n\n### 例4.61：分离变量前补常值比\n\n令U=x²+2,V=y²+1,w=V/U，分离时除去了w−1、w−2。w=2对应y²=2x²+3，已经在原书隐式族C=0中；w=1对应y²=x²+1，也直接满足原方程，却不在任意有限C的原书三次式中，应另列。这是初赛原题中的通用漏解检查，不能因参考答案省略就不查。\n",
+  "exercise_notes": [
+    "11(2)原式为绝对值的n次幂；不能把奇数n当作无绝对值的奇函数积分。",
+    "13中的对数按所在实数区间处理成ln|x|；书解只写ln x时隐含了正半轴。",
+    "15证明极限不能直接假设y′、y″也趋0；用稳定的一阶分解或指数核估计。",
+    "34两问共享一个解族，第二问只新增增长项和初值筛选，不算第二道完整陌生求解。"
+  ],
+  "coverage": [
+    {
+      "method": "分离与整体变量、齐次及平移",
+      "examples": "4.1—4.6、4.61；4-S1",
+      "condition": "除以y、p或比值表达式前另查被排除的解；根号含|x|。"
+    },
+    {
+      "method": "一阶线性、交换变量、Bernoulli",
+      "examples": "4.7、4.9—4.11、4.63；4-S1",
+      "condition": "积分因子可用乘积求导推导，不必背长式；线性与齐次两个词须看具体定义。"
+    },
+    {
+      "method": "全微分、积分因子",
+      "examples": "4.13—4.17；4-S2",
+      "condition": "P_y=Q_x在局部矩形域可用；一般域全局势函数须关注域的条件，曲线积分法后置第7章。"
+    },
+    {
+      "method": "连续积分、两种降阶、已知解降阶",
+      "examples": "4.19—4.23；4-S3",
+      "condition": "p=p(x)与p=p(y)对应的y″不同；已知y₁时先在其非零区间代y=y₁u。"
+    },
+    {
+      "method": "线性解结构与反求方程",
+      "examples": "4.22、4.44、4.54",
+      "condition": "叠加原理只对线性算子成立；非齐次解任意相加一般不是同一方程的解。"
+    },
+    {
+      "method": "常系数三种根型、非齐次共振、分段初值",
+      "examples": "4.25—4.27、4.29、4.31；4-S7",
+      "condition": "重根的x因子与自由项共振的x幂须分清；分段可导不等于二阶导连续。"
+    },
+    {
+      "method": "Euler与复合变量降维",
+      "examples": "4.32、4.34、4.60；4-S7、6.67",
+      "condition": "ln|x|分正负半轴；x=0处不能凭对数解直接延拓。"
+    },
+    {
+      "method": "积分关系、函数恒等式与参数曲线",
+      "examples": "4.12、4.35—4.36、4.48—4.49、4.56；4-S4",
+      "condition": "积分连续性可反过来提高f光滑性，但每提高一次都要有实际表达式依据。"
+    },
+    {
+      "method": "几何、阻力与追击建模",
+      "examples": "4.37—4.38、4.40—4.42、4.62；4-S5",
+      "condition": "列模型与定解条件不可省；追击长积分可选，但速度比与方向关系必须会列。"
+    },
+    {
+      "method": "极限定常数与有界性证明",
+      "examples": "4.8、4.52、4.57—4.58；4-S6",
+      "condition": "有界的H(f)不自动给f有界，须核对H的值域；稳定指数核才有相应统一界。"
+    }
+  ],
+  "exercise_coverage": [
+    {
+      "method": "一阶类型识别、整体代换、交换变量",
+      "core": [
+        "1(1)",
+        "1(2)",
+        "1(4)",
+        "1(6)",
+        "1(8)"
+      ],
+      "reserve": [
+        "1(7)",
+        "1(9)"
+      ],
+      "focus": "计算与入口判断并重；变换后能回代并检查漏解、实数域。"
+    },
+    {
+      "method": "线性、恰当条件与积分因子",
+      "core": [
+        "1(10)",
+        "3",
+        "34(1)",
+        "34(2)"
+      ],
+      "reserve": [
+        "1(3)",
+        "1(5)",
+        "25"
+      ],
+      "focus": "计算为主，条件不可省；定解区间和增长项不是附带细节。"
+    },
+    {
+      "method": "非线性降阶、已知解降阶",
+      "core": [
+        "5(1)",
+        "12"
+      ],
+      "reserve": [
+        "5(2)",
+        "13",
+        "14"
+      ],
+      "focus": "判断依赖哪些变量，再降阶；交换因变量要有局部可逆条件。"
+    },
+    {
+      "method": "共振、Euler及非齐次解结构",
+      "core": [
+        "6",
+        "7(2)",
+        "7(3)",
+        "8",
+        "23",
+        "24"
+      ],
+      "reserve": [
+        "7(4)",
+        "7(6)",
+        "9",
+        "21"
+      ],
+      "focus": "完整计算；会按特征根重数修正特解，不背某一条成品解。"
+    },
+    {
+      "method": "积分/函数关系和正则性提升",
+      "core": [
+        "2(1)",
+        "2(3)",
+        "11(1)",
+        "22",
+        "27"
+      ],
+      "reserve": [
+        "18",
+        "19",
+        "20",
+        "36(1)",
+        "36(2)",
+        "37"
+      ],
+      "focus": "思路为主、计算收尾；先证明可以求导，再保留原式约束。"
+    },
+    {
+      "method": "渐近、统一估计与证明",
+      "core": [
+        "15",
+        "39"
+      ],
+      "reserve": [
+        "4"
+      ],
+      "focus": "证明与不等式；有界、有极限和导数趋零不可互推。"
+    },
+    {
+      "method": "几何与物理建模",
+      "core": [
+        "16",
+        "29",
+        "31",
+        "32",
+        "33"
+      ],
+      "reserve": [
+        "17",
+        "26",
+        "28",
+        "30",
+        "35"
+      ],
+      "focus": "条件翻译为主；区分法线/切线、位移/伸长、上升/下降阶段。"
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a17-ode",
+      "exam": "第17届A类2025·三",
+      "pdf": [
+        6,
+        6
+      ],
+      "focus": "三角代换接Bernoulli再化线性，说明初赛仍需多步类型转换。",
+      "examples": [
+        "4.10",
+        "4.11",
+        "4.63"
+      ]
+    },
+    {
+      "id": "a16-ode",
+      "exam": "第16届A类2024·二",
+      "pdf": [
+        19,
+        20
+      ],
+      "focus": "y²整体变量化线性；原书例4.63同题。方法通用，其他解法不必全部重复。",
+      "examples": [
+        "4.10",
+        "4.15",
+        "4.63"
+      ]
+    },
+    {
+      "id": "a15-ode",
+      "exam": "第15届A类2023·二",
+      "pdf": [
+        37,
+        37
+      ],
+      "focus": "平方代换→平移→齐次的完整链；原书4.61同题，不能把复杂变换一概暂缓。",
+      "examples": [
+        "4.6",
+        "4.61"
+      ]
+    },
+    {
+      "id": "book4-bound",
+      "exam": "教材例4.58·第13届初赛2021",
+      "pdf": [
+        304,
+        305
+      ],
+      "source": "upper",
+      "focus": "有界连续强迫项推出解有界；保留积分因子、因式分解与统一估计，不能只学求通解。",
+      "examples": [
+        "4.58"
+      ]
+    }
+  ],
+  "source": {
+    "book": "upper",
+    "offset": 8,
+    "examples": [
+      266,
+      309
+    ],
+    "question": [
+      309,
+      312
+    ],
+    "solution": [
+      313,
+      321
+    ]
+  },
+  "stats": {
+    "chapter": 4,
+    "original_big_questions": 39,
+    "original_units": 61,
+    "level_counts": {
+      "K": 29,
+      "J": 29,
+      "T": 3
+    },
+    "level_minutes": {
+      "K": 500,
+      "J": 480,
+      "T": 91,
+      "R": 0,
+      "Z": 0
+    },
+    "supplement_units": 0,
+    "core_original_units": 29,
+    "core_total_units": 29,
+    "core_full_minutes": 500,
+    "core_current_minutes": 500,
+    "core_later_minutes": 0,
+    "core_shared_prompt_additions": 1,
+    "all_pool_minutes": 1071
+  },
+  "days": [
+    {
+      "date": "2026-10-25",
+      "chapter": 4,
+      "title": "一阶工具，接上降阶与解结构",
+      "example_range": [
+        1,
+        23
+      ],
+      "examples": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23"
+      ],
+      "core": [
+        "4-练1(1)",
+        "4-练1(2)",
+        "4-练1(4)",
+        "4-练1(6)",
+        "4-练1(8)",
+        "4-练1(10)",
+        "4-练2(1)",
+        "4-练2(3)",
+        "4-练3",
+        "4-练34(1)",
+        "4-练34(2)"
+      ],
+      "supplements": [],
+      "review": "第3章：变上限与积分定义函数；用习题2(9)或2(13)中此前的错题闭卷回访。",
+      "example_minutes": 231,
+      "exercise_minutes": 151,
+      "correction_minutes": 45,
+      "review_minutes": 35,
+      "total_minutes": 462
+    },
+    {
+      "date": "2026-10-26",
+      "chapter": 4,
+      "title": "常系数、Euler与应用建模",
+      "example_range": [
+        24,
+        44
+      ],
+      "examples": [
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.44"
+      ],
+      "core": [
+        "4-练5(1)",
+        "4-练6",
+        "4-练7(2)",
+        "4-练7(3)",
+        "4-练8",
+        "4-练12",
+        "4-练16",
+        "4-练23",
+        "4-练24",
+        "4-练31",
+        "4-练32"
+      ],
+      "supplements": [],
+      "review": "第2章：复合/隐函数求导；闭卷写链式依赖，重做一道原错题。",
+      "example_minutes": 194,
+      "exercise_minutes": 195,
+      "correction_minutes": 45,
+      "review_minutes": 35,
+      "total_minutes": 469
+    },
+    {
+      "date": "2026-10-27",
+      "chapter": 4,
+      "title": "真题后段、极限证明与核心收尾",
+      "example_range": [
+        45,
+        63
+      ],
+      "examples": [
+        "4.48",
+        "4.49",
+        "4.51",
+        "4.52",
+        "4.54",
+        "4.56",
+        "4.57",
+        "4.58",
+        "4.60",
+        "4.61",
+        "4.62",
+        "4.63"
+      ],
+      "core": [
+        "4-练11(1)",
+        "4-练15",
+        "4-练22",
+        "4-练27",
+        "4-练29",
+        "4-练33",
+        "4-练39"
+      ],
+      "supplements": [],
+      "review": "第1章：等价无穷小与Taylor选法；旧错题1道，补查替换是否在加减中合法。",
+      "example_minutes": 172,
+      "exercise_minutes": 154,
+      "correction_minutes": 45,
+      "review_minutes": 35,
+      "total_minutes": 406
+    }
+  ]
+}
